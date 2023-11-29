@@ -5,7 +5,7 @@ const postcssImport = require('postcss-import');
 const postcssImportExtGlob = require('postcss-import-ext-glob');
 const tailwindcss = require('tailwindcss');
 const autoprefixer = require('autoprefixer');
-const cssnano = require('cssnano');
+// const cssnano = require('cssnano');
 
 module.exports = eleventyConfig => {
   eleventyConfig.addTemplateFormats('css');
@@ -23,7 +23,7 @@ module.exports = eleventyConfig => {
           postcssImport,
           tailwindcss,
           autoprefixer,
-          cssnano
+          // cssnano
         ]).process(content, {
           from: path
         });

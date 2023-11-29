@@ -95,7 +95,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addShortcode('packageVersion', () => `v${packageVersion}`);
 
   // 	--------------------- Custom transforms ---------------------
-  eleventyConfig.addPlugin(require('./config/transforms/html-config.js'));
+  // eleventyConfig.addPlugin(require('./config/transforms/html-config.js'));
 
   // 	--------------------- Custom Template Languages ---------------------
   eleventyConfig.addPlugin(require('./config/template-languages/css-config.js'));
