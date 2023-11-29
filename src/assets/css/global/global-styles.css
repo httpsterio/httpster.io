@@ -102,12 +102,12 @@ main:focus {
   outline: none;
 }
 
-article [href^='http']:not([href*='eleventy-excellent.netlify.app']) {
+article [href^='http']:not([href*='httpster.io']) {
   padding-inline-end: 0.8em;
 }
 
 article
-  [href^='http']:not([href*='eleventy-excellent.netlify.app']):not(.no-indicator)::after {
+  [href^='http']:not([href*='httpster.io']):not(.no-indicator)::after {
   position: absolute;
   display: inline-block;
   inline-size: 1em;

@@ -29,6 +29,10 @@
     {
       "name": "Secondary Glare",
       "value": "#D8E2F4"
+    },
+    {
+      "name": "Test Color",
+      "value": "#f0aaFF"
     }
   ]
 }

@@ -15,6 +15,3 @@ The aim is to spread the idea and use of this _excellent_ workflow. To work with
 - Find out more on https://buildexcellentwebsit.es/.
 - Remix the original: https://glitch.com/edit/#!/remix/build-excellent-websites
 
-## Watch the talk
-
-{% youtube 'JqnMI1AXl6w', 'Andy Bell – Be the browser’s mentor, not its micromanager' %}
