@@ -5,23 +5,6 @@ Easy to use Eleventy starter, based on the workflow suggested by Andy Bell's [bu
 If you end up using this starter, feel free to send me a link, I'd love to see it!
 Also let me know if you miss any features. Currently in planning: dark mode, inlining CSS and JS.
 
-- [Eleventy Excellent](#eleventy-excellent)
-  - [Preview](#preview)
-  - [Features](#features)
-  - [First steps](#first-steps)
-  - [Deploy directly to Netlify](#deploy-directly-to-netlify)
-  - [Development](#development)
-    - [Install dependencies](#install-dependencies)
-    - [Working locally](#working-locally)
-    - [Creating a production build](#creating-a-production-build)
-  - [Built with Eleventy Excellent](#built-with-eleventy-excellent)
-  - [Logbook](#logbook)
-  - [Credits and Thank yous](#credits-and-thank-yous)
-
-## Preview
-
-https://eleventy-excellent.netlify.app/
-
 ## Features
 
 **This starter includes:**

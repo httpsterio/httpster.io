@@ -1,6 +1,8 @@
 /** All blog posts as a collection. */
 const getAllPosts = collection => {
-  const projects = collection.getFilteredByGlob('./src/posts/*.md');
+  const now = new Date();
+  const publishedPost = post => post.date <= now && !post.data.draft;
+  const projects = collection.getFilteredByGlob('./src/posts/*.md').filter(publishedPost);
   return projects.reverse();
 };
 

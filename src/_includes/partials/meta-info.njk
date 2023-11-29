@@ -2,14 +2,12 @@
 
 <meta
   name="description"
-  content="
-  {% if seo.description %} {{ seo.description }}
-  {% elif description %}
-  {{ description }}
-  {% else %}
+  content="{% if seo.description -%}
+  {{seo.description}}
+  {% elif description -%}
+  {{ description }}{% else -%}
   {{ meta.siteDescription }}
-  {% endif %}
-  "
+  {%- endif %}"
 />
 
 <meta name="theme-color" content="{{ meta.themeColor }}" />
@@ -51,9 +49,7 @@
 />
 <meta
   property="og:description"
-  content="{% if description %}{{ description }}{% else %}{{
-    meta.siteDescription
-  }}{% endif %}"
+  content="{% if description %}{{ description }}{% else %}{{meta.siteDescription}}{% endif %}"
 />
 <meta property="og:site_name" content="{{ meta.siteName }}" />
 <meta property="og:locale" content="{{ meta.locale }}" />

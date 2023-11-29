@@ -1,8 +1,8 @@
 {
-  "name": "eleventy-excellent",
-  "version": "1.6.2",
-  "description": "Eleventy starter based on the workflow suggested by Andy Bell's buildexcellentwebsit.es.",
-  "author": "Lene Saile",
+  "name": "httpster.io",
+  "version": "0.0.1",
+  "description": "httpsterio's personal site",
+  "author": "Sami Mäkelä",
   "license": "ISC",
   "main": ".eleventy.js",
   "engines": {
@@ -18,14 +18,14 @@
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/madrilene/eleventy-excellent.git"
+    "url": "https://github.com/httpsterio/httpster.io.git"
   },
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-activity-feed": "^1.0.9",
     "@11ty/eleventy-fetch": "^4.0.0",
     "@11ty/eleventy-img": "^3.0.0",
     "@11ty/eleventy-plugin-bundle": "^1.0.4",
-    "@11ty/eleventy-plugin-inclusive-language": "^1.0.3",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "tailwindcss": "^3.0.23"

@@ -125,7 +125,7 @@ article
 
 /* Base selection styles that invert whatever colours are rendered */
 ::selection {
-  background: var(--color-primary);
+  background: var(--color-dark);
   color: var(--color-light);
 }
 
