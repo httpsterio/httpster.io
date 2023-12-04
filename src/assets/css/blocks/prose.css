@@ -1,10 +1,14 @@
 .prose {
-  --flow-space: var(--space-m-l);
+  --flow-space: var(--space-l);
   --wrapper-width: clamp(16rem, 93vw, 55rem);
 }
 
 .prose :is(h2, h3, h4) + * {
-  --flow-space: var(--space-s-m);
+  --flow-space: var(--space-xs);
+}
+
+.prose :is(p, code, pre) + ul {
+  --flow-space: var(--space-xs);
 }
 
 .prose .heading-anchor:is(:hover, :focus) {
@@ -19,7 +23,7 @@
 }
 
 .prose :not(.grid) li + li {
-  margin-top: var(--space-s);
+  margin-top: var(--space-2xs);
 }
 
 .prose :when(ul:not(.grid), ol:not(.grid)) {

@@ -1,17 +1,55 @@
 ---
-title: About
+title: Hey, I'm Sami
 permalink: /about/index.html
-description: About this starter
+description: About Sami
 layout: page
-youtube: true
+subtitle: I'm a full stack creative human who drinks too much coffee and gets needlessly rant-y on topics of no interest.
 ---
 
-Based on the [companion website](https://buildexcellentwebsit.es/) of Andy Bell's talk 'Be the browser’s mentor, not its micromanager'. It takes over a core functionality: Using Tailwind CSS to generate CSS variables based on design tokens.
+## About
+Statistics: I'm alright when it comes to UX design and research, visual design and I can get websites to work as well when I bang my head enough into a wall.
 
-Like buildexcellentwebsit.es, this starter uses modern CSS, fluid type & space, flexible Layouts and Progressive Enhancement, wrapped in a basic template, ideal for personal websites and other small projects.
+I'm also shite at but enjoy the following things - drinking speciality coffee, running Linux and pen DevOps tings and music production. Basically I'm a one-man marketing agency.
 
-The aim is to spread the idea and use of this _excellent_ workflow. To work with it efficiently you should be familiar with [cube.fyi](https://cube.fyi/), [utopia.fyi](https://utopia.fyi/) and [every-layout.dev](https://every-layout.dev/).
+## Now
+Coding, working, gaming and studying in Uni in a nutshell :)
+_Updated on the 4th of December, 2023_
 
-- Find out more on https://buildexcellentwebsit.es/.
-- Remix the original: https://glitch.com/edit/#!/remix/build-excellent-websites
+## Uses
+### Desktop PC
+#### Main computer
+I use this PC for gaming, video editing, music production and programming. It's definitely a bit over the top.
 
+- __CPU:__ i7-12700k @ 3.6 GHz
+- __RAM:__ Corsair Vengeance LPX 32GB 3600 MHz
+- __GPU:__ MSI 3080 Ti Gaming X Trio
+- __Display:__ Samsung 32" 165 Hz Odyssey G5
+- __Motherboard:__ MSI PRO Z690-A
+- __Power Supply:__ Fractal Design 850W Ion Gold
+- __Storage:__ 
+  - 256gb Samsung 980 Evo Pro NVME
+  - 1tb WD Green 5.4k RPM HDD
+  - 4tb Seagate Barracuda 5.4k RPM HDD
+  - 4tb FireCuda 5.4k RPM SSHD
+
+- __Mouse:__ Logitech MX Master 2S
+- __Keyboard:__ Logitech G512 MX Brown
+- __Case:__ Fractal Design Meshify S2
+
+#### Secondary
+My wife uses this for gaming and digital art. It's also a backup file storage for our devices.
+
+- __CPU:__ AMD Ryzen 7 3700X
+- __RAM:__ 16GB G.SKILL Ripjaws V @ 3600MHz
+- __GPU:__ Nvidia GeForce GTX 970 4GB GDDR5
+- __Display:__ Dell Ultrasharp U2515H
+- __Motherboard:__ MSI MPG B550 GAMING PLUS
+- __Power Supply:__ Seasonic Focus GX-650W
+- __Mouse:__ Logitech MX Master 2S
+- __Keyboard:__ Logitech G710
+- __Case:__ SilentiumPC Regnum RG4T
+
+### Other
+- __Media / School laptop:__ Lenovo Ideapad S540 with 8th gen i7, 16GB DDR4 and Nvidia GeForce MX250
+- __Server:__ Asus X550L with 4th gen i7 and 8GB DDR3
+- __NAS:__ Synology DS220+ NAS with 2x4tb Ironwolf HDDs 

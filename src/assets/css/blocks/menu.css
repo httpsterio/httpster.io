@@ -1,7 +1,17 @@
+.nav-main {
+  padding-left: var(--space-s);
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}
+
 @media (min-width: 38em) {
   nav.navbar {
     --nav-button-display: none;
     --nav-position: static;
+  }
+
+  .nav-main {
+    padding-inline: var(--space-l);
   }
 
   nav.navbar ul {
@@ -31,7 +41,7 @@ nav.navbar {
 
 /* Remove default list styling and create layout for list */
 nav.navbar ul {
-  background: var(--nav-list-background, var(--color-light));
+  background: var(--nav-list-background, var(--color-primary));
   box-shadow: var(--nav-list-shadow, -5px 0 11px 0 rgb(0 0 0 / 0.2));
   display: flex;
   flex-direction: var(--nav-list-layout, column);
@@ -56,14 +66,14 @@ nav.navbar [aria-expanded='false'] + ul {
 @media (prefers-reduced-motion: no-preference) {
   nav.navbar [aria-expanded='true'] + ul,
   nav.navbar svg {
-    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55),
+    transition: transform 0.4s cubic-bezier(0.68, -0.15, 0.27, 1.55),
       visibility 0.05s linear;
   }
 }
 
 /* Basic link styling */
 nav.navbar a {
-  --text-color: var(--color-dark);
+  --text-color: var(--color-light);
   color: var(--text-color);
   padding: 0.1rem;
   text-decoration: none;

@@ -1,0 +1,53 @@
+.post-item {
+  border: 0.3rem solid var(--color-dark);
+  color: var(--color-dark);
+  padding: var(--space-m-l);
+  margin: var(--space-xs-s);
+  margin-top: var(--space-l);
+  max-inline-size: unset;
+  box-shadow: 0.75rem 0.75rem 0 0 var(--color-dark);
+  transition: all 0.25s ease-in-out;
+}
+
+.post-item ::selection {
+  color: var(--color-dark);
+  background: var(--color-secondary);
+}
+
+.post-item h3 {
+  font-size: var(--size-step-1);
+  font-weight:700;
+}
+
+.post-item h2 a,
+.post-item h3 a {
+  text-decoration: none;
+}
+
+.post-item:hover,
+.post-item:focus-within {
+  border: 0.3rem solid var(--color-dark);
+  box-shadow: 0.75rem -0.75rem 0 0 var(--color-secondary), -0.75rem 0.75rem 0 0 var(--color-tertiary);
+  transition: all 0.25s ease-in-out;
+}
+
+.post-item a {
+  text-decoration: none;
+}
+
+/* 'clickable' */
+
+.post-item:focus-within a:focus {
+  outline: none;
+}
+.post-item {
+  position: relative;
+}
+.post-item a:after {
+  bottom: 0;
+  content: '';
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}

@@ -13,8 +13,11 @@ tags:
 
 ## TL;DR
 
-`pip3 install fonttools brotli`
-```pyftsubset YOURFONT.woff2 --output-file=YOURFONT-subset.woff2 --text-file=characters.txt --flavor=woff2 --layout-features=kern```
+```bash
+pip3 install fonttools brotli
+
+pyftsubset YOURFONT.woff2 --output-file=YOURFONT-subset.woff2 --text-file=characters.txt --flavor=woff2 --layout-features=kern
+```
 
 ## Forewords
 

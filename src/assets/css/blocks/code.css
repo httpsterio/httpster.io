@@ -19,14 +19,15 @@ code[class*='language-'] {
 code[class*='language-'],
 pre[class*='language-'] {
   text-align: left;
-  white-space: pre;
-  word-spacing: normal;
+  white-space: pre-wrap;
+  word-spacing: var(--word-spacing);
   word-break: normal;
   word-wrap: normal;
   color: var(--color-light);
   background: var(--color-dark);
-  line-height: 1.5;
+  line-height: var(--line-height);
   border-radius: var(--border-radius);
+  overflow-wrap: break-word;
 
   -moz-tab-size: 4;
   -o-tab-size: 4;
@@ -37,6 +38,11 @@ pre[class*='language-'] {
   -ms-hyphens: none;
   hyphens: none;
 }
+
+code::selection, pre::selection, code span::selection {
+  background: var(--color-primary);
+}
+
 
 :not(pre) > code[class*='language-'] {
   white-space: normal;

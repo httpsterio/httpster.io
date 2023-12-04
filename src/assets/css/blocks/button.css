@@ -1,7 +1,7 @@
 .button {
-  color: var(--button-text, var(--color-dark));
-  background-color: var(--button-bg, var(--color-light));
-  border: 2px solid var(--button-border, var(--color-dark));
+  color: var(var(--color-light));
+  background-color: var(var(--color-dark));
+  border: 2px solid var(var(--color-primary));
   border-radius: var(--border-radius);
   display: inline-block;
   font: inherit;

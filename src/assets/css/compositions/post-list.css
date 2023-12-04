@@ -1,0 +1,3 @@
+.post-list {
+  --wrapper-width: clamp(8rem, 93vw, 55rem);
+}

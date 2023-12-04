@@ -8,8 +8,10 @@ body {
   color: var(--color-dark);
   background-color: var(--color-light);
   font-size: var(--size-step-1);
-  font-family: var(--font-base);
-  line-height: 1.4;
+  font-family: var(--font-mono);
+  font-weight:300;
+  line-height: 1.7;
+  word-spacing: var(--word-spacing);
   letter-spacing: var(--tracking);
   display: flex;
   flex-direction: column;
@@ -25,7 +27,8 @@ h2,
 h3 {
   line-height: 1;
   letter-spacing: var(--tracking-s);
-  font-family: var(--font-display);
+  font-family: var(--font-mono);
+  font-weight: 400;
 }
 
 h1 {
@@ -44,13 +47,19 @@ h3 {
 p,
 li,
 blockquote:not([class]) {
-  max-inline-size: 50ch;
+  max-inline-size: 80ch;
 }
 
 h1,
 h2,
 h3 {
-  max-inline-size: 20ch;
+  max-inline-size: 40ch;
+}
+
+h1::selection, h2::selection, h3::selection {
+  color: var(--color-dark);
+  background-color: var(--color-secondary);
+  text-shadow: var(--color-tertiary) 0.2rem 0.2rem;
 }
 
 blockquote {
@@ -125,8 +134,9 @@ article
 
 /* Base selection styles that invert whatever colours are rendered */
 ::selection {
-  background: var(--color-dark);
-  color: var(--color-light);
+  background: var(--color-secondary);
+  color: var(--color-dark);
+  padding: 1.5em;
 }
 
 .preload-transitions * {

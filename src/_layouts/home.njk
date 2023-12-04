@@ -2,13 +2,13 @@
 layout: base
 ---
 
-<header class="section spot-color-primary">
+<header class="section spot-color-dark">
   <div class="section__inner">
     <div class="wrapper flow region">
       <h1 class="text-center">{{ title }}</h1>
     </div>
   </div>
-  {% include 'svg/divider-waves.svg' %}
+  {# {% include 'svg/divider-waves.svg' %} #}
 </header>
 
 <article class="region">
@@ -18,23 +18,20 @@ layout: base
 </article>
 
 <article class="region" style="--region-space-top: var(--space-s)">
-  <div class="wrapper flow prose">
-    <h2>{{ blog.title }}</h2>
-    <!-- blog intro text is optional. -->
-    {% if blog.intro %}
-    <p>{{ blog.intro }}</p>
+  <div class="wrapper flow prose text-center">
+    <h2>{{ articles.title }}</h2>
+    {% if articles.intro %}
+    <p>{{ articles.intro }}</p>
     {% endif %}
   </div>
   <!-- TODO: duplicate of partials/blog.njk -->
 
-  <ul class="wrapper grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
+  <ul class="wrapper post-list mt-l-xl" role="list">
     {% set postslist = collections.posts %} {% for post in postslist.slice(0, 5) %}
 
-    <li class="card flow overflow-hidden">
-      <h3>
-        <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-      </h3>
-      {% set definedDate = post.date %} {% include "partials/date.njk" %}
+    <li class="post-item flow overflow-hidden">
+      <h3><a href="{{ post.url | url }}">{{ post.data.title }}</a></h3>
+      {% set definedDate = post.date %}{% include "partials/date.njk" %}
       <p>{{ post.data.description }}</p>
     </li>
 
