@@ -57,9 +57,11 @@ If you're using Ubuntu on WSL, you might also have to install `pycryptodomex`, `
 
 ### 3. Create a file with the characters you want to keep
 
-Create a basic ´.txt´ file and inside the file, list all the characters you're going to use on your website. My list of characters looks like this:
+Create a basic `.txt` file and inside the file, list all the characters you're going to use on your website. My list of characters looks like this:
 
-```1234567890!"#%&/()=?``´@£$€{[]}\~^'*-–—_.,:;<>|’½§qwertyuiopåasdfghjklöäzxcvbnmæøQWERTYUIOPÅASDFGHJKLÖÄZXCVBNMÆØéáíçñëèāÉÁÍÇÑËÈĀ```
+```
+1234567890!"#%&/()=?``´@£$€{[]}\~^'*-–—_.,:;<>|’½§qwertyuiopåasdfghjklöäzxcvbnmæøQWERTYUIOPÅASDFGHJKLÖÄZXCVBNMÆØéáíçñëèāÉÁÍÇÑËÈĀ
+```
 
 Save the file as `characters.txt` in the same folder as your font files.
 
@@ -75,9 +77,11 @@ Make note of the features you want to keep and write them up somewhere. I'm goin
 
 ### 5. Subset the font
 
-You have all the tools installed, your font in an woff2, otf or ttf format and a list of characters you want to keep. Now, it's time to subset the font. Open your terminal and navigate to the folder where your font files are. Then, type the following command:
+You have all the tools installed, your font in an woff2, otf or ttf format and a list of characters you want to keep. Now, it's time to subset the font. Open your terminal and navigate to the folder where your font files are. Then, run the following command:
 
-```pyftsubset YOURFONT.woff2 --output-file=YOURFONT-subset.woff2 --text-file=characters.txt --flavor=woff2 --layout-features=kern``` and run it.
+```
+pyftsubset YOURFONT.woff2 --output-file=YOURFONT-subset.woff2 --text-file=characters.txt --flavor=woff2 --layout-features=kern
+```
 
 Remember to replace `YOURFONT` with the actual name of the font you're using and replace `kern` with the features you want to keep. If you want to keep multiple features, separate them with a comma like this: `--layout-features=kern,liga`. If you simply want to keep all of the layout features, you can also just type `--layout-features=*` instead.
 
