@@ -5,11 +5,11 @@ pre {
   background: var(--color-dark);
   border-radius: var(--border-radius);
   color: var(--color-light);
-  font-size: var(--size-step-0);
+  font-size: var(--size-step-1);
 }
 
 pre[class*='language-'] {
-  padding: var(--space-s-m);
+  padding: var(--space-s);
 }
 
 code[class*='language-'] {
