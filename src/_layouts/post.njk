@@ -4,11 +4,21 @@ schema: blog
 ---
 
 <article class="region blog">
-  <div class="wrapper flow prose">
-    <h1 class="gradient-text">{{ title }}</h1>
+  <div class="wrapper prose">
+    <h1 class="title-shadow-post">{{ title }}</h1>
 
-    {% set definedDate = date %} {% include "partials/date.njk" %}
-
+    <div class="post-meta mt-m">
+      {% set definedDate = date %} <time class="mb-m post-date" datetime="{{ definedDatedate | toIsoString }}">[{{ definedDate | formatDate('YYYY-MM-DD')}}]</time> 
+      <div class="tag-list mb-m">
+        {% for tag in tags %}
+          {% if tag != "posts" %}
+            <li class="tag">[{{ tag }}]</li>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  <div class="wrapper flow">
     {{ content | safe }}
+  </div>
   </div>
 </article>

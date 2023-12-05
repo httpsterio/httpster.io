@@ -5,10 +5,10 @@ layout: base
 <header class="section spot-color-dark">
   <div class="section__inner">
     <div class="wrapper flow region">
-      <h1 class="text-center">{{ title }}</h1>
+      <h1 class="text-center title-shadow">{{ title }}</h1>
     </div>
   </div>
-  {# {% include 'svg/divider-waves.svg' %} #}
+  {# {% include 'svg/divider-pixels.svg' %} #}
 </header>
 
 <article class="region">
@@ -19,22 +19,30 @@ layout: base
 
 <article class="region" style="--region-space-top: var(--space-s)">
   <div class="wrapper flow prose text-center">
-    <h2>{{ articles.title }}</h2>
+    <h2>Latest articles</h2>
     {% if articles.intro %}
     <p>{{ articles.intro }}</p>
     {% endif %}
   </div>
-  <!-- TODO: duplicate of partials/blog.njk -->
 
-  <ul class="wrapper post-list mt-l-xl" role="list">
+  <div class="wrapper post-list mt-l-xl" role="list">
     {% set postslist = collections.posts %} {% for post in postslist.slice(0, 5) %}
 
-    <li class="post-item flow overflow-hidden">
+    <article class="post-item flow overflow-hidden">
       <h3><a href="{{ post.url | url }}">{{ post.data.title }}</a></h3>
-      {% set definedDate = post.date %}{% include "partials/date.njk" %}
+      <div class="post-meta mt-m">
+        {% set definedDate = date %} <time class="mb-m post-date" datetime="{{ definedDatedate | toIsoString }}">[{{ definedDate | formatDate('YYYY-MM-DD')}}]</time> 
+        <div class="tag-list mb-m">
+          {% for tag in post.data.tags %}
+            {% if tag != "posts" %}
+              <li class="tag">[{{ tag }}]</li>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
       <p>{{ post.data.description }}</p>
-    </li>
+    </article>
 
     {% endfor %}
-  </ul>
+  </div>
 </article>

@@ -2,27 +2,26 @@
 layout: base
 ---
 
-<header class="section spot-color-secondary">
+<header class="section spot-color-dark">
   <div class="section__inner region">
     <div class="wrapper flow">
-      <section class="prose text-center">
-        <h1 class="fade-in">{{ title }}</h1>
+      <section class="wrapper flow prose text-center">
+        <h1 class="title-shadow">{{ title }}</h1>
+            {% if subtitle %}
+              <p class="mt-l-xl subtitle">{{ subtitle | safe }}</p>
+            {% endif %}
       </section>
     </div>
   </div>
-
-  {% include 'svg/divider-edgy.svg' %}
 </header>
 
 <article class="wrapper region">
-  <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
-    {% set postslist = collections.posts %} {% for post in postslist %}
+  <ul class="wrapper post-list mt-l-xl" role="list">
+    {% set postslist = collections.posts %} {% for post in postslist.slice(0, 5) %}
 
-    <li class="card flow overflow-hidden">
-      <h2>
-        <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-      </h2>
-      {% set definedDate = post.date %} {% include "partials/date.njk" %}
+    <li class="post-item flow overflow-hidden">
+      <h3><a href="{{ post.url | url }}">{{ post.data.title }}</a></h3>
+      {% set definedDate = post.date %}{% include "partials/date.njk" %}
       <p>{{ post.data.description }}</p>
     </li>
 

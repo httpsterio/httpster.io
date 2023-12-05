@@ -5,7 +5,7 @@ description: "Taking back what's mine and sticking it to the man."
 writingtime: 1 hour
 tags:
   - social media
-  - web development
+  - webdev
   - culture
 ---
 

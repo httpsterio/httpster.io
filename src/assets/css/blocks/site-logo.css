@@ -1,10 +1,16 @@
 .logo {
-  font-weight: bold;
-  text-transform: uppercase;
+  font-weight: 150;
   display: flex;
   align-items: center;
   gap: var(--space-2xs);
   letter-spacing: var(--tracking-s);
-  padding: var(--space-xs) 0;
+  margin: var(--space-s) 0;
+  padding: var(--space-xs);
   font-size: var(--size-step-1);
+  border: 0.2ch solid transparent;
+}
+
+.logo:hover {
+  color: var(--color-secondary);
+  border: 0.2ch solid var(--color-secondary);
 }

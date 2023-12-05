@@ -1,3 +1,34 @@
+.post-meta {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* This will push the <time> to the left and the .tag elements to the right */
+  align-items: center;
+  flex-wrap: wrap;
+  flex: 0 0 auto;
+}
+
+.tag-list
+{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  list-style-type: none;
+  color: var(--color-dark);
+  font-size: var(--size-step-1);
+  padding-inline: 0.5rem;
+  right: 0;
+  gap: 1rem; /* Add this line */
+}
+
+.tag:hover{
+  background-color: var(--color-tertiary);
+}
+
 .post-item {
   border: 0.3rem solid var(--color-dark);
   color: var(--color-dark);
@@ -15,7 +46,7 @@
 }
 
 .post-item h3 {
-  font-size: var(--size-step-1);
+  font-size: var(--size-step-2);
   font-weight:700;
 }
 

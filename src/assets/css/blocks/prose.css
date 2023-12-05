@@ -3,8 +3,17 @@
   --wrapper-width: clamp(16rem, 93vw, 55rem);
 }
 
+.subtitle {
+  --flow-space: var(--space-xs);
+  --wrapper-width: clamp(16rem, 93vw, 20rem);
+}
+
 .prose :is(h2, h3, h4) + * {
   --flow-space: var(--space-xs);
+}
+
+.prose :is(h1, h2, h3) + :is(h1, h2, h3) {
+  --flow-space: var(--space-m-l);
 }
 
 .prose :is(p, code, pre) + ul {
@@ -22,9 +31,13 @@
   background: var(--color-primary-glare);
 }
 
-.prose :not(.grid) li + li {
+/* .prose :not(.grid) li + li {
   margin-top: var(--space-2xs);
 }
+
+.prose :not(.post-meta) li + li {
+  margin-top: var(--space-2xs);
+} */
 
 .prose :when(ul:not(.grid), ol:not(.grid)) {
   padding-inline-start: var(--space-s);

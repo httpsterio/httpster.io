@@ -2,14 +2,24 @@
 layout: base
 ---
 
+<header class="section spot-color-dark">
+  <div class="section__inner region">
+    <div class="wrapper flow">
+      <section class="wrapper flow prose text-center">
+        <h1 class="title-shadow">{{ title }}</h1>
+            {% if subtitle %}
+              <p class="mt-l-xl subtitle">{{ subtitle }}</p>
+            {% endif %}
+      </section>
+    </div>
+  </div>
+
+  {# {% include 'svg/divider-edgy.svg' %} #}
+</header>
+
 <article class="region page">
   <div class="wrapper flow prose">
-    <h1 class="">{{ title }}</h1>
-    {% if subtitle %}
-      <p class="prose">{{ subtitle }}</p>
-    {% endif %}
-    
+    {{ content | safe }}
+  </div>
+</article>
 
-        {{ content | safe }}
-      </div>
-    </article>

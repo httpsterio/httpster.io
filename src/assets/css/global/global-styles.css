@@ -56,12 +56,6 @@ h3 {
   max-inline-size: 40ch;
 }
 
-h1::selection, h2::selection, h3::selection {
-  color: var(--color-dark);
-  background-color: var(--color-secondary);
-  text-shadow: var(--color-tertiary) 0.2rem 0.2rem;
-}
-
 blockquote {
   border-inline-start: 0.8rem solid var(--color-primary);
   padding: var(--space-m-l);

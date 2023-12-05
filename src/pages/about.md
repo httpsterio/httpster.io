@@ -16,8 +16,7 @@ Coding, working, gaming and studying in Uni in a nutshell :)
 _Updated on the 4th of December, 2023_
 
 ## Uses
-### Desktop PC
-#### Main computer
+### Main computer
 I use this PC for gaming, video editing, music production and programming. It's definitely a bit over the top.
 
 - __CPU:__ i7-12700k @ 3.6 GHz
@@ -36,7 +35,7 @@ I use this PC for gaming, video editing, music production and programming. It's 
 - __Keyboard:__ Logitech G512 MX Brown
 - __Case:__ Fractal Design Meshify S2
 
-#### Secondary
+### Secondary
 My wife uses this for gaming and digital art. It's also a backup file storage for our devices.
 
 - __CPU:__ AMD Ryzen 7 3700X
@@ -52,4 +51,6 @@ My wife uses this for gaming and digital art. It's also a backup file storage fo
 ### Other
 - __Media / School laptop:__ Lenovo Ideapad S540 with 8th gen i7, 16GB DDR4 and Nvidia GeForce MX250
 - __Server:__ Asus X550L with 4th gen i7 and 8GB DDR3
-- __NAS:__ Synology DS220+ NAS with 2x4tb Ironwolf HDDs 
+- __NAS:__ Synology DS220+ NAS with 2x4tb Ironwolf HDDs
+- __Work laptop:__ Apple Macbook Air M1 2019
+- __Phone:__ Apple iPhone 13

@@ -1,17 +1,15 @@
 ---
 permalink: /index.html
 title: 'Hey friends!'
-description: 'Eleventy starter using modern CSS, fluid type, fluid spacing, flexible layout and progressive enhancement.'
+description: "httpsterio's personal website"
 layout: 'home'
 articles:
   title: 'Articles'
   intro: ""
 ---
 
-## An Eleventy starter
+## Welcome to my website
 
-This [Eleventy](https://www.11ty.dev/) starter is based on [Andy Bell's](https://mastodon.social/@andy@bell.bz) talk 'Be the browser’s mentor, not its micromanager' and it's companion website buildexcellentwebsit.es.
+This site is my digital home. I'm sharing my projects, thoughts and digital works here.
 
-In his words, it's about hinting the browser rather than micromanaging it, using progressive enhancement, CSS layout, fluid type & spacing, as well as modern CSS features.
-
-This way we can shape frontends that look good to everyone, regardless of device, connection speed or context.
+Like everything else in my life, this site is a work in progress. Things might move around and change, don't be alarmed.
