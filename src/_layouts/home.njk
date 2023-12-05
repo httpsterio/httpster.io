@@ -25,21 +25,12 @@ layout: base
     {% endif %}
   </div>
 
-  <div class="wrapper post-list mt-l-xl" role="list">
+  <div class="wrapper post-list mt-l-xl">
     {% set postslist = collections.posts %} {% for post in postslist.slice(0, 5) %}
 
     <article class="post-item flow overflow-hidden">
       <h3><a href="{{ post.url | url }}">{{ post.data.title }}</a></h3>
-      <div class="post-meta mt-m">
-        {% set definedDate = date %} <time class="mb-m post-date" datetime="{{ definedDatedate | toIsoString }}">[{{ definedDate | formatDate('YYYY-MM-DD')}}]</time> 
-        <div class="tag-list mb-m">
-          {% for tag in post.data.tags %}
-            {% if tag != "posts" %}
-              <li class="tag">[{{ tag }}]</li>
-            {% endif %}
-          {% endfor %}
-        </div>
-      </div>
+        {% set definedDate = post.date %} {% include "partials/date.njk" %}
       <p>{{ post.data.description }}</p>
     </article>
 

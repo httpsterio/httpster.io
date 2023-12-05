@@ -8,14 +8,14 @@ schema: blog
     <h1 class="title-shadow-post">{{ title }}</h1>
 
     <div class="post-meta mt-m">
-      {% set definedDate = date %} <time class="mb-m post-date" datetime="{{ definedDatedate | toIsoString }}">[{{ definedDate | formatDate('YYYY-MM-DD')}}]</time> 
-      <div class="tag-list mb-m">
+      {% set definedDate = post.date %}{% include "partials/date.njk" %}
+      <ul class="tag-list mb-m">
         {% for tag in tags %}
           {% if tag != "posts" %}
             <li class="tag">[{{ tag }}]</li>
           {% endif %}
         {% endfor %}
-      </div>
+      </ul>
     </div>
   <div class="wrapper flow">
     {{ content | safe }}

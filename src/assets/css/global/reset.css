@@ -25,6 +25,7 @@ dd {
 ul[role='list'],
 ol[role='list'] {
   list-style: none;
+  margin-block-start: 0;
 }
 
 /* Prevent zooming when orientation changes on some iOS devices */
