@@ -7,9 +7,9 @@ schema: blog
   <div class="wrapper prose">
     <h1 class="title-shadow-post">{{ title }}</h1>
 
-    <div class="post-meta mt-m">
-      {% set definedDate = post.date %}{% include "partials/date.njk" %}
-      <ul class="tag-list mb-m">
+    <div class="post-meta my-m">
+      {% set definedDate = date %}{% include "partials/date.njk" %}
+      <ul class="tag-list">
         {% for tag in tags %}
           {% if tag != "posts" %}
             <li class="tag">[{{ tag }}]</li>

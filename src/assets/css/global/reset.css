@@ -28,6 +28,10 @@ ol[role='list'] {
   margin-block-start: 0;
 }
 
+ul {
+  margin: 0;
+}
+
 /* Prevent zooming when orientation changes on some iOS devices */
 html {
   text-size-adjust: none;
