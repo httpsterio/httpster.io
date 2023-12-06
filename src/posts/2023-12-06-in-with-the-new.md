@@ -1,9 +1,9 @@
 ---
 title: In with the new, out with the old
 date: "2023-05-09"
-description: "Shrink your fonts and make your site faster."
+description: "After three and a half years, it's time for a refresh."
 writingtime: "4 hours"
-draft: true
+draft: false
 coverimg: "/img/subset.jpg"
 tags:
   - webdev
