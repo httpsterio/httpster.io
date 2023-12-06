@@ -24,15 +24,16 @@ eleventyExcludeFromCollections: true
   {% set verticalStartingPoint = 170 %}
   {% endif %}
 
-  <!-- SVG background, generate your own on: https://app.haikei.app/  -->
-  <svg id="visual" viewBox="0 0 1200 628" width="1200" height="628" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><rect x="0" y="0" width="1200" height="628" fill="#F3F3F3"></rect><path d="M0 100L50 92.7C100 85.3 200 70.7 300 70.7C400 70.7 500 85.3 600 94.3C700 103.3 800 106.7 900 107.5C1000 108.3 1100 106.7 1150 105.8L1200 105L1200 0L1150 0C1100 0 1000 0 900 0C800 0 700 0 600 0C500 0 400 0 300 0C200 0 100 0 50 0L0 0Z" fill="#DD4462" stroke-linecap="round" stroke-linejoin="miter"></path></svg>
+
+
+<svg id="visual" viewBox="0 0 1920 1080" width="1920" height="1080" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><rect x="0" y="0" width="1920" height="1080" fill="#0c0c0c"></rect><defs><linearGradient id="grad1_0" x1="43.8%" y1="100%" x2="100%" y2="0%"><stop offset="14.444444444444446%" stop-color="#1ed397" stop-opacity="1"></stop><stop offset="85.55555555555554%" stop-color="#1ed397" stop-opacity="1"></stop></linearGradient></defs><defs><linearGradient id="grad1_1" x1="43.8%" y1="100%" x2="100%" y2="0%"><stop offset="14.444444444444446%" stop-color="#1ed397" stop-opacity="1"></stop><stop offset="85.55555555555554%" stop-color="#0c0c0c" stop-opacity="1"></stop></linearGradient></defs><defs><linearGradient id="grad2_0" x1="0%" y1="100%" x2="56.3%" y2="0%"><stop offset="14.444444444444446%" stop-color="#1ed397" stop-opacity="1"></stop><stop offset="85.55555555555554%" stop-color="#1ed397" stop-opacity="1"></stop></linearGradient></defs><defs><linearGradient id="grad2_1" x1="0%" y1="100%" x2="56.3%" y2="0%"><stop offset="14.444444444444446%" stop-color="#0c0c0c" stop-opacity="1"></stop><stop offset="85.55555555555554%" stop-color="#1ed397" stop-opacity="1"></stop></linearGradient></defs><g transform="translate(1920, 1080)"><path d="M-378 0C-372.8 -74.2 -367.6 -148.4 -327.4 -189C-287.1 -229.6 -211.9 -236.5 -151.5 -262.4C-91.1 -288.3 -45.6 -333.1 0 -378L0 0Z" fill="#26684d"></path><path d="M-189 0C-186.4 -37.1 -183.8 -74.2 -163.7 -94.5C-143.6 -114.8 -105.9 -118.3 -75.8 -131.2C-45.6 -144.1 -22.8 -166.6 0 -189L0 0Z" fill="#1ed397"></path></g><g transform="translate(0, 0)"><path d="M378 0C350.7 55.7 323.4 111.4 295.3 170.5C267.2 229.6 238.4 292.2 189 327.4C139.6 362.5 69.8 370.3 0 378L0 0Z" fill="#26684d"></path><path d="M189 0C175.4 27.8 161.7 55.7 147.7 85.2C133.6 114.8 119.2 146.1 94.5 163.7C69.8 181.3 34.9 185.1 0 189L0 0Z" fill="#1ed397"></path></g></svg>
 
   <!-- date -->
   <text
-    font-family="Redhat, Roboto, 'Helvetica Neue', sans-serif"
+    font-family="PP Supply Sans"
     font-size="24"
     font-weight="bold"
-    fill="#DD4462"
+    fill="#F3F3F3"
     letter-spacing="-1"
   >
     <tspan x="160" y="{{ verticalStartingPoint - 120 }}">
@@ -43,10 +44,10 @@ eleventyExcludeFromCollections: true
   <!-- title -->
   <text
     id="text"
-    font-family="Redhat, Roboto, 'Helvetica Neue', sans-serif"
+    font-family="PP Supply Sans"
     font-size="80"
     font-weight="900"
-    fill="#333333"
+    fill="#F3F3F3"
     letter-spacing="-3"
   >
     {% for line in titleInLines %}
@@ -61,9 +62,9 @@ eleventyExcludeFromCollections: true
   font-family="Redhat, Roboto, 'Helvetica Neue', sans-serif"
     font-size="24"
     font-weight="bold"
-    fill="#DD4462"
+    fill="#F3F3F3"
     letter-spacing="-0.5"
   >
-    <tspan x="160" y="600">{{ meta.siteName }} · {{ meta.url | replace("https://", "") | replace("http://", "") }}</tspan>
+    <tspan x="160" y="600">{{ meta.siteName }}</tspan>
   </text>
 </svg>

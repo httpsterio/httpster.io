@@ -30,6 +30,7 @@ ol[role='list'] {
 
 ul {
   margin: 0;
+  padding-inline-start: 0;
 }
 
 /* Prevent zooming when orientation changes on some iOS devices */
