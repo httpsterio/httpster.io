@@ -1,35 +1,8 @@
 @font-face {
-  font-family: Inter;
-  font-style: normal;
-  font-display: swap;
-  font-weight: 400;
-  src: local(''), url(/assets/fonts/inter/inter-v7-latin-500.woff2) format('woff2'),
-    url(/assets/fonts/inter/inter-v7-latin-500.woff) format('woff');
-}
-
-@font-face {
-  font-family: Inter;
-  font-style: normal;
-  font-display: swap;
-  font-weight: 700;
-  src: local(''), url(/assets/fonts/inter/inter-v7-latin-700.woff2) format('woff2'),
-    url(/assets/fonts/inter/inter-v7-latin-700.woff) format('woff');
-}
-
-@font-face {
-  font-family: Redhat;
-  font-style: normal;
-  font-display: swap;
-  font-weight: 700;
-  src: local(''),
-    url(/assets/fonts/redhat/red-hat-display-v7-latin-900.woff2) format('woff2'),
-    url(/assets/fonts/redhat/red-hat-display-v7-latin-900.woff) format('woff');
-}
-
-@font-face {
   font-family: "Supply";
   src: url(/assets/fonts/supply/supplysans-variable.woff2);
   font-weight: 100 800;
+  font-display: swap;
   unicode-range: U+0020-007E, U+00A0-00A9, U+00AB-00AC, U+00AE-00B1,
       U+00B4, U+00B6-00B8, U+00BB, U+00BF-00EF, U+00F1-0107, U+010A-0113,
       U+0116-011B, U+011E-0123, U+0126-0127, U+012A-012B, U+012E-0131,
