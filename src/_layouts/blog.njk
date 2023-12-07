@@ -17,7 +17,7 @@ layout: base
 
 <article class="wrapper region">
   <ul class="wrapper post-list mt-l-xl" role="list">
-    {% set postslist = collections.posts %} {% for post in postslist.slice(0, 5) %}
+    {% set postslist = collections.articles %} {% for post in postslist %}
 
     <li class="post-item flow overflow-hidden">
       <h3><a href="{{ post.url | url }}">{{ post.data.title }}</a></h3>

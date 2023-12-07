@@ -4,9 +4,11 @@ date: "2023-05-09"
 description: "After three and a half years, it's time for a refresh."
 writingtime: "4 hours"
 draft: false
-coverimg: "/img/subset.jpg"
+coverimg: ""
 tags:
   - webdev
 ---
 
-## Site refresh
+## Time for a site refresh
+
+For the past three and a half years exactly, I've been using 

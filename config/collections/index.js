@@ -1,3 +1,5 @@
+const { filterdrafts } = require('../filters');
+
 /** All blog posts as a collection. */
 const getAllPosts = collection => {
   const now = new Date();
@@ -11,7 +13,13 @@ const onlyMarkdown = collection => {
   return collection.getFilteredByGlob('./src/**/*.md');
 };
 
+const articleCollection = collection => {
+  const articles = collection.getFilteredByGlob('./src/content/articles/*.md');
+  return filterdrafts(articles).reverse();
+};
+
 module.exports = {
   getAllPosts,
-  onlyMarkdown
+  onlyMarkdown,
+  articleCollection
 };

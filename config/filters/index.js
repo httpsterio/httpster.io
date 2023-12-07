@@ -121,6 +121,11 @@ const splitlines = (input, maxCharLength) => {
   return lines;
 };
 
+const filterdrafts = collection => {
+  const now = new Date();
+  return collection.filter(post => post.date <= now && !post.data.draft);
+};
+
 module.exports = {
   limit,
   toHtml,
@@ -132,5 +137,6 @@ module.exports = {
   minifyCss,
   minifyJs,
   mdInline,
-  splitlines
+  splitlines,
+  filterdrafts
 };

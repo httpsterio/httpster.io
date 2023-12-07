@@ -40,6 +40,7 @@ const {
 // module import collections
 const {getAllPosts} = require('./config/collections/index.js');
 const {onlyMarkdown} = require('./config/collections/index.js');
+const {articleCollection} = require('./config/collections/index.js');
 
 // module import events
 const {svgToJpeg} = require('./config/events/index.js');
@@ -102,6 +103,7 @@ module.exports = eleventyConfig => {
   // 	--------------------- Custom collections -----------------------
   eleventyConfig.addCollection('posts', getAllPosts);
   eleventyConfig.addCollection('onlyMarkdown', onlyMarkdown);
+  eleventyConfig.addCollection('articles', articleCollection);
 
   // 	--------------------- Events ---------------------
   eleventyConfig.on('afterBuild', svgToJpeg);
@@ -122,6 +124,10 @@ module.exports = eleventyConfig => {
   // social icons to root directory
   eleventyConfig.addPassthroughCopy({
     'src/assets/images/favicon/*': '/'
+  });
+
+  eleventyConfig.addPassthroughCopy({
+    'src/assets/stats/': '/stats/'
   });
 
   // 	--------------------- general config -----------------------

@@ -9,7 +9,7 @@ excludeFromSitemap: true
   <subtitle>{{ meta.blog.description }}</subtitle>
   <link href="{{ meta.url }}/feed.xml" rel="self" />
   <link href="{{ meta.url }}/" />
-  {% set postslist = collections.posts %}
+  {% set postslist = collections.articles %}
   <updated>{{ postslist | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
   <id>{{ meta.url }}/</id>
   <author>
