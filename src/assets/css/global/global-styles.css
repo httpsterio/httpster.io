@@ -10,7 +10,7 @@ body {
   font-size: var(--size-step-1);
   font-family: var(--font-mono);
   font-weight:300;
-  line-height: 1.7;
+  line-height: 1.5;
   word-spacing: var(--word-spacing);
   letter-spacing: var(--tracking);
   display: flex;

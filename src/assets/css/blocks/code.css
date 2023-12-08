@@ -5,7 +5,7 @@ pre {
   background: var(--color-dark);
   border-radius: var(--border-radius);
   color: var(--color-light);
-  font-size: var(--size-step-1);
+  font-size: var(--size-step-0);
 }
 
 pre[class*='language-'] {

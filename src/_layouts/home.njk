@@ -30,7 +30,16 @@ layout: base
 
     <article class="post-item flow overflow-hidden">
       <h3><a href="{{ post.url | url }}">{{ post.data.title }}</a></h3>
-        {% set definedDate = post.date %} {% include "partials/date.njk" %}
+    <div class="post-meta my-m">
+      {% set definedDate = date %}{% include "partials/date.njk" %}
+      <ul class="tag-list">
+        {% for tag in post.data.tags %}
+          {% if tag != "posts" %}
+            <li class="tag">#{{ tag }}</li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
       <p>{{ post.data.description }}</p>
     </article>
 
