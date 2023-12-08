@@ -4,7 +4,7 @@
   --border-radius: 0.3rem;
   --transition-duration: 250ms;
   --transition-timing: ease;
-  --wrapper-width: clamp(16rem, 93vw, 85rem);
+  --wrapper-width: clamp(16rem, 90vw, 85rem);
   --tracking: .05ch;
   --tracking-s: -0.015ch;
   --word-spacing: 0.3ch;

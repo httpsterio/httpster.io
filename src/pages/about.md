@@ -48,6 +48,23 @@ My wife uses this for gaming and digital art. It's also a backup file storage fo
 - __Keyboard:__ Logitech G710
 - __Case:__ SilentiumPC Regnum RG4T
 
+### Audio / Video
+- __Soundcard:__ Røde Rødecaster Pro II
+- __Soundcard:__ Audient ID4 MKI
+- __Microphone:__ Shure SM7B
+- __Microphone:__ Røde Wireless GO II
+- __Microphone:__ Røde NT1-A
+- __Microphone:__ Røde smartLAV+
+- __Headphones:__ Beyerdynamic DT 880 Pro 250 Ohm
+- __Speakers:__ Yamaha HS7W
+- __Speakers:__ Genelec G One
+- __DSLR:__ Sony A6000
+- __Lens:__ Sigma 16mm f/1.4 DC DN
+- __Capture Card:__ Elgato HD60S+
+- __Lighting:__ Godox ES45 x2
+
+
+
 ### Other
 - __Media / School laptop:__ Lenovo Ideapad S540 with 8th gen i7, 16GB DDR4 and Nvidia GeForce MX250
 - __Server:__ Asus X550L with 4th gen i7 and 8GB DDR3
