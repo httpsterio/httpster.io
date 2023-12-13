@@ -23,5 +23,5 @@ package = "netlify-plugin-cache"
   from = "/now"
   to = "/about#now"
   status = 301
-  force = false
+  force = true
   query = {path = ":path"}
