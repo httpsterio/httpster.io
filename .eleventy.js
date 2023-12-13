@@ -127,7 +127,7 @@ module.exports = eleventyConfig => {
   });
 
   eleventyConfig.addPassthroughCopy({
-    'src/assets/stats/': '/stats/'
+    'src/assets/stats/script.js': '/stats/script.js'
   });
 
   // 	--------------------- general config -----------------------

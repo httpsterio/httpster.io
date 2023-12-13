@@ -8,7 +8,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addExtension('js', {
     outputFileExtension: 'js',
     compile: async (content, path) => {
-      if (path !== './src/assets/scripts/app.js') {
+      if (path !== './src/assets/scripts/app.js' && path !== './src/assets/scripts/umami.js') {
         return;
       }
 
