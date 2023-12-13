@@ -28,7 +28,7 @@
 }
 
 .prose mark {
-  background: var(--color-primary-glare);
+  background: var(--color-primary);
 }
 
 /* .prose :not(.grid) li + li {

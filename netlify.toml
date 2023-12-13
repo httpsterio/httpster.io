@@ -18,3 +18,10 @@ package = "netlify-plugin-cache"
 [build]
   command = "npm run build"
   publish = "dist"
+
+[[redirects]]
+  from = "/now"
+  to = "/about#now"
+  status = 301
+  force = false
+  query = {path = ":path"}

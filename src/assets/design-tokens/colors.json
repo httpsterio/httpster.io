@@ -11,16 +11,8 @@
       "value": "#F3F3F3"
     },
     {
-      "name": "Light Glare",
-      "value": "#FFFFFF"
-    },
-    {
       "name": "Primary",
       "value": "#e5633e"
-    },
-    {
-      "name": "Primary Glare",
-      "value": "#F4D0DF"
     },
     {
       "name": "Secondary",
@@ -29,14 +21,6 @@
     {
       "name": "Tertiary",
       "value": "#fdb320 "
-    },
-    {
-      "name": "Secondary Glare",
-      "value": "#D8E2F4"
-    },
-    {
-      "name": "Test Color",
-      "value": "#f0aaFF"
     }
   ]
 }

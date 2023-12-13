@@ -13,7 +13,8 @@
     "dev:11ty": "eleventy --serve --watch",
     "build:11ty": "eleventy",
     "start": "run-p dev:*",
-    "build": "run-s clean build:*"
+    "build": "run-s clean build:*",
+    "debug": "DEBUG=* run-p dev:*"
   },
   "keywords": [],
   "repository": {

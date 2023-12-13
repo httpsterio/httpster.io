@@ -1,5 +1,6 @@
 .post-meta {
   display: flex;
+  margin: var(--space-2xs), 0;
   flex-direction: row;
   justify-content: flex-start; /* This will push the <time> to the left and the .tag elements to the right */
   align-items: center;
@@ -29,9 +30,18 @@
   color: var(--color-secondary)
 }
 
+.post-category {
+  color: var(--color-dark);
+  text-shadow: var(--color-secondary) 0.1ch 0.1ch;
+  font-size: var(--size-step-0);
+  font-weight: 400;
+  margin-right: var(--space-xs-s);
+}
+
 .post-item {
   border: 0.3rem solid var(--color-dark);
   color: var(--color-dark);
+  background-color: var(--color-light);
   padding: var(--space-m-l);
   margin: var(--space-xs-s);
   margin-top: var(--space-l);

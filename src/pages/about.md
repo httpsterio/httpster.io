@@ -7,9 +7,7 @@ subtitle: I'm a full stack creative human who drinks too much coffee and gets ne
 ---
 
 ## About
-Statistics: I'm alright when it comes to UX design and research, visual design and I can get websites to work as well when I bang my head enough into a wall.
 
-I'm also shite at but enjoy the following things - drinking speciality coffee, running Linux and pen DevOps tings and music production. Basically I'm a one-man marketing agency.
 
 ## Now
 Coding, working, gaming and studying in Uni in a nutshell :)

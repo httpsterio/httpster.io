@@ -6,6 +6,11 @@
   },
   "items": [
     {
+      "name": "3XS",
+      "min": 0,
+      "max": 4
+    },
+    {
       "name": "2XS",
       "min": 8,
       "max": 10
