@@ -7,7 +7,7 @@ subtitle: I'm a full stack creative human who drinks too much coffee and gets ne
 ---
 
 ## About
-
+Heya! My name is Sami and I'm a 32 year old developer/designer/artist. I'm living in Finland with my wife and I'm originally from Denmark.
 
 ## Now
 Coding, working, gaming and studying in Uni in a nutshell :)
