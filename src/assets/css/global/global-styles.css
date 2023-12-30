@@ -8,11 +8,11 @@ body {
   color: var(--color-dark);
   background-color: var(--color-light);
   font-size: var(--size-step-1);
-  font-family: var(--font-mono);
-  font-weight:300;
+  font-family: var(--font-base);
+  font-weight:400;
   line-height: 1.5;
   word-spacing: var(--word-spacing);
-  letter-spacing: var(--tracking);
+  letter-spacing: var(--tracking-s);
   display: flex;
   flex-direction: column;
 }
@@ -106,7 +106,8 @@ main:focus {
 }
 
 article [href^='http']:not([href*='httpster.io']) {
-  padding-inline-end: 0.8em;
+  padding-inline-end: 0.6em;
+  text-shadow: var(--color-tertiary) 0.1ch 0.1ch;
 }
 
 article

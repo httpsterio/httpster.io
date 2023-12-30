@@ -2,10 +2,11 @@
   display: flex;
   margin: var(--space-2xs), 0;
   flex-direction: row;
-  justify-content: flex-start; /* This will push the <time> to the left and the .tag elements to the right */
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
   flex: 0 0 auto;
+  font-family: var(--font-mono);
 }
 
 .tag-list

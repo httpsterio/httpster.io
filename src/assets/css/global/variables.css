@@ -7,6 +7,6 @@
   --wrapper-width: clamp(16rem, 90vw, 85rem);
   --tracking: .05ch;
   --tracking-s: -0.015ch;
-  --word-spacing: 0.3ch;
+  --word-spacing: 0.1ch;
   --line-height:1.5;
 }
