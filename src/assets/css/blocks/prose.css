@@ -1,6 +1,8 @@
 .prose {
   --flow-space: var(--space-md);
   --wrapper-width: clamp(16rem, 90vw, 55rem);
+
+  font-feature-settings: "lnum" 1, "tnum" 1;
 }
 
 .subtitle {

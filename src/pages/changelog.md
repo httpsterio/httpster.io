@@ -5,6 +5,12 @@ description: This site's changelog
 layout: page
 ---
 
+## 2024-01-01
+New post about the new site
+
+## 2023-12-31
+Updated bodyfont to Vollkorn and converted it to woff2. Writing new blog post.
+
 ## 2023-12-08
 Added tags back to the layout. Still gotta add categories. Also, updated <a href="/about">about</a> page with A/V gear and fixed nested list indentation.
 

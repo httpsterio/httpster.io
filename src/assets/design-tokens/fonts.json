@@ -5,7 +5,7 @@
     {
       "name": "Display",
       "description": "System fonts for body copy and globally set text.",
-      "value": ["Inter", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif"]
+      "value": ["Supply", "monospace"]
     },
     {
       "name": "Base",
@@ -15,7 +15,7 @@
     {
       "name": "Mono",
       "description": "Expressive sections, like quotes",
-      "value": ["Supply", "monospace"]
+      "value": ["Inter", "monospace"]
     }
   ]
 }

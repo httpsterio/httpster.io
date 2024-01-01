@@ -2,7 +2,7 @@
   padding-left: var(--space-s);
   background-color: var(--color-dark);
   color: var(--color-light);
-  font-family: var(--font-mono);
+  font-family: var(--font-display);
 }
 
 @media (min-width: 38em) {

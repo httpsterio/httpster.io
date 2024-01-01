@@ -16,7 +16,7 @@ module.exports = {
     opengraph_default_alt: 'Visible content:httpsterios website',
     twitterSite: '',
     twitterCreator: '',
-    mastodonProfile: 'https://toot.wales/@sami'
+    mastodonProfile: 'https://social.lol/@sami'
   },
   blog: {
     // this is for the rss feed

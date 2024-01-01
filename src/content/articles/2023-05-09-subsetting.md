@@ -92,6 +92,6 @@ There you have it. Personally, I managed to reduce my font load from 472kb to 46
 
 If you want to learn more about FontTools, you can check out the [official documentation](https://fonttools.readthedocs.io/en/latest/). If you want to learn more about subsetting fonts, I can recommend [this article](https://www.zachleat.com/web/subset-webfonts/) by Zach Leatherman.
 
-Thanks for reading! If you enjoyed this tutorial, holler at me on Mastodon [@sami@toot.wales](https://toot.wales/@sami) or you can shoot me an email firstname@websitename. 
+Thanks for reading! If you enjoyed this tutorial, holler at me on Mastodon [@sami@social.lol](https://social.lol/@sami) or you can shoot me an email firstname@websitename. 
 
 Take care, stay happy and keep being brilliant!

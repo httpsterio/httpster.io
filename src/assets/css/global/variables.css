@@ -9,4 +9,36 @@
   --tracking-s: -0.015ch;
   --word-spacing: 0.1ch;
   --line-height:1.5;
+
+  --vollkorn-regular-aalt: "aalt" off;
+  --vollkorn-regular-c2sc: "c2sc" off;
+  --vollkorn-regular-case: "case" off;
+  --vollkorn-regular-dlig: "dlig" off;
+  --vollkorn-regular-dnom: "dnom" off;
+  --vollkorn-regular-frac: "frac" off;
+  --vollkorn-regular-hist: "hist" off;
+  --vollkorn-regular-hlig: "hlig" off;
+  --vollkorn-regular-lnum: "lnum" off;
+  --vollkorn-regular-mgrk: "mgrk" off;
+  --vollkorn-regular-numr: "numr" off;
+  --vollkorn-regular-onum: "onum" off;
+  --vollkorn-regular-ordn: "ordn" off;
+  --vollkorn-regular-pnum: "pnum" off;
+  --vollkorn-regular-salt: "salt" off;
+  --vollkorn-regular-smcp: "smcp" off;
+  --vollkorn-regular-ss01: "ss01" off;
+  --vollkorn-regular-ss02: "ss02" off;
+  --vollkorn-regular-ss03: "ss03" off;
+  --vollkorn-regular-ss04: "ss04" off;
+  --vollkorn-regular-ss05: "ss05" off;
+  --vollkorn-regular-ss11: "ss11" off;
+  --vollkorn-regular-ss13: "ss13" off;
+  --vollkorn-regular-ss14: "ss14" off;
+  --vollkorn-regular-ss17: "ss17" off;
+  --vollkorn-regular-subs: "subs" off;
+  --vollkorn-regular-sups: "sups" off;
+  --vollkorn-regular-titl: "titl" off;
+  --vollkorn-regular-tnum: "tnum" off;
+  --vollkorn-regular-zero: "zero" off;
+  --vollkorn-regular-cpsp: "cpsp" off;
 }

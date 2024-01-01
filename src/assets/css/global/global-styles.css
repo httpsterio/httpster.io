@@ -27,7 +27,7 @@ h2,
 h3 {
   line-height: 1;
   letter-spacing: var(--tracking-s);
-  font-family: var(--font-mono);
+  font-family: var(--font-display);
   font-weight: 400;
 }
 
@@ -106,11 +106,12 @@ main:focus {
 }
 
 article [href^='http']:not([href*='httpster.io']) {
-  padding-inline-end: 0.6em;
+  /* padding-inline-end: 0.6em; */
+  font-weight: 700;
   text-shadow: var(--color-tertiary) 0.1ch 0.1ch;
 }
 
-article
+/* article
   [href^='http']:not([href*='httpster.io']):not(.no-indicator)::after {
   position: absolute;
   display: inline-block;
@@ -119,13 +120,13 @@ article
   background-image: url('/assets/images/icn-external.svg');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 60% auto;
+  background-size: 60% auto; */
   /* alternative text rules */
-  content: '(external link)';
+  /* content: '(external link)';
   overflow: hidden;
   white-space: nowrap;
-  text-indent: 1em; /* the width of the icon */
-}
+  text-indent: 1em;
+} */
 
 /* Base selection styles that invert whatever colours are rendered */
 ::selection {
