@@ -1,3 +1,10 @@
+.link-section-item{
+  background-color: var(--color-primary);
+  color: var(--color-dark);
+  padding-inline: 1em;
+  display: inline-block;
+}
+
 .nav-main {
   padding-left: var(--space-s);
   background-color: var(--color-dark);

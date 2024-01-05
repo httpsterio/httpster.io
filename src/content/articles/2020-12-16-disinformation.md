@@ -3,10 +3,11 @@ title: Stress, fake news & vaccinations
 date: "2020-12-16"
 description: "Once again, hanging around social media is tedious and exasperating."
 writingtime: "2 hours"
+draft: true
 tags:
   - social media
   - covid-19
-  - culture
+  - life
 ---
 
 I have an exam tomorrow, course code TJTA-1113 to be specific. I need to study the course material as I've had an extremely frustrating experience assimilating the course syllabus. Of course, I could've put in more effort and not left it to the last moments to study, but the course material has been presented in an extremely inefficient way. At least from my perspective.

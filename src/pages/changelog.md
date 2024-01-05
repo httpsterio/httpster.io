@@ -5,6 +5,9 @@ description: This site's changelog
 layout: page
 ---
 
+## 2024-01-04
+Added new post about my back pain
+
 ## 2024-01-01
 New post about the new site
 
