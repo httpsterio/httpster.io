@@ -20,7 +20,7 @@ For the next 20 minutes, we tried to get me into a chair, into the bed, on to th
 
 Yesterday, I was bouncing around the court, today I couldn't sit without swearing and crying in pain. Eventually, after pushing through the pain, I managed to get in the chair. Sitting was painful as well, my spine compressed on itself and no position I was in gave any relief. The EMT's arrived just after 18:05 and I got some temporary relief from a muscle relaxant shot.
 
-This isn't the first time I've had issues with what appears to be sciatica, but it was definitely the first time I've been fully incapacitated by it. I'm only 32 years old, in my mind I'm still young. I exercise and _try_ to lead a healthy and active lifestyle. In reality I'm overweight, I smoke and too sedentary.
+This isn't the first time I've had issues with what appears to be sciatica, but it was definitely the first time I've been fully incapacitated by it. I'm only 32 years old, in my mind I'm still young. I exercise and _try_ to lead a healthy and active lifestyle. In reality I'm overweight, I smoke and I'm too sedentary.
 
 Depending on the statistics and definitions, roughly 1 in 4 lives with some type of disability. Unless you die an instant death in a freak accident, you will with a 100% certainty be disabled at some point in your life. I know it's cheesy, but one shouldn't take their health and a functioning body for granted.
 
