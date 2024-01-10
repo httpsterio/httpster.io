@@ -13,8 +13,8 @@ module.exports = {
   ],
   main: [
     {
-      text: 'Articles',
-      url: '/articles/'
+      text: 'Main feed',
+      url: '/main/'
     },
     {
       text: 'About',

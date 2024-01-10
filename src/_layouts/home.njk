@@ -18,14 +18,14 @@ layout: base
 
 <article class="region" style="--region-space-top: var(--space-s)">
   <div class="wrapper flow prose text-center">
-    <h2>Latest articles</h2>
+    <h2>Latest content</h2>
     {% if articles.intro %}
     <p>{{ articles.intro }}</p>
     {% endif %}
   </div>
 
   <div class="wrapper post-list mt-l-xl">
-    {% set postslist = collections.articles %} 
+    {% set postslist = collections.mainContent %} 
     {% for post in postslist.slice(0, 5) %}
 
     <article class="post-item flow overflow-hidden">
@@ -50,5 +50,5 @@ layout: base
 </article>
 
 <div class="wrapper flow prose text-center mb-xl">
-  <a href="/articles">Read all the articles -></a>
+  <a href="/main/">Check all the rest -></a>
 </div>

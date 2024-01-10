@@ -1,3 +1,11 @@
+.top-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-s);
+  margin: 1rem;
+}
+
 .link-section-item{
   background-color: var(--color-primary);
   color: var(--color-dark);

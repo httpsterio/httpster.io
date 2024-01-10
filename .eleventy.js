@@ -41,6 +41,8 @@ const {
 const {getAllPosts} = require('./config/collections/index.js');
 const {onlyMarkdown} = require('./config/collections/index.js');
 const {articleCollection} = require('./config/collections/index.js');
+const {coffeeCollection} = require('./config/collections/index.js');
+const {mainCollection} = require('./config/collections/index.js')
 
 // module import events
 const {svgToJpeg} = require('./config/events/index.js');
@@ -104,6 +106,8 @@ module.exports = eleventyConfig => {
   eleventyConfig.addCollection('posts', getAllPosts);
   eleventyConfig.addCollection('onlyMarkdown', onlyMarkdown);
   eleventyConfig.addCollection('articles', articleCollection);
+  eleventyConfig.addCollection('coffee', coffeeCollection);
+  eleventyConfig.addCollection('mainContent', mainCollection);
 
   // 	--------------------- Events ---------------------
   eleventyConfig.on('afterBuild', svgToJpeg);

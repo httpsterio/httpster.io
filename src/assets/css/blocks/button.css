@@ -18,3 +18,29 @@
   --button-text: var(--color-light);
   --button-border: var(--color-dark);
 }
+
+.nav-button{
+  border: 0.25rem solid var(--color-secondary);
+  color: var(--color-dark);
+  background-color: var(--color-secondary);
+  display: inline-block;
+  font-family: var(--font-display);
+  padding: 0.5rem 1rem 0rem 1rem;
+  margin: 0.2rem;
+  /* background-image: url('https://assets.codepen.io/4175254/ep-133-noise.png'); */
+  text-align: center;
+  text-transform: uppercase;
+  font-weight:300;
+  text-decoration: none;
+  transition-property: transform, background-color, box-shadow;
+  transition-duration: .2s;
+  transition-timing-function: cubic-bezier(.25, .5, .5, 1);
+}
+
+.nav-button:active, .nav-button:hover, .nav-button:focus {
+  border: 0.25rem solid transparent;
+  border-radius: 0;
+  background-color: var(--color-light);
+  box-shadow: 0.5rem -0.5rem 0 0 var(--color-primary), -0.5rem 0.5rem 0 0 var(--color-tertiary);
+  transition: all 0.25s ease-in-out;
+}

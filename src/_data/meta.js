@@ -9,6 +9,7 @@ module.exports = {
   author: 'httpsterio',
   authorEmail: 'sami @ domain',
   authorWebsite: 'https://httpster.io',
+  proof: 'provenc3d7aa',
   themeColor: '#f3f3f3',
   themeBgColor: '#0c0c0c',
   meta_data: {

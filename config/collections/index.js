@@ -2,15 +2,14 @@ const { filterdrafts } = require('../filters');
 
 /** All blog posts as a collection. */
 const getAllPosts = collection => {
-  const now = new Date();
-  const publishedPost = post => post.date <= now && !post.data.draft;
-  const projects = collection.getFilteredByGlob('./src/posts/*.md').filter(publishedPost);
-  return projects.reverse();
+  const projects = collection.getFilteredByGlob('./src/posts/*.md');
+  return filterdrafts(projects).reverse();
 };
 
 /** All markdown files as a collection for sitemap.xml */
 const onlyMarkdown = collection => {
-  return collection.getFilteredByGlob('./src/**/*.md');
+  const onlyMarkdownContent =  collection.getFilteredByGlob('./src/**/*.md');
+  return filterdrafts(onlyMarkdownContent).reverse();
 };
 
 const articleCollection = collection => {
@@ -18,8 +17,22 @@ const articleCollection = collection => {
   return filterdrafts(articles).reverse();
 };
 
+const coffeeCollection = collection => {
+  const coffee = collection.getFilteredByGlob('./src/content/coffee/*.md');
+  return filterdrafts(coffee).reverse();
+};
+
+const mainCollection = collection => {
+  const articles = collection.getFilteredByGlob('./src/content/articles/*.md');
+  const coffee = collection.getFilteredByGlob('./src/content/coffee/*.md');
+  const mainContent = articles.concat(coffee);
+  return filterdrafts(mainContent).reverse();
+};
+
 module.exports = {
   getAllPosts,
   onlyMarkdown,
-  articleCollection
+  articleCollection,
+  coffeeCollection,
+  mainCollection
 };

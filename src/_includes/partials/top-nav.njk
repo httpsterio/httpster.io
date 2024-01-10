@@ -1,9 +1,5 @@
-<nav class="">
-    <div class="wrapper flow">
-      <section class="">
+<section class="top-nav">
     {% for item in navigation.main %}
-      <a class="link-section-item" href="{{ item.url }}"{{ helpers.getLinkActiveState(item.url,page.url)|safe}}>{{ item.text }}</a>
+      <a class="nav-button" href="{{ item.url }}"{{ helpers.getLinkActiveState(item.url,page.url)|safe}}>{{ item.text }}</a>
     {% endfor %}
-      </section>
-    </div>
-</nav>
+</section>

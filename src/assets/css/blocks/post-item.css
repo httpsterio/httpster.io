@@ -21,9 +21,9 @@
 .tag {
   list-style-type: none;
   color: var(--color-dark);
-  font-size: var(--size-step-0);
+  font-size: var(--size-step-1);
   right: 0;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .tag:hover{
@@ -33,9 +33,8 @@
 
 .post-category {
   color: var(--color-dark);
-  text-shadow: var(--color-secondary) 0.1ch 0.1ch;
-  font-size: var(--size-step-0);
-  font-weight: 400;
+  font-size: var(--size-step-1);
+  font-weight: 600;
   margin-right: var(--space-xs-s);
 }
 
