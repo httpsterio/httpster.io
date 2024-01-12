@@ -1,6 +1,6 @@
 {
   "layout": "post",
-  "category": "coffee",
+  "category": "mainstream",
   "permalink": "//coffee/{{ title | slugify }}/index.html",
-  "item-type": "partials/item-coffee.njk"
+  "item-type": "partials/item-mainstream.njk"
 }
