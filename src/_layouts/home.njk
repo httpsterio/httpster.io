@@ -1,6 +1,8 @@
 ---
 layout: base
 ---
+{% import "macros/dynamic-include.njk" as dyinc %}
+
 
 <header class="section spot-color-dark">
   <div class="section__inner">
@@ -28,7 +30,7 @@ layout: base
     {% set postslist = collections.mainContent %} 
 
 {% for post in postslist.slice(0, 3) %}
-{% include "partials/"+post.data.item-type+".njk" %} 
+{% include "partials/item-article.njk" %}
 {% endfor %}
     
   </div>

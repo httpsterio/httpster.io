@@ -6,6 +6,7 @@ layout: 'home'
 articles:
   title: 'Articles'
   intro: ""
+item-type: item-default  
 ---
 
 ## Welcome to my website
