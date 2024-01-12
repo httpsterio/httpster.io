@@ -88,6 +88,9 @@ module.exports = eleventyConfig => {
   eleventyConfig.addFilter('keys', Object.keys);
   eleventyConfig.addFilter('values', Object.values);
   eleventyConfig.addFilter('entries', Object.entries);
+
+  const util = require('util');
+  eleventyConfig.addFilter('console', value => `<div style="white-space: pre-wrap;">${decodeURIComponent(util.inspect(value))}</div>;`);
   
 
   // 	--------------------- Custom shortcodes ---------------------

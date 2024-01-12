@@ -2,5 +2,5 @@
   "layout": "post",
   "category": "mainstream",
   "permalink": "//coffee/{{ title | slugify }}/index.html",
-  "item-type": "item-mainstream"
+  "type": "item-mainstream"
 }

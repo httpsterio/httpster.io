@@ -3,7 +3,7 @@ title: Changelog
 permalink: /changelog/index.html
 description: This site's changelog
 layout: page
-item-type: item-default
+type: default
 ---
 
 {% for log in changelog.log %}

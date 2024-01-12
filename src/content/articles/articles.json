@@ -2,5 +2,5 @@
   "layout": "post",
   "category": "article",
   "permalink": "//article/{{ title | slugify }}/index.html",
-  "item-type": "item-article"
+  "type": "item-article"
 }

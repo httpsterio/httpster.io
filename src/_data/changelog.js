@@ -1,6 +1,11 @@
 module.exports = {
   log: [
     {
+      date: "2024-01-12",
+      type: "feature",
+      content: "Big feature upgrade! Now, the main content feed can have a mix of different content types, each with its own display right in the feed!"
+    },
+    {
       date: "2024-01-10",
       type: "feature",
       content: "Working on removing the mobile menu and having menu always visible. Also added different collection categories and pages to the top. not a fan of the button look tho."
