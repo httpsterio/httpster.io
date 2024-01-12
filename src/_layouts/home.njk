@@ -28,7 +28,7 @@ layout: base
     {% set postslist = collections.mainContent %} 
 
 {% for post in postslist.slice(0, 3) %}
-{% include post.data.item-type %} 
+{% include "partials/"+post.data.item-type+".njk" %} 
 {% endfor %}
     
   </div>
