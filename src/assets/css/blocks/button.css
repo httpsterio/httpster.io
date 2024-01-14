@@ -1,7 +1,7 @@
 .button {
   color: var(var(--color-light));
   background-color: var(var(--color-dark));
-  border: 2px solid var(var(--color-primary));
+  border: 2px solid var(var(--color-red));
   border-radius: var(--border-radius);
   display: inline-block;
   font: inherit;
@@ -20,9 +20,9 @@
 }
 
 .nav-button{
-  border: 0.25rem solid var(--color-secondary);
+  border: 0.25rem solid var(--color-green);
   color: var(--color-dark);
-  background-color: var(--color-secondary);
+  background-color: var(--color-green);
   display: inline-block;
   font-family: var(--font-display);
   padding: 0.5rem 1rem 0rem 1rem;
@@ -41,6 +41,6 @@
   border: 0.25rem solid transparent;
   border-radius: 0;
   background-color: var(--color-light);
-  box-shadow: 0.5rem -0.5rem 0 0 var(--color-primary), -0.5rem 0.5rem 0 0 var(--color-tertiary);
+  box-shadow: 0.5rem -0.5rem 0 0 var(--color-red), -0.5rem 0.5rem 0 0 var(--color-yellow);
   transition: all 0.25s ease-in-out;
 }

@@ -30,7 +30,7 @@
 }
 
 .prose mark {
-  background: var(--color-primary);
+  background: var(--color-red);
 }
 
 /* .prose :not(.grid) li + li {

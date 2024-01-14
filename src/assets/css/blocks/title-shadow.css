@@ -1,19 +1,19 @@
 .title-shadow {
-  text-shadow: var(--color-secondary) 0.08ch 0.08ch;
+  text-shadow: var(--color-green) 0.08ch 0.08ch;
 }
 
 .title-shadow::selection {
   color: var(--color-dark);
-  background-color: var(--color-secondary);
-  text-shadow: var(--color-tertiary) 0.08ch 0.08ch;
+  background-color: var(--color-green);
+  text-shadow: var(--color-yellow) 0.08ch 0.08ch;
 }
 
 .title-shadow-post {
-  text-shadow: var(--color-primary) 0.08ch 0.08ch;
+  text-shadow: var(--color-red) 0.08ch 0.08ch;
 }
 
 .title-shadow-post::selection {
   color: var(--color-dark);
-  background-color: var(--color-secondary);
-  text-shadow: var(--color-tertiary) 0.08ch 0.08ch;
+  background-color: var(--color-green);
+  text-shadow: var(--color-yellow) 0.08ch 0.08ch;
 }

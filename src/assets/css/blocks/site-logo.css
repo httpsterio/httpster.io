@@ -12,6 +12,6 @@
 }
 
 .logo:hover {
-  color: var(--color-secondary);
-  border: 0.2ch solid var(--color-secondary);
+  color: var(--color-green);
+  border: 0.2ch solid var(--color-green);
 }

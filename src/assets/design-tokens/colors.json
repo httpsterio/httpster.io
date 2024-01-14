@@ -11,15 +11,15 @@
       "value": "#F3F3F3"
     },
     {
-      "name": "Primary",
+      "name": "red",
       "value": "#e5633e"
     },
     {
-      "name": "Secondary",
+      "name": "green",
       "value": "#1ed397"
     },
     {
-      "name": "Tertiary",
+      "name": "yellow",
       "value": "#fdb320 "
     }
   ]

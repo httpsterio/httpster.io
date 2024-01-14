@@ -19,6 +19,10 @@ module.exports = {
     {
       text: 'About',
       url: '/about/'
+    },
+    {
+      text: 'Now',
+      url: 'https://sami.omg.lol/now'
     }
   ],
   bottom: [

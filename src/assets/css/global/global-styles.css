@@ -56,7 +56,7 @@ h3 {
 }
 
 blockquote {
-  border-inline-start: 0.8rem solid var(--color-primary);
+  border-inline-start: 0.8rem solid var(--color-red);
   padding: var(--space-m-l);
   font-size: var(--size-step-2);
 }
@@ -107,7 +107,7 @@ main:focus {
 article [href^='http']:not([href*='httpster.io']) {
   /* padding-inline-end: 0.6em; */
   font-weight: 700;
-  text-shadow: var(--color-tertiary) 0.1ch 0.1ch;
+  text-shadow: var(--color-yellow) 0.1ch 0.1ch;
 }
 
 /* article
@@ -129,7 +129,7 @@ article [href^='http']:not([href*='httpster.io']) {
 
 /* Base selection styles that invert whatever colours are rendered */
 ::selection {
-  background: var(--color-secondary);
+  background: var(--color-green);
   color: var(--color-dark);
   padding: 1.5em;
 }

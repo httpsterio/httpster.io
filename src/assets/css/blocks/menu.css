@@ -7,7 +7,7 @@
 }
 
 .link-section-item{
-  background-color: var(--color-primary);
+  background-color: var(--color-red);
   color: var(--color-dark);
   padding-inline: 1em;
   display: inline-block;
@@ -57,7 +57,7 @@ nav.navbar {
 
 /* Remove default list styling and create layout for list */
 nav.navbar ul {
-  background: var(--nav-list-background, var(--color-primary));
+  background: var(--nav-list-background, var(--color-red));
   box-shadow: var(--nav-list-shadow, -5px 0 11px 0 rgb(0 0 0 / 0.2));
   display: flex;
   flex-direction: var(--nav-list-layout, column);
@@ -107,8 +107,8 @@ nav.navbar a:where(:hover, :focus) {
 
 /* Change border-color and color for the active page */
 nav.navbar [aria-current='page'] {
-  --border-color: var(--color-primary);
-  --text-color: var(--color-primary);
+  --border-color: var(--color-red);
+  --text-color: var(--color-red);
 }
 
 /* Reset button styling */
