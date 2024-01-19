@@ -10,8 +10,8 @@
   },
   "scripts": {
     "clean": "rimraf dist",
-    "dev:11ty": "eleventy --serve --watch",
-    "build:11ty": "eleventy",
+    "dev:11ty": "NODE_ENV=dev eleventy --serve --watch",
+    "build:11ty": "NODE_ENV=production eleventy",
     "start": "run-p dev:*",
     "build": "run-s clean build:*",
     "debug": "DEBUG=* run-p dev:*"
@@ -50,6 +50,7 @@
     "markdown-it-mark": "^3.0.1",
     "markdown-it-prism": "^2.3.0",
     "netlify-plugin-cache": "^1.0.3",
+    "node-fetch": "^3.3.2",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.8",
     "postcss-cli": "^10.0.0",

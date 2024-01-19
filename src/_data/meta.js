@@ -1,5 +1,6 @@
 module.exports = {
   url: process.env.URL || 'http://localhost:8080',
+  domain: 'httpster.io',
   siteName: 'httpster.io',
   siteDescription: 'My personal site',
   siteType: 'Person', // schema
