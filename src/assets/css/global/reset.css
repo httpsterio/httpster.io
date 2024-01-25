@@ -82,3 +82,9 @@ button,
 summary {
   cursor: pointer;
 }
+
+video {
+  max-width: 100%;
+  display:block;
+  margin-inline: auto;
+}
