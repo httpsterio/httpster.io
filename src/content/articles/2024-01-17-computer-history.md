@@ -3,14 +3,14 @@ title: My history with computers
 date: "2024-01-16"
 description: "Computers have always been a big part of my life."
 writingtime: ""
-draft: false
+draft: true
 tags:
   - life
 ---
 
 Computers have always been a big part of my life. On most days, most of the time I am awake, I spend it on a computer. My work, hobbies, education and entertainment habits have always been this way. I was never a programmer wunderkind, but computers have enabled so much in my life that I can only be glad of the opportunity to grow up with them as an integral part of my life.
 
-In this post, I'll try to chronicle how they've influenced me over the years.
+In this post, I'll try to chronicle at least a part of my journey.
 
 ## In the '90s
 
