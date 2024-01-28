@@ -1,5 +1,5 @@
 <nav id="mainnav" class="nav-links" aria-label="Main">
   {% for item in navigation.top %}
-    <a class="nav-link-item" href="{{ item.url }}"{{ helpers.getLinkActiveState(item.url,page.url) | safe }} ><div class="nav-link-icon" aria-hidden="true">{% include 'icons/social-' + item.icon %}</div><span class="nav-link-text">{{ item.text }}</span></a>
+    <a aria-label="{{ link.text }}" class="nav-link-item" href="{{ item.url }}"{{ helpers.getLinkActiveState(item.url,page.url) | safe }} ><div class="nav-link-icon" aria-hidden="true">{% include 'icons/social-' + item.icon %}</div><span class="nav-link-text">{{ item.text }}</span></a>
   {% endfor %}
 </nav>
