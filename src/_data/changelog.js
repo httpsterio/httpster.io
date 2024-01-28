@@ -1,6 +1,11 @@
 module.exports = {
   log: [
     {
+      date: "2024-01-28",
+      type: "feature",
+      content: "No mobile hamburger menu boisss! Baleeted that code and just replaced with a lil css, hiding text and just showing icons on mobile"
+    },
+    {
       date: "2024-01-12",
       type: "feature",
       content: "Big feature upgrade! Now, the main content feed can have a mix of different content types, each with its own display right in the feed!"

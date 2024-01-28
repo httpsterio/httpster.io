@@ -1,33 +1,5 @@
-<nav id="mainnav" class="navbar" aria-label="Main">
-  <ul>
-    {% for item in navigation.top %}
-    <li>
-      <a
-        class="nav"
-        href="{{ item.url }}"
-        {{
-        helpers.getLinkActiveState(item.url,
-        page.url)
-        |
-        safe
-        }}
-        >{{ item.text }}</a>
-    </li>
-    {% endfor %}
-  </ul>
+<nav id="mainnav" class="nav-links" aria-label="Main">
+  {% for item in navigation.top %}
+    <a class="nav-link-item" href="{{ item.url }}"{{ helpers.getLinkActiveState(item.url,page.url) | safe }} ><div class="nav-link-icon" aria-hidden="true">{% include 'icons/social-' + item.icon %}</div><span class="nav-link-text">{{ item.text }}</span></a>
+  {% endfor %}
 </nav>
-
-<!--  template element holding a button that needs to be injected when JavaScript is finally available. based on an article by Manuel Matuzovic, https://web.dev/website-navigation/, see also https://kittygiraudel.com/2022/09/30/templating-in-html/ -->
-
-<template id="burger-template">
-  <button type="button" aria-expanded="false" aria-label="Menu" aria-controls="mainnav">
-    <span>Menu</span>
-    <svg width="24" height="24" aria-hidden="true" fill="currentColor">
-      <path
-        fill-rule="evenodd"
-        d="M12 3.75a.75.75 0 01.75.75v6.75h6.75a.75.75 0 010 1.5h-6.75v6.75a.75.75 0 01-1.5 0v-6.75H4.5a.75.75 0 010-1.5h6.75V4.5a.75.75 0 01.75-.75z"
-        clip-rule="evenodd"
-      />
-    </svg>
-  </button>
-</template>

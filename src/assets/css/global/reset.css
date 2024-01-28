@@ -88,3 +88,22 @@ video {
   display:block;
   margin-inline: auto;
 }
+
+figure {
+  max-width: 100%;
+  display:block;
+  margin-inline: auto;
+}
+
+figure img {
+  max-width: 100%;
+  margin-inline: auto;
+}
+
+figure figcaption {
+  text-align: center;
+  margin-inline: auto;
+  max-width: 80%;
+  font-size: var(--size-step-0);
+  font-style: italic;
+}

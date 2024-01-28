@@ -1,11 +1,12 @@
 ---
 title: My history with computers
 date: "2024-01-16"
-description: "Computers have always been a big part of my life."
+description: "Computer goes beep boop."
 writingtime: ""
 draft: true
 tags:
   - life
+  - personal
 ---
 
 Computers have always been a big part of my life. On most days, most of the time I am awake, I spend it on a computer. My work, hobbies, education and entertainment habits have always been this way. I was never a programmer wunderkind, but computers have enabled so much in my life that I can only be glad of the opportunity to grow up with them as an integral part of my life.
@@ -46,3 +47,40 @@ With the help of my friend, we made a ___cool___ flame wallpaper and some hue-sh
   <source src="/assets/media/s4mw1s3.webm" type="video/webm" />
   <source src="/assets/media/s4mw1s3.mp4" type="video/webm" />
 </video>
+
+The video is actually featuring one of the first tracks I made with Sony Acid and a bunch of free loops. I've lost the first handful of tracks shown in the Beta Records screenshot. I've since backed up and kept a copy of every track and project I've made after I moved to FL Studio, but those Sony Acid tracks are sadly lost to time.
+
+Anyways, nälkä kasvaa syödessä as we say in Finland! I was ravenous. I kept making new sites, redid my own site at least a half a dozen times in the following years, sites for friends and gaming guilds and a plethora of other projects and groups.
+
+At some point around 2008 I got into music blogs. My whole journey into that world and what came of it is worth its' own writeup of its own. After spending a considerable amount of time on sites like Dani Deahl's DSQUAREd, Trashbag Kids, Too Many Sebastians, Dödselectro, Vacay Vitamins, Missintoof, Datasapiens and a slew of other sites, I wanted in the scene.
+
+I did what all the other cool kids did and talked my way into using our high school's server and setup Wordpress. I managed to snag a fun domain and off we went! The site did pretty well after a slow start and in the end, I started to average over 10k daily views. I moved servers a couple of times as I started to encounter slowdowns and at some point I started hacking at the Wordpress theme code to remove database queries from things I deemed unnecessary. ___What's caching btw?___ Plugins, theme customizations, responsive web design, I had to learn a whole bunch of things! Throw in some domain and custom email management, mySQL databases, CDN for file storage etc.
+
+I've since grown and outgrown Wordpress. These days I prefer static site generators, but over the years I've definitely had to work with the odd Wordpres site here and there. I didn't know it back then, but I would definitely attribute my career in tech as having being largely influenced by how I drifted into music blogging and all of the skills I ended up teaching myself.
+
+
+## Let's LAN!
+
+If we go back to 2006, it's also around the time I finally got my very own computer. My two best buddies had already had a PC of their own so the only thing left to do is have a LAN party, right?
+
+I'm of the opinion that LAN partying might be the most fun you can have with or without your pants. So much so, that everytime someone in our clique had an empty house or an excuse to evict the 'rents, we'd have a teeny tiny LAN party going.
+
+<figure>
+  <img src="/assets/images/articles/2024/lan2.jpg" alt="Author at his first lan party with a moustache painted with MS Paint" title="Author at his first lan party with a moustache painted with MS Paint" />
+  <figcaption>Artistic moustache at our first LAN party, circa June 2006</figcaption>
+</figure>
+
+Usually we'd play Starcraft, Unreal and Trackmania. Back then, most games that had any type of multiplayer could also locally host a server. I wish games still had that. 
+
+Our second LAN party was when I downloaded _(read, pirated)_ FL Studio for the first time and really got into music making. We'd play around and do dumb stuff, trying to break FL Studio and that's how the first tracks were born. Sepe Susi and the Lunatic Disco Police, truly an autre piece of art.
+
+<figure>
+  <img src="/assets/images/articles/2024/lan1.jpg" alt="Sleeping at a LAN party on the floor with a greasy pizza box" title="Sleeping at a LAN party with a greasy pizza box" />
+  <figcaption>Sleeping at a LAN party with a greasy pizza box, circa June 2007</figcaption>
+</figure>
+
+We had so much fun that other people in our friend group wanted in on the action. Usually it was just the three of us and those were the most fun parties in my opinion, but occasionally we'd have other participants as well. All fine and dandy, fun is meant to be shared around.
+
+We kept these parties going through elementary school right up until high school graduation. Even after going to different high schools, we couldn't be stopped! Moving across the co untry for university was what finally forced our hand and now when we meet, it's usually without our respective computers.
+
+A couple of years later, I started to partake in larger LAN parties as well. Assembly was the big one and occasionally I also went to The Group's parties. I was helping out my rhythm gaming friends and running the game stands and later running Microsoft's booth, but I always left plenty of time to just hang out with my buddies from all over Finland.
