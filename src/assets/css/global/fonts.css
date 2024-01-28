@@ -121,3 +121,11 @@
   U+FB01-FB02, U+1D106-1D107, U+1D538-1D539, U+1D53B-1D53E,
   U+1D540-1D544, U+1D546, U+1D54A-1D550;
 }
+
+@font-face {
+  font-family: "serif-fallback";
+  src: local("Times New Roman");
+  font-style: normal;
+  font-display: swap;
+  size-adjust: 105%;
+}
