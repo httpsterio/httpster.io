@@ -2,8 +2,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: var(--space-s);
-  margin: 1rem;
+  gap: var(--space-xs);
+  margin: var(--space-2xs);
 }
 
 .link-section-item{

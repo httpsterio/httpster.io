@@ -10,7 +10,7 @@
     {
       "name": "Base",
       "description": "System fonts for body copy and globally set text.",
-      "value": ["Vollkorn", "Inter", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif"]
+      "value": ["Vollkorn", "sans-serif"]
     },
     {
       "name": "Mono",
