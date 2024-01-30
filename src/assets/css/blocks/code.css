@@ -2,7 +2,7 @@ code,
 pre {
   padding: 0.125em 0.4em;
   font-family: var(--font-mono);
-  font-weight: 200;
+  font-weight: 300;
   background: var(--color-dark);
   border-radius: var(--border-radius);
   color: var(--color-light);
@@ -59,7 +59,7 @@ pre[class*='language-'] {
 .language-css > code,
 .language-sass > code,
 .language-scss > code {
-  color: #fd9170;
+  color: var(--color-yellow);
 }
 
 [class*='language-'] .namespace {
@@ -67,7 +67,7 @@ pre[class*='language-'] {
 }
 
 .token.atrule {
-  color: #d2b1e7;
+  color: var(--color-red);
 }
 
 .token.attr-name {
@@ -79,7 +79,7 @@ pre[class*='language-'] {
 }
 
 .token.attribute {
-  color: #80cbc4;
+  color: var(--color-green);
 }
 
 .token.boolean {
@@ -95,7 +95,7 @@ pre[class*='language-'] {
 }
 
 .token.char {
-  color: #80cbc4;
+  color: var(--color-green);
 }
 
 .token.class {
@@ -131,7 +131,7 @@ pre[class*='language-'] {
 }
 
 .token.function {
-  color: #d2b1e7;
+  color: var(--color-light);
 }
 
 .token.hexcode {
@@ -170,7 +170,7 @@ pre[class*='language-'] {
 }
 
 .token.property {
-  color: #80cbc4;
+  color: var(--color-green);
 }
 
 .token.pseudo-class {
@@ -194,7 +194,7 @@ pre[class*='language-'] {
 }
 
 .token.string {
-  color: #f48ea2;
+  color: var(--color-yellow);
 }
 
 .token.symbol {

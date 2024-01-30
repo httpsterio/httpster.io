@@ -105,27 +105,43 @@ main:focus {
 }
 
 article [href^='http']:not([href*='httpster.io']) {
-  /* padding-inline-end: 0.6em; */
-  font-weight: 700;
-  text-shadow: var(--color-yellow) 0.1ch 0.1ch;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: var(--font-display);
+  padding-block: 0.5ch;
+  padding-inline: 0.2ch;
+  transition: 0.25s;
+  color: var(--color-blue);
+  font-weight:400;
+  text-decoration: underline;
 }
 
-/* article
-  [href^='http']:not([href*='httpster.io']):not(.no-indicator)::after {
-  position: absolute;
-  display: inline-block;
-  inline-size: 1em;
-  block-size: 1em;
-  background-image: url('/assets/images/icn-external.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 60% auto; */
-  /* alternative text rules */
-  /* content: '(external link)';
-  overflow: hidden;
-  white-space: nowrap;
-  text-indent: 1em;
-} */
+article [href^='http']:not([href*='httpster.io']):hover {
+  text-decoration: none;
+  color: var(--color-light);
+  background-color: var(--color-blue);
+  transition: 0.25s;
+}
+
+article [href*='httpster.io'] {
+  font-weight: 600;
+  text-decoration: none;
+  font-family: var(--font-display);
+  padding-block: 0.5ch;
+  padding-inline: 0.2ch;
+  transition: 0.25s;
+  transition: 0.25s;
+  color: var(--color-blue);
+  font-weight:400;
+  text-decoration: underline;
+}
+
+article [href*='httpster.io']:hover {
+  text-decoration: none;
+  color: var(--color-light);
+  background-color: var(--color-blue);
+  transition: 0.25s;
+}
 
 /* Base selection styles that invert whatever colours are rendered */
 ::selection {

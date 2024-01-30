@@ -1,6 +1,11 @@
 module.exports = {
   log: [
     {
+      date: "2024-01-30",
+      type: "content",
+      content: "Wrote a post on webfonts and CLS"
+    },
+    {
       date: "2024-01-28",
       type: "feature",
       content: "No mobile hamburger menu boisss! Baleeted that code and just replaced with a lil css, hiding text and just showing icons on mobile"

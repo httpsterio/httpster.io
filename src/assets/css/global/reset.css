@@ -84,25 +84,31 @@ summary {
 }
 
 video {
-  max-width: 100%;
+  max-width: 80%;
   display:block;
   margin-inline: auto;
+  border: 0.2ch solid var(--color-dark);
+  box-shadow: 0.75rem 0.75rem 0 0 var(--color-green), -0.75rem -0.75rem 0 0 var(--color-yellow);
 }
 
 figure {
-  max-width: 100%;
+  max-width: 80%;
   display:block;
   margin-inline: auto;
+  border: 0.2ch solid var(--color-dark);
+  box-shadow: 0.75rem 0.75rem 0 0 var(--color-green), -0.75rem -0.75rem 0 0 var(--color-yellow);
 }
 
 figure img {
   max-width: 100%;
+  padding: 1rem;
   margin-inline: auto;
 }
 
 figure figcaption {
   text-align: center;
   margin-inline: auto;
+  padding-bottom: 0.5rem;
   max-width: 80%;
   font-size: var(--size-step-0);
   font-style: italic;

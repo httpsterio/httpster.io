@@ -124,8 +124,7 @@
 
 @font-face {
   font-family: "serif-fallback";
+  size-adjust: 108.28%;
+  ascent-override: 103%;
   src: local("Times New Roman");
-  font-style: normal;
-  font-display: swap;
-  size-adjust: 105%;
 }

@@ -9,6 +9,11 @@ tags:
   - personal
 ---
 
+<figure>
+  <img src="/assets/images/articles/2024/computars.jpg" alt="Author drawn in MS paint, using the computer with a cup of coffee in their hand" title="Author drawn in MS paint, using the computer with a cup of coffee in their hand" />
+  <figcaption>Artistic rendition of me, by Side in 2016</figcaption>
+</figure>
+
 Computers have always been a big part of my life. On most days, most of the time I am awake, I spend it on a computer. My work, hobbies, education and entertainment habits have always been this way. I was never a programmer wunderkind, but computers have enabled so much in my life that I can only be glad of the opportunity to grow up with them as an integral part of my life.
 
 In this post, I'll try to chronicle at least a part of my journey.

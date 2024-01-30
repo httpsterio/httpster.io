@@ -27,10 +27,10 @@
   font-weight: 300;
 }
 
-.tag:hover{
+/* .tag:hover{
   text-shadow: var(--color-dark) 0.1ch 0.1ch;
   color: var(--color-green)
-}
+} */
 
 .post-category {
   color: var(--color-dark);
@@ -69,7 +69,7 @@
 .post-item:hover,
 .post-item:focus-within {
   border: 0.3rem solid var(--color-dark);
-  box-shadow: 0.75rem -0.75rem 0 0 var(--color-green), -0.75rem 0.75rem 0 0 var(--color-yellow);
+  box-shadow: 0.75rem -0.75rem 0 0 var(--color-green), -0.75rem 0.75rem 0 0 var(--color-blue);
   transition: all 0.25s ease-in-out;
 }
 
