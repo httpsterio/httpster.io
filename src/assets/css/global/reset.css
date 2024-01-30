@@ -88,7 +88,7 @@ video {
   display:block;
   margin-inline: auto;
   border: 0.2ch solid var(--color-dark);
-  box-shadow: 0.75rem 0.75rem 0 0 var(--color-green), -0.75rem -0.75rem 0 0 var(--color-yellow);
+  box-shadow: 0.5rem 0.5rem 0 0 var(--color-red), -0.5rem -0.5rem 0 0 var(--color-yellow);
 }
 
 figure {
@@ -96,7 +96,7 @@ figure {
   display:block;
   margin-inline: auto;
   border: 0.2ch solid var(--color-dark);
-  box-shadow: 0.75rem 0.75rem 0 0 var(--color-green), -0.75rem -0.75rem 0 0 var(--color-yellow);
+  box-shadow: 0.5rem 0.5rem 0 0 var(--color-blue), -0.5rem -0.5rem 0 0 var(--color-green);
 }
 
 figure img {

@@ -3,7 +3,7 @@ module.exports = {
     {
       date: "2024-01-30",
       type: "content",
-      content: "Wrote a post on webfonts and CLS"
+      content: "Wrote a post on webfonts and CLS. Also added some styling for figures and videos."
     },
     {
       date: "2024-01-28",
