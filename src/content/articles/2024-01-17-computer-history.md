@@ -10,7 +10,7 @@ tags:
 ---
 
 <figure>
-  <img src="/assets/images/articles/2024/computars.jpg" alt="Author drawn in MS paint, using the computer with a cup of coffee in their hand" title="Author drawn in MS paint, using the computer with a cup of coffee in their hand" />
+  <img src="/assets/images/articles/2024/computars.webp" alt="Author drawn in MS paint, using the computer with a cup of coffee in their hand" title="Author drawn in MS paint, using the computer with a cup of coffee in their hand" />
   <figcaption>Artistic rendition of me, by Side in 2016</figcaption>
 </figure>
 
@@ -71,7 +71,7 @@ If we go back to 2006, it's also around the time I finally got my very own compu
 I'm of the opinion that LAN partying might be the most fun you can have with or without your pants. So much so, that everytime someone in our clique had an empty house or an excuse to evict the 'rents, we'd have a teeny tiny LAN party going.
 
 <figure>
-  <img src="/assets/images/articles/2024/lan2.jpg" alt="Author at his first lan party with a moustache painted with MS Paint" title="Author at his first lan party with a moustache painted with MS Paint" />
+  <img src="/assets/images/articles/2024/lan2.webp" alt="Author at his first lan party with a moustache painted with MS Paint" title="Author at his first lan party with a moustache painted with MS Paint" />
   <figcaption>Artistic moustache at our first LAN party, circa June 2006</figcaption>
 </figure>
 
@@ -80,7 +80,7 @@ Usually we'd play Starcraft, Unreal and Trackmania. Back then, most games that h
 Our second LAN party was when I downloaded _(read, pirated)_ FL Studio for the first time and really got into music making. We'd play around and do dumb stuff, trying to break FL Studio and that's how the first tracks were born. Sepe Susi and the Lunatic Disco Police, truly an autre piece of art.
 
 <figure>
-  <img src="/assets/images/articles/2024/lan1.jpg" alt="Sleeping at a LAN party on the floor with a greasy pizza box" title="Sleeping at a LAN party with a greasy pizza box" />
+  <img src="/assets/images/articles/2024/lan1.webp" alt="Sleeping at a LAN party on the floor with a greasy pizza box" title="Sleeping at a LAN party with a greasy pizza box" />
   <figcaption>Sleeping at a LAN party with a greasy pizza box, circa June 2007</figcaption>
 </figure>
 
