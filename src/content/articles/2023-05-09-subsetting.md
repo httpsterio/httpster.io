@@ -9,6 +9,8 @@ tags:
   - fonts
   - typography
   - webdev
+sharedlink:
+  - https://social.lol/@sami/111865379426526421
 ---
 
 ## TL;DR
