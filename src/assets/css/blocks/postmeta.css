@@ -28,6 +28,8 @@ a.shared-link {
   color: var(--color-light);
   margin-block: var(--space-2xs);
   text-align:center;
+  word-wrap: break-word;
+  word-break: break-all;
 }
 
 .post-meta a:visited{
