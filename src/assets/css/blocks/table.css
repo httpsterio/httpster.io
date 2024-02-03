@@ -1,0 +1,25 @@
+table {
+  margin-block-start: 0;
+  border: 2px solid black;
+  text-align: left;
+  margin-block-end: 4rem;
+}
+
+th, td {
+  padding:1rem;
+}
+
+tr {
+border: 2px solid black;
+}
+
+.table-heading {
+  font-size: var(--size-step-3);
+}
+
+@media (max-width:30em){
+  table {
+  font-size: var(--size-step-min-1);
+  background-color: var(--color-yellow);
+  }
+}

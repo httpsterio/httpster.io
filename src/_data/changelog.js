@@ -1,6 +1,11 @@
 module.exports = {
   log: [
     {
+      date: "2024-02-03",
+      type: "feature",
+      content: "Added tinylytics to test and kudos feature plus Mastodon links if I've shared it."
+    },
+    {
       date: "2024-01-30",
       type: "content",
       content: "Wrote a post on webfonts and CLS. Also added some styling for figures and videos."

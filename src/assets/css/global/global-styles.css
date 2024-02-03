@@ -116,6 +116,10 @@ article [href^='http']:not([href*='httpster.io']) {
   text-decoration: underline;
 }
 
+article [href^='http']:not([href*='httpster.io']):visited {
+  color: var(--color-red);
+}
+
 article [href^='http']:not([href*='httpster.io']):hover {
   text-decoration: none;
   color: var(--color-light);
@@ -134,6 +138,10 @@ article [href*='httpster.io'] {
   color: var(--color-blue);
   font-weight:400;
   text-decoration: underline;
+}
+
+article [href*='httpster.io']:visited {
+  color: var(--color-red);
 }
 
 article [href*='httpster.io']:hover {

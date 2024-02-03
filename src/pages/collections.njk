@@ -1,0 +1,43 @@
+---
+title: Collections
+permalink: /collections/index.html
+description: My Collections
+layout: page
+type: default
+---
+
+<h2>This page is still a work in progress!</h2>
+
+</p>I'm trying to do something. asd</p>
+
+{% for artist in musiccollection.releases %}
+
+<div>
+<h2 class="table-heading">{{ artist.artist }}</h2>
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">Title</th>
+        <th scope="col">Year</th>
+        <th scope="col">Type</th>
+        <th scope="col">Quality</th>
+        <th scope="col">EAC</th>
+        <th scope="col">Review</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in artist.release %}
+      <tr>
+        <th class="table-music-title" scope="row">{{item.title}}</th>
+        <td class="table-music-year">{{item.year}}</td>
+        <td class="table-music-type">{{item.type}}</td>
+        <td class="table-music-quality">{{item.quality}}</td>
+        <td class="table-music-eac">{{item.eac}}</td>
+        {% if item.review %}<td class="table-music-review"><a href="{{item.review}}">Link</a></td>{% endif %}
+      </tr>
+      {% endfor %}
+      <tr>
+    </tbody>
+  </table>
+</div>
+{% endfor %}

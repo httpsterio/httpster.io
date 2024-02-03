@@ -6,6 +6,8 @@ writingtime: ""
 draft: false
 tags:
   - webdev
+sharedlink:
+  - https://social.lol/@sami/111842574066744533
 ---
 
 In this article, I'll outline why and how I matched my fallback font's dimensions with my webfont's settings to diminish the layout shifting.

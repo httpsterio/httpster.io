@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: var(--space-xs);
-  margin: var(--space-2xs);
+  padding-block-end: var(--space-s);
 }
 
 .link-section-item{

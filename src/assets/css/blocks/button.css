@@ -26,7 +26,6 @@
   display: inline-block;
   font-family: var(--font-display);
   padding: 0.5rem 1rem 0rem 1rem;
-  /* background-image: url('https://assets.codepen.io/4175254/ep-133-noise.png'); */
   text-align: center;
   text-transform: uppercase;
   font-weight:300;
@@ -43,3 +42,37 @@
   box-shadow: 0.5rem -0.5rem 0 0 var(--color-red), -0.5rem 0.5rem 0 0 var(--color-yellow);
   transition: all 0.25s ease-in-out;
 }
+
+/* .nav-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  padding-inline: var(--space-xs);
+  padding-block-start: 1ch;
+  padding-block-end: 0.6ch;
+  margin-inline: 0.5ch;
+  background-image: linear-gradient(to top, #D8D9DB 0%, #fff 80%, #FDFDFD 100%);
+  border-radius: 1.4rem;
+  border: 1px solid #8F9092;
+  transition: all 0.2s ease;
+  font-family: var(--font-display);
+  font-size: var(--size-step-0);
+  font-weight: 600;
+  color: #606060;
+  text-shadow: 0 1px #fff;
+}
+
+.nav-button:hover {
+  box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1;
+}
+
+.nav-button:active {
+  box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+}
+
+.nav-button:focus {
+  box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+} */

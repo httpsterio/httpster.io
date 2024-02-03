@@ -1,0 +1,11 @@
+<aside class="postmeta-box">
+  {% if sharedlink %}
+  <div class="meta-mastolinks">
+    <h1>Related links:</h1> 
+    {% for link in sharedlink %} 
+      <a href="{{ link }}" class="shared-link">{{link}}</a>
+    {% endfor %}
+  </div>
+  {% endif %}
+<div class="kudos">Leave a kudos <button class="tinylytics_kudos">Hi!</button></div>
+</aside>
