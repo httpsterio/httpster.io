@@ -126,6 +126,37 @@ const filterdrafts = collection => {
   return collection.filter(post => post.date <= now && !post.data.draft);
 };
 
+const getWebmentionsForUrl = (webmentions, url) => {
+  return webmentions.children.filter(entry => entry['wm-target'] === url);
+};
+const webmentionSize = mentions => {
+  return !mentions ? 0 : mentions.length;
+};
+const webmentionsByType = (mentions, mentionType) => {
+  return mentions.filter(entry => !!entry[mentionType]);
+};
+const isOwnWebmention = webmention => {
+  const urls = [
+    'https://www.httpster.io',
+    'https://social.lol@sami'
+  ];
+  const authorUrl = webmention.author ? webmention.author.url : false;
+  // check if a given URL is part of this site.
+  return authorUrl && urls.includes(authorUrl);
+};
+const sortWebmentions = mentions => {
+  return mentions.sort((a, b) => {
+    if (a['published'] < b['published']) {
+      return -1;
+    }
+    if (a['published'] > b['published']) {
+      return 1;
+    }
+    // a must be equal to b
+    return 0;
+  });
+};
+
 module.exports = {
   limit,
   toHtml,
@@ -138,5 +169,10 @@ module.exports = {
   minifyJs,
   mdInline,
   splitlines,
-  filterdrafts
+  filterdrafts,
+  getWebmentionsForUrl,
+  webmentionSize,
+  webmentionsByType,
+  isOwnWebmention,
+  sortWebmentions
 };
