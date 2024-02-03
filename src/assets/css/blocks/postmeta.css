@@ -29,6 +29,7 @@ a.shared-link {
   margin-block: var(--space-2xs);
   text-align:center;
   word-wrap: break-word;
+  word-break: break-all;
 }
 
 .post-meta a:visited{
