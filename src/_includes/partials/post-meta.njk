@@ -1,3 +1,5 @@
+{% set mentionUrls = webmentions | getWebmentionsForUrl(webmentionUrl) %}
+
 <aside class="postmeta-box">
   {% if sharedlink %}
   <div class="meta-mastolinks">
@@ -8,4 +10,17 @@
   </div>
   {% endif %}
 <div class="kudos">Leave a kudos <button class="tinylytics_kudos">Hi!</button></div>
+
+
+  <p class="pt-l">Did you mention this on your website?</p>
+
+  <form action="https://webmention.io/httpster.io/webmention" method="post" class="form-webmention">
+    <label for="form-webmention-source">URL</label>
+    <div>
+      <input id="form-webmention-source" type="url" name="source" placeholder="https://example.com" required />
+      <input type="hidden" name="target" value="https://httpster.io{{ page.url }}" />
+      <input type="submit" class="button" value="Send webmention" />
+    </div>
+  </form>
+
 </aside>

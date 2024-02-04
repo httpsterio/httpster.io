@@ -1,7 +1,4 @@
-<section
-  class="wrapper flow content region | blog webmentions"
-  style="--region-space-top: var(--space-xl)"
->
+<section class="wrapper flow content region | blog webmentions">
   <h2 id="webmentions">Webmentions</h2>
   <!-- Filter the cached mentions to only include ones matching the post's url -->
   {% set allMentions = webmentions | getWebmentionsForUrl(webmentionUrl) %}
@@ -27,7 +24,7 @@
   <!-- Count the total replies -->
   {% set combinedMentionsSize = combinedMentions | webmentionSize %}
 
-  <!-- if reactions -->
+  <!-- if reactions --> 
   {% if combinedMentionsSize > 0 %}
 
   <div class="flow">
@@ -76,44 +73,4 @@
     {% for webmention in replies %} {% include "partials/webmention.njk" %} {% endfor %}
   </div>
   {% endif %}
-
-  <section class="region flow">
-    <p>
-      Did you mention this on your website?
-    </p>
-
-    <form
-      action="https://webmention.io/httpster.io/webmention"
-      method="post"
-      class="form-webmention"
-    >
-      <label for="form-webmention-source">URL</label>
-      <div
-        class="sidebar"
-        style="
-          --sidebar-gap: var(--space-xs);
-          --sidebar-target-width: 60%;
-          --sidebar-content-min-width: 220px;
-        "
-      >
-        <input
-          id="form-webmention-source"
-          type="url"
-          name="source"
-          placeholder="https://example.com"
-          required
-        />
-        <input
-          type="hidden"
-          name="target"
-          value="https://httpster.io{{ page.url }}"
-        />
-        <input
-          type="submit"
-          class="button"
-          value="Send webmention"
-        />
-      </div>
-    </form>
-  </section>
 </section>

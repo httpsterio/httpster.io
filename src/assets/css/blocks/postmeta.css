@@ -4,7 +4,7 @@ inline-size: var(--wrapper-width,65rem);
 max-width: 80%;
 margin-inline: auto;
 margin-bottom: var(--space-xl);
-padding-block: var(--space-m);
+padding-block: var(--space-s);
 padding-inline: var(--space-2xs);
 background-color: var(--color-blue);
 color: var(--color-light);
@@ -17,11 +17,12 @@ box-shadow: -0.75ch -0.75ch var(--color-red), 0.75ch 0.75ch var(--color-dark);
 .meta-mastolinks {
   justify-content:center;
   text-align:center;
-  padding-block: var(--space-m);
+  border: 1px solid pink;
+  padding-block: var(--space-2xs);
 }
 
 .meta-mastolinks > h1{
-  font-size: var(--size-step-3);
+  font-size: var(--size-step-2);
 }
 
 a.shared-link {

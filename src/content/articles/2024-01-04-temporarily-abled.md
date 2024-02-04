@@ -6,6 +6,8 @@ writingtime: "2 hours"
 draft: false
 tags:
   - life
+sharedlink:
+  - https://social.lol/@sami/111783411186340088
 ---
 
 Yesterday I was playing badminton with my friend. I won 4 out of 5 games. I might be fat, but overall I'm not in a terrible shape as I've been going to the gym and tried to work on my health lately.

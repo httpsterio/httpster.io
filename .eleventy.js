@@ -50,7 +50,7 @@ const {coffeeCollection} = require('./config/collections/index.js');
 const {mainCollection} = require('./config/collections/index.js')
 
 // module import events
-const {svgToJpeg} = require('./config/events/index.js');
+// const {svgToJpeg} = require('./config/events/index.js');
 
 // plugins
 const markdownLib = require('./config/plugins/markdown.js');
@@ -124,7 +124,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addCollection('mainContent', mainCollection);
 
   // 	--------------------- Events ---------------------
-  eleventyConfig.on('afterBuild', svgToJpeg);
+  // eleventyConfig.on('afterBuild', svgToJpeg);
 
   // 	--------------------- Plugins ---------------------
   eleventyConfig.addPlugin(EleventyRenderPlugin);

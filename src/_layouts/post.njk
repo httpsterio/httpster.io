@@ -25,9 +25,8 @@ schema: blog
 </article>
 
 
-{% set webmentionUrl %}{{ page.url | url | absoluteUrl(meta.url) }}{% endset %}
+{% set webmentionUrl %}{{ page.url | url | absoluteUrl(meta.webmentionUrl) }}{% endset %}
 
-{{webmentionUrl}}
 
 {% include "partials/webmentions.njk" %}
 {% include "partials/post-meta.njk" %}

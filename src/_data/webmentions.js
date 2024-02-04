@@ -1,6 +1,7 @@
 const fs = require('fs');
 const unionBy = require('lodash/unionBy');
 const domain = require('./meta.js').domain;
+const EleventyFetch = require('@11ty/eleventy-fetch');
 
 // Load .env variables with dotenv
 require('dotenv').config();
@@ -10,7 +11,7 @@ const CACHE_DIR = '.cache';
 const API = 'https://webmention.io/api';
 const TOKEN = process.env.WEBMENTION_IO_TOKEN;
 
-async function fetchWebmentions(since, perPage = 10000) {
+async function fetchWebmentions(since, perPage = 100000) {
   if (!domain) {
     // If we dont have a domain name, abort
     console.warn('>>> unable to fetch webmentions: no domain name specified in meta.js');
@@ -28,14 +29,12 @@ async function fetchWebmentions(since, perPage = 10000) {
   let url = `${API}/mentions.jf2?domain=${domain}&token=${TOKEN}&per-page=${perPage}`;
   if (since) url += `&since=${since}`;
 
-  const response = await fetch(url);
-  if (response.ok) {
-    const feed = await response.json();
-    console.log(`>>> ${feed.children.length} new webmentions fetched from ${API}`);
-    return feed;
-  }
-
-  return null;
+  const feed = await EleventyFetch(url, {
+    duration: "1d", // Cache for 1 day.
+    type: "json" // Parse the response with `.json()`.
+  });
+  console.log(`>>> ${feed.children.length} new webmentions fetched from ${API}`);
+  return feed;
 }
 
 // Merge fresh webmentions with cached entries, unique per id
@@ -76,6 +75,7 @@ function readFromCache() {
 
 module.exports = async function () {
   const cache = readFromCache();
+  console.time('cache-bench');
 
   if (cache.children.length) {
     console.log(`>>> ${cache.children.length} webmentions loaded from cache`);
