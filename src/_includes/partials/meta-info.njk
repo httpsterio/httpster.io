@@ -14,40 +14,10 @@
 <!-- Links to information about the author(s) of the document -->
 <link rel="author" href="humans.txt" />
 
-{% if meta.meta_data.mastodonProfile %}
 <!-- Mastodon verified site -->
 <link rel="me" href="{{ meta.meta_data.mastodonProfile }}" />
-{% endif %}
 
-<!-- Open Graph meta  -->
-<meta property="og:url" content="{{ meta.url }}{{ page.url }}" />
-<meta property="og:type" content="website" />
-<meta property="og:title" content="{% if title %}{{ title }}{% else %}{{ meta.siteName }}{% endif %}"/>
-<meta property="og:image" content="{{ meta.url }}{% if (layout == 'post') %}/assets/images/social-preview/{{title | slugify}}-preview.jpeg{% else %}{{ meta.meta_data.opengraph_default }}{% endif %}"/>
-<meta property="og:image:alt" content="{% if (layout == 'post') %}{{ title }}{% else %}{{ meta.meta_data.opengraph_default_alt }}{% endif %}"/>
-<meta property="og:description" content="{% if description %}{{ description }}{% else %}{{meta.siteDescription}}{%endif%}"/>
-<meta property="og:site_name" content="{{ meta.siteName }}" />
-<meta property="og:locale" content="{{ meta.locale }}" />
-<meta property="article:author" content="{{ meta.author }}" />
-
-<!-- Twitter meta -->
-<meta name="twitter:card" content="summary_large_image" />
-{% if meta.meta_data.twitterSite %}
-<meta name="twitter:site" content="{{ meta.meta_data.twitterSite }}" />
-{% endif %} {% if meta.meta_data.twitterCreator %}
-<meta name="twitter:creator" content="{{ meta.meta_data.twitterCreator }}" />
-{% endif %}
-<meta name="twitter:dnt" content="on" />
-
-<!-- Favicon -->
-<link rel="icon" href="{{ '/favicon.ico' | url }}" sizes="any" />
-<link rel="icon" href="{{ '/favicon.svg' | url }}" type="image/svg+xml" />
-<link rel="apple-touch-icon" sizes="180x180" href="{{ '/apple-touch-icon.png' | url }}" />
-<link rel="icon" type="image/png" href="{{ '/favicon-32x32.png' | url }}" sizes="32x32" />
-<link rel="icon" type="image/png" href="{{ '/favicon-16x16.png' | url }}" sizes="16x16" />
-<link rel="manifest" href="{{ '/site.webmanifest' | url }}" />
-
-<!-- webmentions -->
-<link rel="authorization_endpoint" href="https://indieauth.com/auth">
-<link rel="webmention" href="https://webmention.io/httpster.io/webmention" />
-<link rel="pingback" href="https://webmention.io/httpster.io/xmlrpc" />
+{% include "partials/meta/og.njk" %}
+{% include "partials/meta/twitter.njk" %}
+{% include "partials/meta/favicon.njk" %}
+{% include "partials/meta/webmentions.njk" %}

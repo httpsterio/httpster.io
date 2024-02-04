@@ -18,13 +18,18 @@ module.exports = eleventyConfig => {
       }
 
       return async () => {
-        let output = await postcss([
+        const plugins = [
           postcssImportExtGlob,
           postcssImport,
           tailwindcss,
-          autoprefixer,
-          cssnano
-        ]).process(content, {
+        ];
+
+        if (process.env.NODE_ENV === 'production') {
+          plugins.push(autoprefixer);
+          plugins.push(cssnano);
+        }
+
+        let output = await postcss(plugins).process(content, {
           from: path
         });
 

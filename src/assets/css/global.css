@@ -8,8 +8,37 @@
 @import 'global/variables.css';
 @import 'global/global-styles.css';
 
-@import-glob 'blocks/*.css';
-@import-glob 'compositions/*.css';
-@import-glob 'utilities/*.css';
+/* BLOCKS */
+@import 'blocks/blog.css';
+@import 'blocks/button.css';
+@import 'blocks/card.css';
+@import 'blocks/code.css';
+@import 'blocks/date.css';
+@import 'blocks/menu.css';
+@import 'blocks/page.css';
+@import 'blocks/post-item.css';
+@import 'blocks/postmeta.css';
+@import 'blocks/prose.css';
+@import 'blocks/section.css';
+@import 'blocks/seperator.css';
+@import 'blocks/site-foot.css';
+@import 'blocks/site-head.css';
+@import 'blocks/site-logo.css';
+@import 'blocks/skip-link.css';
+@import 'blocks/table.css';
+@import 'blocks/textgradient.css';
+@import 'blocks/title-shadow.css';
+@import 'blocks/youtube.css';
+
+/* COMPOSITIONS */
+@import 'compositions/cluster.css';
+@import 'compositions/grid.css';
+@import 'compositions/post-list.css';
+
+/* UTLITIES */
+@import 'utilities/content.css';
+@import 'utilities/flow.css';
+@import 'utilities/region.css';
+@import 'utilities/wrapper.css';
 
 @import 'tailwindcss/utilities';
