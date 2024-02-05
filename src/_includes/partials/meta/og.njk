@@ -2,7 +2,11 @@
 <meta property="og:url" content="{{ meta.url }}{{ page.url }}" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="{% if title %}{{ title }}{% else %}{{ meta.siteName }}{% endif %}"/>
-<meta property="og:image" content="{{ meta.url }}{% if (layout == 'post') %}/assets/images/social-preview/{{title | slugify}}-preview.jpeg{% else %}{{ meta.meta_data.opengraph_default }}{% endif %}"/>
+{%- if coverimg %}
+<meta property="og:image" content="{{coverimg}}"/>
+{% else %}
+<meta property="og:image" content="{{ meta.url }}{% if (layout == 'post')%}/assets/images/social-preview/{{title | slugify}}-preview.jpeg{% else %}{{ meta.meta_data.opengraph_default }}{% endif %}"/>
+{% endif -%}
 <meta property="og:image:alt" content="{% if (layout == 'post') %}{{ title }}{% else %}{{ meta.meta_data.opengraph_default_alt }}{% endif %}"/>
 <meta property="og:description" content="{% if description %}{{ description }}{% else %}{{meta.siteDescription}}{%endif%}"/>
 <meta property="og:site_name" content="{{ meta.siteName }}" />
