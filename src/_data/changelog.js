@@ -1,6 +1,11 @@
 module.exports = {
   log: [
     {
+      date: "2024-02-05",
+      type: "feature",
+      content: "First version of webmentions. Styled the kudos button and made a fancy ass box for the related meta stuff for posts."
+    },
+    {
       date: "2024-02-03",
       type: "feature",
       content: "Added tinylytics to test and kudos feature plus Mastodon links if I've shared it."
