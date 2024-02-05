@@ -17,8 +17,7 @@ box-shadow: -0.75ch -0.75ch var(--color-red), 0.75ch 0.75ch var(--color-dark);
 .meta-mastolinks {
   justify-content:center;
   text-align:center;
-  border: 1px solid pink;
-  padding-block: var(--space-2xs);
+  padding-block: var(--space-s);
 }
 
 .meta-mastolinks > h1{
@@ -39,10 +38,35 @@ a.shared-link {
 
 
 .kudos {
+  padding-block: var(--space-s);
 }
-.tinylytics_kudos{}
+.tinylytics_kudos{
+  background-color:var(--color-light);
+  color: var(--color-light);
+  padding-inline: var(--space-s);
+  margin-inline: var(--space-xs);
+  border-radius: 0.5rem;
+  border:0;
+  background-image: radial-gradient(100% 100% at 100% 0, #e5633e 0, #cf4116 100%);
+  box-shadow: rgba(45, 35, 66, .4) 0 0.25ch 0.3ch,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+}
+
+.tinylytics_kudos:focus {
+  box-shadow: #e5633e 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #e5633e 0 -3px 0 inset;
+}
+
+.tinylytics_kudos:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #a84125 0 -0.25ch 0 inset;
+  transform: translateY(-0.25ch);
+}
+
+.tinylytics_kudos:active {
+  box-shadow: #e5633e 0 3px 7px inset;
+  transform: translateY(2px);
+}
 
 .tinylytics_kudos did_select {
+  color: var(--color-light);
 
 }
 
