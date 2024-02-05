@@ -22,10 +22,17 @@ const mainstreamCollection = collection => {
   return filterdrafts(collection.getFilteredByGlob('./src/content/mainstream/*.md')).reverse();
 };
 
+const reviewCollection = collection => {
+  return filterdrafts(collection.getFilteredByGlob('./src/content/reviews/*.md')).reverse();
+};
+
 const mainCollection = collection => {
-  const articles = collection.getFilteredByGlob('./src/content/articles/*.md');
-  const coffee = collection.getFilteredByGlob('./src/content/coffee/*.md');
-  const mainContent = articles.concat(coffee);
+  const mainContent = [
+    ...articleCollection(collection),
+    ...coffeeCollection(collection),
+    ...mainstreamCollection(collection),
+    ...reviewCollection(collection)
+  ];
   return filterdrafts(mainContent).reverse();
 };
 
@@ -35,5 +42,6 @@ module.exports = {
   articleCollection,
   coffeeCollection,
   mainstreamCollection,
+  reviewCollection,
   mainCollection
 };

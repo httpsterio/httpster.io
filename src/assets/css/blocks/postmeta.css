@@ -40,8 +40,9 @@ a.shared-link {
 .kudos {
   padding-block: var(--space-s);
 }
-.tinylytics_kudos{
+.post-meta-button {
   background-color:var(--color-light);
+  font-family: var(--font-display);
   font-size: var(--size-step-1);
   color: var(--color-light);
   padding-inline: var(--space-s);
@@ -53,27 +54,38 @@ a.shared-link {
   transition: 0.25s ease-in-out;
 }
 
-.tinylytics_kudos:focus {
-  box-shadow: #e5633e 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #e5633e 0 -3px 0 inset;
+.post-meta-button:focus {
   transition: 0.25s ease-in-out;
 }
 
-.tinylytics_kudos:hover {
-  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #a84125 0 -0.25ch 0 inset;
-  transform: translateY(-0.25ch);
+.post-meta-button:hover {
+  background-image: radial-gradient(100% 100% at 100% 0, #df491f 0, #e4b419 100%);
+  box-shadow: rgba(45, 35, 66, .7) 0 0.6ch 0.6ch,rgba(58, 65, 111, .5) 0 -0.33ch 0 inset;
+  transform: translateY(-0.5ch);
   transition: 0.25s ease-in-out;
 }
 
-.tinylytics_kudos:active {
+.post-meta-button:active {
   box-shadow: #e5633e 0 3px 7px inset;
-  transform: translateY(2px);
+  transform: translateY(0px);
 }
 
-.tinylytics_kudos:disabled {
-  background-image: radial-gradient(100% 100% at 100% 0, #f39980 0, #f37d59 100);
+.post-meta-button:disabled {
+  background-image: none;
+  background-color: rgb(204, 206, 196);
+  box-shadow: #e5633e 0 0px 0px inset;
   color: var(--color-dark);
-  transition: none;
+  transform: translateY(0px);
 }
+
+.post-meta-form {
+
+}
+.post-meta-field {
+
+
+}
+
 
 .tinylytics_hits {}
 

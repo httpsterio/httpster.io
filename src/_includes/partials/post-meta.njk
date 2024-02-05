@@ -9,17 +9,17 @@
     {% endfor %}
   </div>
   {% endif %}
-<div class="kudos">Leave a kudos <button class="tinylytics_kudos did_select">Hi!</button></div>
+<div class="kudos">Leave a kudos <button class="post-meta-button did_select">Hi!</button></div>
 
 
-  <p>Did you mention this on your website?</p>
+  <p class="p-m text-center">Did you mention this on your website? Tell me about it and send a webmention!</p>
 
-  <form action="https://webmention.io/httpster.io/webmention" method="post" class="form-webmention">
+  <form class="post-meta-form" action="https://webmention.io/httpster.io/webmention" method="post" class="form-webmention">
     <label for="form-webmention-source">URL</label>
     <div>
-      <input id="form-webmention-source" type="url" name="source" placeholder="https://example.com" required />
+      <input class="post-meta-field" id="form-webmention-source" type="url" name="source" placeholder="https://yourwebsite.url" required />
       <input type="hidden" name="target" value="https://httpster.io{{ page.url }}" />
-      <input type="submit" class="button" value="Send webmention" />
+      <input type="submit" class="post-meta-button" value="Send" />
     </div>
   </form>
 
