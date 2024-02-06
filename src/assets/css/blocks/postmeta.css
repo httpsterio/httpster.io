@@ -4,8 +4,8 @@ inline-size: var(--wrapper-width,65rem);
 max-width: 80%;
 margin-inline: auto;
 margin-bottom: var(--space-xl);
-padding-block: var(--space-s);
-padding-inline: var(--space-2xs);
+padding-block: var(--space-m);
+padding-inline: var(--space-s);
 background-color: var(--color-blue);
 color: var(--color-light);
 justify-content: center;
@@ -17,19 +17,21 @@ box-shadow: -0.75ch -0.75ch var(--color-red), 0.75ch 0.75ch var(--color-dark);
 .meta-mastolinks {
   justify-content:center;
   text-align:center;
-  padding-block: var(--space-s);
 }
 
 .meta-mastolinks > h1{
   font-size: var(--size-step-2);
+  padding-block: var(--space-xs);
 }
 
 a.shared-link {
+  display: block;
+  font-size: var(--size-step-1);
   color: var(--color-light);
   margin-block: var(--space-2xs);
-  text-align:center;
   word-wrap: break-word;
   word-break: break-all;
+  text-align:center;
 }
 
 .post-meta a:visited{
@@ -40,49 +42,26 @@ a.shared-link {
 .kudos {
   padding-block: var(--space-s);
 }
-.post-meta-button {
-  background-color:var(--color-light);
-  font-family: var(--font-display);
-  font-size: var(--size-step-1);
-  color: var(--color-light);
-  padding-inline: var(--space-s);
-  margin-inline: var(--space-xs);
-  border-radius: 0.5rem;
-  border:0;
-  background-image: radial-gradient(100% 100% at 100% 0, #e5633e 0, #cf4116 100%);
-  box-shadow: rgba(45, 35, 66, .4) 0 0.25ch 0.3ch,rgba(58, 65, 111, .5) 0 -3px 0 inset;
-  transition: 0.25s ease-in-out;
-}
-
-.post-meta-button:focus {
-  transition: 0.25s ease-in-out;
-}
-
-.post-meta-button:hover {
-  background-image: radial-gradient(100% 100% at 100% 0, #df491f 0, #e4b419 100%);
-  box-shadow: rgba(45, 35, 66, .7) 0 0.6ch 0.6ch,rgba(58, 65, 111, .5) 0 -0.33ch 0 inset;
-  transform: translateY(-0.5ch);
-  transition: 0.25s ease-in-out;
-}
-
-.post-meta-button:active {
-  box-shadow: #e5633e 0 3px 7px inset;
-  transform: translateY(0px);
-}
-
-.post-meta-button:disabled {
-  background-image: none;
-  background-color: rgb(204, 206, 196);
-  box-shadow: #e5633e 0 0px 0px inset;
-  color: var(--color-dark);
-  transform: translateY(0px);
-}
 
 .post-meta-form {
-
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
-.post-meta-field {
 
+.post-meta-fields {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 1em;
+}
+
+.post-meta-btn {
+}
+
+.post-meta-field {
 
 }
 

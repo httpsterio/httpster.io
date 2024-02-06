@@ -25,6 +25,7 @@ const {
   formatDate,
   toAbsoluteUrl,
   stripHtml,
+  stripHttps,
   minifyCss,
   minifyJs,
   mdInline,
@@ -87,6 +88,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addFilter('formatDate', formatDate);
   eleventyConfig.addFilter('toAbsoluteUrl', toAbsoluteUrl);
   eleventyConfig.addFilter('stripHtml', stripHtml);
+  eleventyConfig.addFilter('stripHttps', stripHttps);
   eleventyConfig.addFilter('slugify', slugifyString);
   eleventyConfig.addFilter('toJson', JSON.stringify);
   eleventyConfig.addFilter('fromJson', JSON.parse);

@@ -5,21 +5,21 @@
   <div class="meta-mastolinks">
     <h1>Related links:</h1> 
     {% for link in sharedlink %} 
-      <a href="{{ link }}" class="shared-link">{{link}}</a>
+      <a href="{{ link }}" class="shared-link">{{link | stripHttps }}</a>
     {% endfor %}
   </div>
   {% endif %}
-<div class="kudos">Leave a kudos <button class="tinylytics_kudos post-meta-button">Hi!</button></div>
+<div class="kudos">Leave a kudos <button class="tinylytics_kudos rounded-btn">Hi!</button></div>
 
 
-  <p class="p-m text-center">Did you mention this on your website? Tell me about it and send a webmention!</p>
+  <p class="text-center">Did you mention this on your website? Tell me about it and send a webmention!</p>
 
   <form class="post-meta-form" action="https://webmention.io/httpster.io/webmention" method="post" class="form-webmention">
-    <label for="form-webmention-source">URL</label>
-    <div>
+    <label for="form-webmention-source" class="font-display">URL</label>
+    <div class="post-meta-fields">
       <input class="post-meta-field" id="form-webmention-source" type="url" name="source" placeholder="https://yourwebsite.url" required />
       <input type="hidden" name="target" value="https://httpster.io{{ page.url }}" />
-      <input type="submit" class="post-meta-button" value="Send" />
+      <input type="submit" class="rounded-btn post-meta-btn" value="Send" />
     </div>
   </form>
 

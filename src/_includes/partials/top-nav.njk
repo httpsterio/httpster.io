@@ -1,5 +1,5 @@
 <section class="top-nav">
     {% for item in navigation.main %}
-      <a class="nav-button" href="{{ item.url }}"{{ helpers.getLinkActiveState(item.url,page.url)|safe}}>{{ item.text }}</a>
+      <a class="rounded-btn" href="{{ item.url }}"{{ helpers.getLinkActiveState(item.url,page.url)|safe}}>{{ item.text }}</a>
     {% endfor %}
 </section>
