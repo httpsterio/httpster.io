@@ -26,14 +26,16 @@ module.exports = {
           "year": "1979",
           "type": "Album",
           "quality": ["mp3", "flac"],
-          "eac": "100%"
+          "eac": "100%",
+          "review": ""
         },
         {
           "title": "Make Up City",
           "year": "1979",
           "type": "Album",
           "quality": ["mp3", "flac"],
-          "eac": "100%"
+          "eac": "100%",
+          "review": ""
         },
       ],
     }

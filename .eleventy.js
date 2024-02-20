@@ -29,12 +29,7 @@ const {
   minifyCss,
   minifyJs,
   mdInline,
-  splitlines,
-  getWebmentionsForUrl,
-  webmentionSize,
-  webmentionsByType,
-  isOwnWebmention,
-  sortWebmentions
+  splitlines
 } = require('./config/filters/index.js');
 
 // module import shortcodes
@@ -99,11 +94,6 @@ module.exports = eleventyConfig => {
   eleventyConfig.addFilter('keys', Object.keys);
   eleventyConfig.addFilter('values', Object.values);
   eleventyConfig.addFilter('entries', Object.entries);
-  eleventyConfig.addFilter('getWebmentionsForUrl', getWebmentionsForUrl);
-  eleventyConfig.addFilter('webmentionSize', webmentionSize);
-  eleventyConfig.addFilter('webmentionsByType', webmentionsByType);
-  eleventyConfig.addFilter('isOwnWebmention', isOwnWebmention);
-  eleventyConfig.addFilter('sortWebmentions', sortWebmentions);
 
   const util = require('util');
   eleventyConfig.addFilter('console', value => `<div style="white-space: pre-wrap;">${decodeURIComponent(util.inspect(value))}</div>;`);
