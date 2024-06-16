@@ -3,7 +3,7 @@ title: My history with computers
 date: "2024-01-16"
 description: "Computer goes beep boop."
 writingtime: ""
-draft: true
+draft: false
 tags:
   - life
   - personal
@@ -28,13 +28,13 @@ One day, my best friend's big brother came over for a visit. He had gotten his h
 
 ## The Noughties
 
-After my parents split in 2001 and we moved to Finland, we only had the crappier PC running Windows 95 and no games. In my deepest and darkest hours, I started playing around with the other applications found on the computer. I'm not sure how many paintings, short stories and animations I made in MS Paint, Word and Powerpoint, but there was a lot of them. Luckily, they're lost to the sands of time as most of those wouldn't fly in this day and age.
+After my parents split in 2001 and we moved to Finland, we only had the crappier PC running Windows 95 and no games. In my deepest and darkest hours, I started playing around with the other applications found on the computer. I'm not sure how many paintings, short stories and animations I made in MS Paint, Word and Powerpoint, but there was a lot of them. Luckily, they're lost to the sands of time as most of those wouldn't fly in this day and age. But I kept myself entertained with whatever silly little applications our machines had installed and it was all great fun.
 
 In 2004 we went to visit my cousin in Denmark and as he was about to buy a new PC for himself, he sold his older one to my parents. This was also the same summer I managed to convince my parents to get us an ADSL connection. I went from fooling around in Windows 95 to a machine with XP, 1 gigabyte of RAM, 128mb of video memory and a 0.5mb internet connection. Talk about progress! I finally got to play those old and good Blizzard games on top of a few new ones as well. Riven, Sudeki, Far Cry and Warcraft 3 on top of a ton of smaller freebie games like Liero, Soldat, Little Fighter 2 and Dim. Life was pretty good!
 
 The PC was definitely an upgrade but it also wasn't definitely top of the line, Oblivion for example ran as fast as a slideshow and I had to mod it with Oldblivion which rendered most textures as 2D and it resembled Doom more than itself.
 
-## Websites ahead!
+## from websites...
 
 Now we're in around the years 2006 or so, the point when I started to get into creating websites. The Finnish online circles at the time were quite small and smaller websites had started to pop up. Some friends of my friends had their own little personal spaces online where they shared game cheat codes, links to free games, warezing tips and other random info and I thought that was maybe the coolest thing ever. 
 
@@ -47,19 +47,29 @@ This time around I was actually going to make something myself I could control, 
 Anglefire and Geocities were all the rage as were the .tk domains that you could get for free. So, after a while of playing around with notepad, WinSCP and some online tutorials, my hand-made website was online! I had settled on Geocities and gave up using any fancy-smancy domains as it but some ugly ad bars on the top of the site.
 
 With the help of my friend, we made a ___cool___ flame wallpaper and some hue-shifted alternate versions of it as well. The only thing missing was obviously an advert for the newly opened website! 
-
-<video controls width="640">
-  <source src="/assets/media/s4mw1s3.webm" type="video/webm" />
-  <source src="/assets/media/s4mw1s3.mp4" type="video/webm" />
-</video>
+<figure>
+  <video controls width="640" preload="auto" >
+    <source src="/assets/media/s4mw1s3.webm" type="video/webm" />
+    <source src="/assets/media/s4mw1s3.mp4" type="video/webm" />
+      <script>
+          var video = document.currentScript.parentElement;
+          video.volume = 0.1;
+      </script>
+  </video>
+  <figcaption>A really bad video about my new website, by me in 2006</figcaption>
+</figure>
 
 The video is actually featuring one of the first tracks I made with Sony Acid and a bunch of free loops. I've lost the first handful of tracks shown in the Beta Records screenshot. I've since backed up and kept a copy of every track and project I've made after I moved to FL Studio, but those Sony Acid tracks are sadly lost to time.
 
 Anyways, nälkä kasvaa syödessä as we say in Finland! I was ravenous. I kept making new sites, redid my own site at least a half a dozen times in the following years, sites for friends and gaming guilds and a plethora of other projects and groups.
 
+## ...to music blogs!
+
 At some point around 2008 I got into music blogs. My whole journey into that world and what came of it is worth its' own writeup of its own. After spending a considerable amount of time on sites like Dani Deahl's DSQUAREd, Trashbag Kids, Too Many Sebastians, Dödselectro, Vacay Vitamins, Missintoof, Datasapiens and a slew of other sites, I wanted in the scene.
 
-I did what all the other cool kids did and talked my way into using our high school's server and setup Wordpress. I managed to snag a fun domain and off we went! The site did pretty well after a slow start and in the end, I started to average over 10k daily views. I moved servers a couple of times as I started to encounter slowdowns and at some point I started hacking at the Wordpress theme code to remove database queries from things I deemed unnecessary. ___What's caching btw?___ Plugins, theme customizations, responsive web design, I had to learn a whole bunch of things! Throw in some domain and custom email management, mySQL databases, CDN for file storage etc.
+I did what all the other cool kids did and talked my way into using our high school's server and setup Wordpress. I managed to snag a fun domain and off we went! The site did pretty well after a slow start and in the end, I started to average over 10k daily views. I moved servers a couple of times as I started to encounter slowdowns and at some point I started hacking at the Wordpress theme code to remove database queries from things I deemed unnecessary. 
+_What is caching btw?_
+Plugins, theme customizations, responsive web design, I had to learn a whole bunch of things! Throw in some domain and custom email management, mySQL databases, CDN for file storage etc.
 
 I've since grown and outgrown Wordpress. These days I prefer static site generators, but over the years I've definitely had to work with the odd Wordpres site here and there. I didn't know it back then, but I would definitely attribute my career in tech as having being largely influenced by how I drifted into music blogging and all of the skills I ended up teaching myself.
 
@@ -75,9 +85,11 @@ I'm of the opinion that LAN partying might be the most fun you can have with or 
   <figcaption>Artistic moustache at our first LAN party, circa June 2006</figcaption>
 </figure>
 
-Usually we'd play Starcraft, Unreal and Trackmania. Back then, most games that had any type of multiplayer could also locally host a server. I wish games still had that. 
+Usually we'd play Starcraft, Unreal and Trackmania with Liero Xtreme and Soldat deserving some respectful mentions as well. Back then, most games that had any type of multiplayer could also locally host a server. I wish games still had that. 
 
-Our second LAN party was when I downloaded _(read, pirated)_ FL Studio for the first time and really got into music making. We'd play around and do dumb stuff, trying to break FL Studio and that's how the first tracks were born. Sepe Susi and the Lunatic Disco Police, truly an autre piece of art.
+Our second LAN party was when I downloaded _(read, pirated from Rapidshare, RIP)_ FL Studio for the first time and really got into music making. We'd play around and do dumb stuff, trying to break FL Studio and that's how the first tracks were born. Sepe Susi and the Lunatic Disco Police, truly an autre piece of art.
+
+_Side note: I did eventually buy a license for FL Studio. Right after I came into some actual real money after graduating high school._
 
 <figure>
   <img src="/assets/images/articles/2024/lan1.webp" alt="Sleeping at a LAN party on the floor with a greasy pizza box" title="Sleeping at a LAN party with a greasy pizza box" />
@@ -86,6 +98,6 @@ Our second LAN party was when I downloaded _(read, pirated)_ FL Studio for the f
 
 We had so much fun that other people in our friend group wanted in on the action. Usually it was just the three of us and those were the most fun parties in my opinion, but occasionally we'd have other participants as well. All fine and dandy, fun is meant to be shared around.
 
-We kept these parties going through elementary school right up until high school graduation. Even after going to different high schools, we couldn't be stopped! Moving across the co untry for university was what finally forced our hand and now when we meet, it's usually without our respective computers.
+We kept these parties going through elementary school right up until high school graduation. Even after going to different high schools, we couldn't be stopped! Moving cross the country for university was what finally forced our hand and now when we meet, it's usually without our respective computers.
 
 A couple of years later, I started to partake in larger LAN parties as well. Assembly was the big one and occasionally I also went to The Group's parties. I was helping out my rhythm gaming friends and running the game stands and later running Microsoft's booth, but I always left plenty of time to just hang out with my buddies from all over Finland.

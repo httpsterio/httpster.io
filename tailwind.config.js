@@ -27,6 +27,7 @@ module.exports = {
       xs: '20em',
       sm: '38em',
       md: '50em',
+      lg: '65em',
       lg: '80em'
     },
     colors,

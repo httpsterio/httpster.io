@@ -1,0 +1,48 @@
+---
+layout: base
+schema: blog
+---
+
+<article class="region blog">
+  <div class="wrapper prose">
+    <h1 class="title-shadow-post">{{ title }}</h1>
+
+    <div class="post-meta my-s-m">
+      {% set definedDate = date %}{% include "partials/date.njk" %}
+      <span class="post-category">${{category}}</span>
+      <ul class="tag-list">
+        {% for tag in tags %}
+          {% if tag != "posts" %}
+            <li class="tag">#{{ tag }}</li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+
+
+  {% if reviewtype == "album" %}
+  <section class="review-album-info md:flex">
+  <div class="review-image"><img src="{{image}}"></div>
+  <dl class="review-meta flex flex-col justify-center">
+    <dt>artist</dt> 
+    <dd>{{artist}}</dd>
+    <dt>title</dt>
+    <dd>{{album}}</dd>
+    <dt>year</dt>
+    <dd>{{year}}</dd>
+    <dt>runtime</dt>
+    <dd>{{runtime}}</dd>
+    <dt>score</dt>
+    <dd>{{score}} / 5</dd>
+  </dl>
+  </section>
+  {% endif %}
+
+  <div class="wrapper flow">
+    {{ content | safe }}
+
+  </div>
+  </div>
+</article>
+
+{% include "partials/post-meta.njk" %}

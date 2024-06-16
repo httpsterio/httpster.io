@@ -46,13 +46,14 @@
 .rounded-btn {
   background-color:var(--color-light);
   font-family: var(--font-display);
-  font-size: var(--size-step-1);
+  font-size: var(--size-step-0);
   text-decoration: none;
   color: var(--color-light);
-  padding-inline: var(--space-s);
-  margin-inline: var(--space-xs);
   border-radius: 0.5rem;
   border:0;
+  padding-inline: var(--space-s);
+  padding-block: var(--space-3xs);
+  max-width: var(--space-3xl);
   background-image: radial-gradient(100% 100% at 100% 0, #e5633e 0, #cf4116 100%);
   box-shadow: rgba(45, 35, 66, .4) 0 0.25ch 0.3ch,rgba(58, 65, 111, .5) 0 -3px 0 inset;
   transition: 0.25s ease-in-out;

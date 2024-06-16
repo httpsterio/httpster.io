@@ -1,5 +1,5 @@
 .post-date{
-color: var(--color-dark);
+color: currentColor;
 display:flex;
 left:0;
 margin-right: var(--space-s);

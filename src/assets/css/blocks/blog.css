@@ -1,5 +1,6 @@
 .blog h1 {
   font-size: var(--size-step-4);
+  text-align: center;
 }
 
 .blog h2 {

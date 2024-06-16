@@ -1,16 +1,16 @@
 module.exports = {
-  top: [
-    {
-      text: 'Mastodon',
-      url: 'https://social.lol/@sami',
-      icon: 'mastodon.svg'
-    },
-    {
-      text: 'Subscribe',
-      url: '/feed.xml',
-      icon: 'rss.svg'
-    }
-  ],
+  // top: [
+  //   {
+  //     text: 'Mastodon',
+  //     url: 'https://social.lol/@sami',
+  //     icon: 'mastodon.svg'
+  //   },
+  //   {
+  //     text: 'Subscribe',
+  //     url: '/feed.xml',
+  //     icon: 'rss.svg'
+  //   }
+  // ],
   main: [
     {
       text: 'Main feed',
@@ -31,6 +31,16 @@ module.exports = {
     {
       text: 'Now',
       url: 'https://sami.omg.lol/now'
+    },
+    {
+      text: 'Mastodon',
+      url: 'https://social.lol/@sami',
+      icon: 'mastodon.svg'
+    },
+    {
+      text: 'Subscribe',
+      url: '/feed.xml',
+      icon: 'rss.svg'
     }
   ],
   bottom: [

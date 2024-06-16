@@ -14,13 +14,12 @@ layout: base
     </div>
   </div>
 </header>
-
 <article class="region" style="--region-space-top: var(--space-s)">
   <div class="wrapper post-list mt-l-xl">
     {% set postslist = collections.posts %} 
     {% for post in postslist %}
 
-    <article class="post-item flow overflow-hidden">
+    <article class="post-item {{post.data.type}} flow overflow-hidden">
       <h3><a href="{{ post.url | url }}">{{ post.data.title }}</a></h3>
       <div class="post-meta mt-xs">
         {% set definedDate = post.date %} {% include "partials/date.njk" %}
@@ -34,7 +33,7 @@ layout: base
         </ul>
       </div>
 
-      <p class="mt-xs">{{ post.data.description }}</p>
+      <p class="mt-xs">{{ post.data.description }}</p> 
     </article>
     {% endfor %}
     

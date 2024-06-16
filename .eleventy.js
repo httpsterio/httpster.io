@@ -63,6 +63,21 @@ const bundlerPlugin = require('@11ty/eleventy-plugin-bundle');
 
 module.exports = eleventyConfig => {
 
+  // browsersync config
+  eleventyConfig.setServerOptions({
+    module: "@11ty/eleventy-server-browsersync",
+
+    // Default options shown:
+    port: 8080,
+    ignore: ["node_modules"],
+    watch: false,
+    open: false,
+    notify: false,
+    ui: false,
+    ghostMode: true,
+    index: "index.html",
+  })
+
   // 	--------------------- Custom Watch Targets -----------------------
   eleventyConfig.addWatchTarget('./src/assets');
   eleventyConfig.addWatchTarget('./utils/*.js');

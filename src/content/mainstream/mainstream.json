@@ -1,6 +1,6 @@
 {
   "layout": "post",
   "category": "mainstream",
-  "permalink": "//coffee/{{ title | slugify }}/index.html",
+  "permalink": "//music/{{ title | slugify }}/index.html",
   "type": "item-mainstream"
 }

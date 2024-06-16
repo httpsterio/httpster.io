@@ -29,6 +29,7 @@
 @import 'blocks/textgradient.css';
 @import 'blocks/title-shadow.css';
 @import 'blocks/youtube.css';
+@import 'blocks/review.css';
 
 /* COMPOSITIONS */
 @import 'compositions/cluster.css';

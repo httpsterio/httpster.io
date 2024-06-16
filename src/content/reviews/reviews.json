@@ -1,0 +1,6 @@
+{
+  "layout": "post-review",
+  "category": "reviews",
+  "permalink": "//review/{{ title | slugify }}/index.html",
+  "type": "item-review"
+}

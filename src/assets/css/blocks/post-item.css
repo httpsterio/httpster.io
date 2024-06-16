@@ -17,11 +17,11 @@
   column-gap: 1rem;
   flex-wrap: wrap;
   padding-inline-start: 0;
+  color: currentColor;
 }
 
 .tag {
   list-style-type: none;
-  color: var(--color-dark);
   font-size: var(--size-step-1);
   right: 0;
   font-weight: 300;
@@ -32,12 +32,7 @@
   color: var(--color-green)
 } */
 
-.post-category {
-  color: var(--color-dark);
-  font-size: var(--size-step-1);
-  font-weight: 600;
-  margin-right: var(--space-xs-s);
-}
+
 
 .post-item {
   border: 0.3rem solid var(--color-dark);
@@ -92,4 +87,37 @@
   position: absolute;
   right: 0;
   top: 0;
+}
+
+.post-category {
+  color: currentColor;
+  font-size: var(--size-step-1);
+  font-weight: 600;
+  margin-right: var(--space-xs-s);
+}
+
+/* item category styles */
+
+.item-review {
+  border-color: var(--color-red);
+  color: var(--color-dark);
+  background-color: var(--color-red);
+}
+
+.item-review:hover,
+.item-review:focus-within {
+  border-color: var(--color-dark);
+  box-shadow: 0.75rem -0.75rem 0 0 var(--color-dark), -0.75rem 0.75rem 0 0 var(--color-red);
+}
+
+.item-coffee {
+  border-color: var(--color-blue);
+  color: var(--color-light);
+  background-color: var(--color-blue);
+}
+
+.item-coffee:hover,
+.item-coffee:focus-within {
+  border-color: var(--color-dark);
+  box-shadow: 0.75rem -0.75rem 0 0 var(--color-dark), -0.75rem 0.75rem 0 0 var(--color-blue);
 }

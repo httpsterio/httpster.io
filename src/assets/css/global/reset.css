@@ -84,11 +84,10 @@ summary {
 }
 
 video {
-  max-width: 80%;
-  display:block;
+  width: 100%;
+  padding: 1rem;
   margin-inline: auto;
-  border: 0.2ch solid var(--color-dark);
-  box-shadow: 0.5rem 0.5rem 0 0 var(--color-red), -0.5rem -0.5rem 0 0 var(--color-yellow);
+
 }
 
 figure {

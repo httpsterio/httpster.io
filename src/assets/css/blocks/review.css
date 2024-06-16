@@ -1,0 +1,43 @@
+.review-album-info {
+  max-width: 80%;
+  margin-inline: auto;
+  margin-block: var(--space-l);
+  border: 0.3rem solid var(--color-dark);
+  box-shadow: 0.75rem 0.75rem 0 0 var(--color-dark);
+  font-family: var(--font-display);
+}
+
+.review-image {
+  flex-basis: 50%;
+  background-color: var(--color-red);
+}
+
+.review-image img {
+  width: auto;
+  height: auto;
+  display: block;
+}
+
+.review-meta {
+  width: auto;
+  background-color: var(--color-red);
+  padding-inline: var(--space-m);
+  padding-block: 1rem;
+  flex-basis:50%;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+.review-meta dt {
+  font-weight: 300;
+  font-size: var(--size-step-0);
+  line-height: 0.5ch;
+}
+
+.review-meta dd {
+  font-weight: 800;
+  font-size: var(--size-step-1);
+  margin-bottom:0.7ch;
+}
