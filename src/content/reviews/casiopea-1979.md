@@ -1,6 +1,6 @@
 ---
 title: Casiopea's debut album review
-date: "2024-06-21"
+date: "2024-06-20"
 description: "Casiopea's titular album came out 45 years ago. Is it still any good?"
 writingtime: 3 hours
 draft: false
