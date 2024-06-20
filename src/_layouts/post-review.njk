@@ -23,7 +23,7 @@ schema: blog
   {% if reviewtype == "album" %}
   <section class="review-album-info md:flex">
   <div class="review-image"><img src="{{image}}"></div>
-  <dl class="review-meta flex flex-col justify-center">
+  <dl class="review-meta flex flex-col justify-center" style="{% if theme %} background: var(--color-{{theme}});{%endif%}">
     <dt>artist</dt> 
     <dd>{{artist}}</dd>
     <dt>title</dt>
@@ -33,7 +33,7 @@ schema: blog
     <dt>runtime</dt>
     <dd>{{runtime}}</dd>
     <dt>score</dt>
-    <dd>{{score}} / 5</dd>
+    <dd>{{score}} / 100</dd>
   </dl>
   </section>
   {% endif %}

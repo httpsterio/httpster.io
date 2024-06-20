@@ -1,17 +1,23 @@
 .logo {
-  font-family: var(--font-display);
-  font-weight: 300;
+  font-family: var(--font-base);
+  font-weight: 450;
   display: flex;
   align-items: center;
   gap: var(--space-2xs);
-  letter-spacing: var(--tracking-s);
+  letter-spacing: 0.3ch;
   margin: var(--space-s) 0;
   padding: var(--space-xs);
-  font-size: var(--size-step-1);
+  font-size: var(--size-step-2);
   border: 0.2ch solid transparent;
+  border-radius: 0.5rem;
+  text-shadow: var(--color-red) 0.1ch 0.1ch;
+  transition: 0.3s ease-out;
+
 }
 
 .logo:hover {
-  color: var(--color-green);
-  border: 0.2ch solid var(--color-green);
+  color: var(--color-red);
+  border: 0.2ch solid var(--color-red);
+  text-shadow: var(--color-light) 0.1ch 0.1ch;
+  transition: 0.3s ease-out;
 }

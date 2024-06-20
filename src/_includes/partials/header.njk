@@ -1,9 +1,9 @@
 <a href="#main" class="skip-link">{{ meta.skipContent }}</a>
 
 <header class="nav-main">
-  <div class="site-head | ontop">
+  <div class="site-head | ontop justify-center">
     {% set activePage = page.url | url %}
-   <a href="/" class="logo site-head__brand title-shadow-alt | no-underline" {% if activePage === '/' %} aria-current="page" {% endif %}>[ {{ meta.siteName }} ]</a>
+   <a href="/" class="logo site-head__brand title-shadow-alt | no-underline" {% if activePage === '/' %} aria-current="page" {% endif %}>{{ meta.siteName }}</a>
     {% include "partials/menu.njk" %}
   </div>
   {% include "partials/top-nav.njk" %}

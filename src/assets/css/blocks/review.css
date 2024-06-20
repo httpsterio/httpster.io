@@ -16,11 +16,11 @@
   width: auto;
   height: auto;
   display: block;
+  border-right: 0.3rem solid var(--color-dark);
 }
 
 .review-meta {
   width: auto;
-  background-color: var(--color-red);
   padding-inline: var(--space-m);
   padding-block: 1rem;
   flex-basis:50%;
@@ -28,16 +28,21 @@
   flex-direction: column;
   display: flex;
   align-items: center;
+  line-height: 2ch;
 }
 
 .review-meta dt {
   font-weight: 300;
   font-size: var(--size-step-0);
-  line-height: 0.5ch;
+  margin-bottom: -1ch;
 }
 
 .review-meta dd {
-  font-weight: 800;
+  font-weight: 600;
   font-size: var(--size-step-1);
-  margin-bottom:0.7ch;
+  margin-bottom:0.6ch;
+}
+
+.review-meta dd:last-of-type {
+  margin-bottom:0;
 }
