@@ -34,7 +34,7 @@
 .review-meta dt {
   font-weight: 300;
   font-size: var(--size-step-0);
-  margin-bottom: -1ch;
+  margin-bottom: -0.8ch;
 }
 
 .review-meta dd {
