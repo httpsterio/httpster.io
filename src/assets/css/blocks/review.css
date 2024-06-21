@@ -1,5 +1,5 @@
 .review-album-info {
-  max-width: 80%;
+  max-width: 90%;
   margin-inline: auto;
   margin-block: var(--space-l);
   border: 0.3rem solid var(--color-dark);
@@ -13,10 +13,9 @@
 }
 
 .review-image img {
-  width: auto;
+  width: 100%;
   height: auto;
   display: block;
-  border-right: 0.3rem solid var(--color-dark);
 }
 
 .review-meta {
@@ -34,13 +33,13 @@
 .review-meta dt {
   font-weight: 300;
   font-size: var(--size-step-0);
-  margin-bottom: -0.8ch;
+  margin-bottom: -0.5ch;
 }
 
 .review-meta dd {
   font-weight: 600;
   font-size: var(--size-step-1);
-  margin-bottom:0.8ch;
+  margin-bottom:0.6ch;
 }
 
 .review-meta dd:last-of-type {
