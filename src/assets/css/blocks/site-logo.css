@@ -1,5 +1,5 @@
 .logo {
-  font-family: var(--font-base);
+  font-family: var(--font-mono);
   font-weight: 450;
   display: flex;
   align-items: center;
@@ -7,7 +7,7 @@
   letter-spacing: 0.3ch;
   margin: var(--space-s) 0;
   padding: var(--space-xs);
-  font-size: var(--size-step-2);
+  font-size: var(--size-step-3);
   border: 0.2ch solid transparent;
   border-radius: 0.5rem;
   text-shadow: var(--color-red) 0.1ch 0.1ch;
