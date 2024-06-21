@@ -40,7 +40,7 @@
 .review-meta dd {
   font-weight: 600;
   font-size: var(--size-step-1);
-  margin-bottom:0.6ch;
+  margin-bottom:0.8ch;
 }
 
 .review-meta dd:last-of-type {

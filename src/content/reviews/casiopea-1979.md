@@ -74,7 +74,7 @@ The break around 2 minutes just adds intensity to the groove as it attempts to b
 
 Mukaiya plays some faster keyboard runs that transform into an almost sinister pre-chorus that evolves back into the main section of the song with another great guitar solo that carries through the rest of the song.
 
-Out of every track on this album, I think this is the best song to showcase Sasaki's technical forté as plays some incredibly difficult drum patterns that almost make you question your own sense of rhythm. If the rest of the band couldn't keep up with the technical drums, I'd almost call it overplaying the drums but as such it fits perfectly. Just listen to those hats!
+Out of every track on this album, I think this is the best song to showcase Sasaki's technical forté as he plays some incredibly difficult drum patterns that almost make you question your own sense of rhythm. If the rest of the band couldn't keep up with the technical drums, I'd almost call it overplaying the drums but as such it fits perfectly. Just listen to those hats!
 
 Space Road is simply a beautiful journey from start to finish with some incredibly skilled writing and execution. This might be my first choice as a track to introduce someone to Casiopea.
 
