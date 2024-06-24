@@ -1,6 +1,11 @@
 module.exports = {
   log: [
     {
+      date: "2024-02-24",
+      type: "feature",
+      content: "Added umami back in again."
+    },
+    {
       date: "2024-02-21",
       type: "feature",
       content: "Removed tinylytics as the dev is not a nice person. Added a new article type, reviews and wrote Casiopea review. A bit hacky, but works. Updating logo header and main menu buttons."
