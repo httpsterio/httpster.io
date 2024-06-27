@@ -3,7 +3,7 @@ module.exports = {
     {
       date: "2024-02-27",
       type: "feature",
-      content: "Styled this page!"
+      content: "Styled this page! Also, fixed possible overflow with long links in footnotes and tags getting stacked too closely vertically on mobile. Centered home content from markdown."
     },
     {
       date: "2024-02-27",

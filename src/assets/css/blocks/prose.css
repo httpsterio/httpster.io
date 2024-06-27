@@ -50,6 +50,12 @@
   color: var(--color-blue);
 }
 
+.footnote-item {
+  word-break: break-word;
+}
+
+#fn4 > p > a:nth-child(1)
+
 /* .prose :not(.grid) li + li {
   margin-top: var(--space-2xs);
 }

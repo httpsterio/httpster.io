@@ -76,7 +76,7 @@ I was thoroughly entertained and glad I ended up watching the movie.
 
 ## Notes
 
-[^1]: Team Gaki website with some subbed episodes to watch, https://www.teamgaki.com.
+[^1]: [Team Gaki website](https://www.teamgaki.com) with some subbed episodes to watch.
 [^2]: In manzai comedy, a traditional Japanese form of stand-up comedy, the "boke" is the role of the funny man who makes foolish or absurd statements and actions, which are then corrected or criticized by the "tsukkomi," the straight man.
 [^3]: Lucha libre wrestlers, also known as luchadores, are Mexican professional wrestlers known for their high-flying maneuvers, colorful masks, and theatrical, acrobatic style of wrestling.
-[^4]: Quentin Dupieux's Rubber movie https://www.imdb.com/title/tt1612774/
+[^4]: Quentin Dupieux's Rubber movie on IMDb https://www.imdb.com/title/tt1612774/

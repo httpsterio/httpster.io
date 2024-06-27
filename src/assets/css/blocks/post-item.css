@@ -18,6 +18,7 @@
   flex-wrap: wrap;
   padding-inline-start: 0;
   color: currentColor;
+  row-gap: 0.7ch;
 }
 
 .tag {
@@ -31,7 +32,6 @@
   padding-inline: 1ch;
   border-radius: 0.5rem;
   padding-top: 0.3ch;
-
 }
 
 /* .tag:hover{
