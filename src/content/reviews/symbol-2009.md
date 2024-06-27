@@ -20,13 +20,13 @@ image: "/assets/images/reviews/symbol/cover symbol 2009.webp"
 ---
 
 ## Intro 
-Hiroshi Matsumoto is a Japanese comedy legend most well known for his work in Gaki no Tsukai[^1] and as the boke[^2] of the comedy duo Downtown. His second film, _Symbol_, is definitely a weird one to say the least.
+Hitoshi Matsumoto is a Japanese comedy legend most well known for his work in Gaki no Tsukai[^1] and as the boke[^2] of the comedy duo Downtown. His second film, _Symbol_, is definitely a weird one to say the least.
 
 After finishing the movie, I shouldn't have been surprised to learn that not only did Matsumoto star as the main character in the film, he also wrote and directed it himself.
 
 <figure>
-  <img src="/assets/images/reviews/symbol/screen2.webp" alt="Screenshot from the film Symbol. Hiroshi Matsumoto's character is laying in a white room in a yellow and dotted pajamas, his eyes are open and glassy." title="Screenshot from the film Symbol. Hiroshi Matsumoto's character is laying in a white room in a yellow and dotted pajamas, his eyes are open and glassy." />
-  <figcaption>Hiroshi Matsumoto's character, trapped in the white room, waking up for the first time.</figcaption>
+  <img src="/assets/images/reviews/symbol/screen2.webp" alt="Screenshot from the film Symbol. Hitoshi Matsumoto's character is laying in a white room in a yellow and dotted pajamas, his eyes are open and glassy." title="Screenshot from the film Symbol. Hitoshi Matsumoto's character is laying in a white room in a yellow and dotted pajamas, his eyes are open and glassy." />
+  <figcaption>Hitoshi Matsumoto's character, trapped in the white room, waking up for the first time.</figcaption>
 </figure>
 
 
