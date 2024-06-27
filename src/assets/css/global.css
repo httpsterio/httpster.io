@@ -30,6 +30,7 @@
 @import 'blocks/title-shadow.css';
 /* @import 'blocks/youtube.css'; */
 @import 'blocks/review.css';
+@import 'blocks/changelog.css';
 
 /* COMPOSITIONS */
 @import 'compositions/cluster.css';

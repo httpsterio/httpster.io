@@ -7,12 +7,14 @@ type: default
 ---
 
 {% for log in changelog.log %}
+<div class="changelog-item">
+
 ### {{ log.date }}
 
-__${{ log.type }}__
+<li class="changelog-tag" >${{ log.type }}</li>
 
 {{ log.content | safe}}
 
-<hr>
+</div>
 {% endfor %}
 

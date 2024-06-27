@@ -3,6 +3,16 @@ module.exports = {
     {
       date: "2024-02-27",
       type: "feature",
+      content: "Styled this page!"
+    },
+    {
+      date: "2024-02-27",
+      type: "content",
+      content: "New Symbol movie review added!"
+    },
+    {
+      date: "2024-02-27",
+      type: "feature",
       content: "Added review-score meta-section styling. Styled footnotes. Restyled tags in posts. Added a meta section for reviews with dt and dd for specs of reviewed thing. Readjusted button hover and active states when keyboard navigating. "
     },
     {

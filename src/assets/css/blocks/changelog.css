@@ -1,0 +1,23 @@
+.changelog-item {
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  padding-inline: 2rem;
+  padding-block: 2rem;
+  border: 0.3ch solid var(--color-dark);
+  box-shadow: 0.75rem 0.75rem 0 0 var(--color-blue), -0.75rem -0.75rem 0 0 var(--color-green);
+  margin-block: var(--space-l);
+}
+
+.changelog-item li {
+  list-style-type: none;
+  font-weight: 600;
+  font-size: var(--size-step-1);
+  text-align: center;
+  font-family: var(--font-display);
+  margin-block: var(--space-xs);
+}
+
+.changelog-item h3 {
+  text-align: center;
+  font-weight: 200;
+}
