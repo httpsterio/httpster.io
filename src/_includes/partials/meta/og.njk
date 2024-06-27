@@ -2,8 +2,8 @@
 <meta property="og:url" content="{{ meta.url }}{{ page.url }}" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="{% if title %}{{ title }}{% else %}{{ meta.siteName }}{% endif %}"/>
-{%- if coverimg %}
-<meta property="og:image" content="{{coverimg}}"/>
+{%- if socialimage %}
+<meta property="og:image" content="{{socialimage}}"/>
 {% else %}
 <meta property="og:image" content="{{ meta.url }}{% if (layout == 'post')%}/assets/images/social-preview/{{title | slugify}}-preview.jpeg{% else %}{{ meta.meta_data.opengraph_default }}{% endif %}"/>
 {% endif -%}

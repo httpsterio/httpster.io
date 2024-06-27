@@ -16,9 +16,12 @@ album: Casiopea
 year: 1979
 runtime: 36min
 score: 95
-coverimg: "/assets/images/reviews/social casiopea 1979.jpg"
-image: "/assets/images/reviews/cover casiopea 1979.webp"
+socialimage: "/assets/images/social/casiopea 1979.jpg"
+image: "/assets/images/reviews/casiopea-1979/cover casiopea 1979.webp"
+
 ---
+
+assets/images/reviews/casiopea-1979/cover casiopea 1979.webp
 
 ## Intro 
 During the COVID lockdowns, me and the wife got into a habit of playing Scrabble or doing puzzles whilst listening to random albums from YouTube.
@@ -130,6 +133,8 @@ Casiopea's debut album is funny in the sense that it's not that reflective of wh
 
 The song writing and performance is simply stellar but the mixing is clearly very dated. I wouldn't say that it's bad but it's also very obviously not a great mix either.
 
-I think as a whole it definitely stands the test of time and it's also a very approachable album when it comes to fusion jazz music and that makes it an easy starting point to get into Casiopea's discography.
+I think as a whole it definitely stands the test of time and it's also a very approachable album when it comes to fusion jazz music and that makes it an easy starting point to get into Casiopea's discography. I might be biased, but I do strongly recommend checking the album out. Even if you're not a fan of jazz, Casiopea is so much more than that! 
 
-I give the album a score of __95 / 100__ with a strong recommendation of checking it out. It can be found on most streaming platforms these days. Happy listenings!
+The album can be found on most streaming platforms these days. Happy listenings!
+
+{% include "partials/review-score.njk" %}

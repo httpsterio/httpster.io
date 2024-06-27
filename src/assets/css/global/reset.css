@@ -51,6 +51,11 @@ body {
   line-height: 1.5;
 }
 
+/* Anchor styles */
+:where(a:not([class])) {
+  text-decoration-skip-ink: auto;
+}
+
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
@@ -96,11 +101,15 @@ figure {
   margin-inline: auto;
   border: 0.2ch solid var(--color-dark);
   box-shadow: 0.5rem 0.5rem 0 0 var(--color-blue), -0.5rem -0.5rem 0 0 var(--color-green);
+  background-color: var(--color-dark);
+  color: var(--color-light);
 }
 
 figure img {
+  background-color: var(--color-dark);
   max-width: 100%;
-  padding: 1rem;
+  padding-inline: 0;
+  padding-block: 0;
   margin-inline: auto;
 }
 
@@ -108,6 +117,7 @@ figure figcaption {
   text-align: center;
   margin-inline: auto;
   padding-bottom: 0.5rem;
+  padding-top: 1ch;
   max-width: 80%;
   font-size: var(--size-step-0);
   font-style: italic;

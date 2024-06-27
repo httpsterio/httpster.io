@@ -13,13 +13,13 @@
   text-decoration: none;
 }
 
-.button:hover {
+.button:hover, .button:focus-within {
   --button-bg: var(--color-dark);
   --button-text: var(--color-light);
   --button-border: var(--color-dark);
 }
 
-.nav-button{
+.nav-button, .nav-button:focus-within{
   border: 0.25rem solid var(--color-green);
   color: var(--color-dark);
   background-color: var(--color-green);
@@ -59,11 +59,7 @@
   transition: 0.25s ease-in-out;
 }
 
-.rounded-btn:focus {
-  transition: 0.25s ease-in-out;
-}
-
-.rounded-btn:hover {
+.rounded-btn:hover, .rounded-btn:focus-within {
   background-image: radial-gradient(100% 100% at 100% 0, #df491f 0, #e4b419 100%);
   box-shadow: rgba(45, 35, 66, .7) 0 0.6ch 0.6ch,rgba(58, 65, 111, .5) 0 -0.33ch 0 inset;
   transform: translateY(-0.5ch);

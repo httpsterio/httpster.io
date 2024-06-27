@@ -22,6 +22,10 @@
   --flow-space: var(--space-xs);
 }
 
+.heading-anchor::before {
+  content: "# ";
+}
+
 .prose .heading-anchor:is(:hover, :focus) {
   text-decoration: underline;
 }
@@ -31,6 +35,19 @@
 
 .prose mark {
   background: var(--color-red);
+}
+
+.footnotes-sep {
+  display: none;
+}
+
+.footnotes-list {
+  font-style:italic;
+}
+.footnote-ref {
+  font-size: var(--size-step-min-1);
+  font-family: var(--font-display);
+  color: var(--color-blue);
 }
 
 /* .prose :not(.grid) li + li {

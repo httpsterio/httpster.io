@@ -26,6 +26,8 @@ const {
   toAbsoluteUrl,
   stripHtml,
   stripHttps,
+  yearsSinceDate,
+  yearsSinceYear,
   minifyCss,
   minifyJs,
   mdInline,
@@ -102,6 +104,8 @@ module.exports = eleventyConfig => {
   eleventyConfig.addFilter('slugify', slugifyString);
   eleventyConfig.addFilter('toJson', JSON.stringify);
   eleventyConfig.addFilter('fromJson', JSON.parse);
+  eleventyConfig.addFilter('yearsSinceDate', yearsSinceDate);
+  eleventyConfig.addFilter('yearsSinceYear', yearsSinceYear);
   eleventyConfig.addFilter('cssmin', minifyCss);
   eleventyConfig.addNunjucksAsyncFilter('jsmin', minifyJs);
   eleventyConfig.addFilter('md', mdInline);

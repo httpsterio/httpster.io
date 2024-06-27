@@ -45,3 +45,30 @@
 .review-meta dd:last-of-type {
   margin-bottom:0;
 }
+
+.review-score {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 60%;
+  margin-inline: auto;
+  margin-block: var(--space-l);
+  padding-block: var(--space-s);
+  border: 0.3rem solid var(--color-dark);
+  box-shadow: 0.75rem 0.75rem 0 0 var(--color-dark);
+  font-family: var(--font-display);
+  align-content: center;
+  align-items: center;
+}
+
+.review-score dt {
+  font-weight: 300;
+  font-size: var(--size-step-1);
+  text-align: center;
+}
+
+.review-score dd {
+  font-weight: 600;
+  font-size: var(--size-step-2);
+  text-align: center;
+}

@@ -1,6 +1,31 @@
 module.exports = {
   log: [
     {
+      date: "2024-02-27",
+      type: "feature",
+      content: "Added review-score meta-section styling. Styled footnotes. Restyled tags in posts. Added a meta section for reviews with dt and dd for specs of reviewed thing. Readjusted button hover and active states when keyboard navigating. "
+    },
+    {
+      date: "2024-02-27",
+      type: "feature",
+      content: "Added review-score.njk partial for review score box at the end of article. Added new font size var, step-min-2 and readjusted step-min-1. Added skip link theming and reworked figure image design."
+    },
+    {
+      date: "2024-02-27",
+      type: "feature",
+      content: "Added two new filters, __yearsSinceDate__ and __YearsSinceYear__ which allow me to compare either a YYYY-MM-DD or YYYY date to the current year and get the output as an integer. Added __markdown-it-anchor__ to create linkable headings."
+    },
+    {
+      date: "2024-02-26",
+      type: "feature",
+      content: "Reworked the main site heading text. Moved opengraph images to a new folder. Updated blog.njk to read partials based on post data type. Moved the h2 from home\\.md into home.njk so that it doesn't get a linkable heading."
+    },
+    {
+      date: "2024-02-26",
+      type: "feature",
+      content: "Split review meta-sections into their own njk files, album-meta and film-meta based on reviewtype field in the posts."
+    },
+    {
       date: "2024-02-24",
       type: "feature",
       content: "Added umami back in again."

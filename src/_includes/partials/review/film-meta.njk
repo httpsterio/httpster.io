@@ -1,0 +1,15 @@
+<section class="review-album-info md:flex">
+<div class="review-image"><img src="{{image}}"></div>
+<dl class="review-meta" style="{% if theme %} background: var(--color-{{theme}});{%endif%}">
+  <dt>title</dt> 
+  <dd>{{filmName}}</dd>
+  <dt>year</dt>
+  <dd>{{releaseYear}}</dd>
+  <dt>director</dt>
+  <dd>{{director}}</dd>
+  <dt>runtime</dt>
+  <dd>{{runtime}}</dd>
+  <dt>score</dt>
+  <dd>{{score}} / 100</dd>
+</dl>
+</section>

@@ -10,6 +10,8 @@ tags:
 
 ## Fastest MEAN Stack Install on Ubuntu
 
+> This article is from {{date | yearsSinceDate}} years ago, so it's likely not to work or be the recommended method of achieving the desired end result.
+
 If you're looking for a server stack that's more JavaScript-friendly than your everyday LAMP stack, MEAN (MongoDB, Express.js, AngularJS, and Node.js) is a great option to consider. This stack is mostly written in JS and integrates nicely with modern JavaScript tools like Grunt, making it a natural choice for web developers who want to bring the backend closer to the frontend.
 
 The best part? Installing MEAN is surprisingly easy, even for command line noobs like me. Here's how to set it up in just a few minutes.

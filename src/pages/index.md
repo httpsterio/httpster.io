@@ -9,8 +9,6 @@ articles:
 type: default
 ---
 
-## Welcome to my website
-
 This site is my digital home. I'm sharing my projects, thoughts and digital works here.
 
 Like everything else in my life, this site is a work in progress. Things might move around and change, don't be alarmed.

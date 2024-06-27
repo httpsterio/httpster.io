@@ -1,0 +1,9 @@
+{% if score %}
+  <section class="review-score" style="{% if theme %} background: var(--color-{{theme}});{%endif%}">
+  <dl>
+    <dt>score</dt> 
+    <dd>{{score}} / 100</dd>
+  </dl>
+  </section>
+{% endif %}
+

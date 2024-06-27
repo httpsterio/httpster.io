@@ -3,7 +3,6 @@ const markdownItPrism = require('markdown-it-prism');
 const markdownItAnchor = require('markdown-it-anchor');
 const markdownItClass = require('@toycode/markdown-it-class');
 const markdownItLinkAttributes = require('markdown-it-link-attributes');
-const markdownItEmoji = require('markdown-it-emoji');
 const markdownItFootnote = require('markdown-it-footnote');
 const markdownitMark = require('markdown-it-mark');
 const markdownitAbbr = require('markdown-it-abbr');
@@ -22,7 +21,10 @@ const markdownLib = markdownIt({
   .use(markdownItAnchor, {
     slugify: slugifyString,
     tabIndex: false,
-    permalink: undefined
+    symbol: true,
+    permalink: markdownItAnchor.permalink.headerLink({
+      class: 'heading-anchor'
+    })
   })
   .use(markdownItClass, {
     ol: 'list',

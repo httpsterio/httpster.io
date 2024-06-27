@@ -11,7 +11,7 @@ type: default
 
 __${{ log.type }}__
 
-{{ log.content }}
+{{ log.content | safe}}
 
 <hr>
 {% endfor %}

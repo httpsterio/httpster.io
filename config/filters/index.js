@@ -50,6 +50,18 @@ const toISOString = dateString => dayjs(dateString).toISOString();
 /** Formats a date using dayjs's conventions: https://day.js.org/docs/en/display/format */
 const formatDate = (date, format) => dayjs(date).format(format);
 
+const yearsSinceDate = (postDate) => {
+  var now = dayjs().year();
+  var postYear = dayjs(postDate).year();
+  return now - postYear;
+};
+
+const yearsSinceYear = (postDate) => {
+  const now = new Date().getFullYear(); // Get the current year
+  const postYear = parseInt(postDate, 10); // Parse the postDate string as an integer
+  return now - postYear; // Return the difference
+};
+
 const minifyCss = code => new CleanCSS({}).minify(code).styles;
 
 const minifyJs = async (code, ...rest) => {
@@ -139,6 +151,8 @@ module.exports = {
   toAbsoluteUrl,
   stripHtml,
   stripHttps,
+  yearsSinceDate,
+  yearsSinceYear,
   minifyCss,
   minifyJs,
   mdInline,

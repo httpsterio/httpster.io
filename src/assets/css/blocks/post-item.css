@@ -22,9 +22,16 @@
 
 .tag {
   list-style-type: none;
-  font-size: var(--size-step-1);
+  font-size: var(--size-step-0);
   right: 0;
   font-weight: 300;
+  border: 1px solid black;
+  color: var(--color-light);
+  background-color: var(--color-dark);
+  padding-inline: 1ch;
+  border-radius: 0.5rem;
+  padding-top: 0.3ch;
+
 }
 
 /* .tag:hover{
@@ -99,9 +106,7 @@
 /* item category styles */
 
 .item-review {
-  border-color: var(--color-red);
   color: var(--color-dark);
-  background-color: var(--color-red);
 }
 
 .item-review:hover,

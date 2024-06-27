@@ -1,9 +1,6 @@
 .logo {
   font-family: var(--font-mono);
   font-weight: 450;
-  display: flex;
-  align-items: center;
-  gap: var(--space-2xs);
   letter-spacing: 0.3ch;
   margin: var(--space-s) 0;
   padding: var(--space-xs);
@@ -12,12 +9,12 @@
   border-radius: 0.5rem;
   text-shadow: var(--color-red) 0.1ch 0.1ch;
   transition: 0.3s ease-out;
-
+  text-decoration: none;
 }
 
-.logo:hover {
+.logo:hover, .logo:focus-within {
   color: var(--color-red);
-  border: 0.2ch solid var(--color-red);
-  text-shadow: var(--color-light) 0.1ch 0.1ch;
+  text-shadow: var(--color-light) 0.1ch -0.1ch;
   transition: 0.3s ease-out;
+
 }
