@@ -6,6 +6,9 @@
   border: 0.3ch solid var(--color-dark);
   box-shadow: 0.75rem 0.75rem 0 0 var(--color-blue), -0.75rem -0.75rem 0 0 var(--color-green);
   margin-block: var(--space-l);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .changelog-item li {
