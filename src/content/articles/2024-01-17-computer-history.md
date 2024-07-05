@@ -3,7 +3,7 @@ title: My history with computers
 date: "2024-01-16"
 description: "Computer goes beep boop."
 writingtime: ""
-draft: false
+draft: true
 tags:
   - life
   - personal
