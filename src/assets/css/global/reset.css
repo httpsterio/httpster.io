@@ -97,6 +97,7 @@ video {
 
 figure {
   max-width: 80%;
+  width: fit-content;
   display:block;
   margin-inline: auto;
   border: 0.2ch solid var(--color-dark);
