@@ -22,5 +22,6 @@
 
 .changelog-item h3 {
   text-align: center;
-  font-weight: 200;
+  font-weight: 400;
+  font-size: var(--size-step-2);
 }
