@@ -139,7 +139,10 @@ const splitlines = (input, maxCharLength) => {
 
 const filterdrafts = collection => {
   const now = new Date();
-  return collection.filter(post => post.date <= now && !post.data.draft);
+  if (process.env.ELEVENTY_ENV == 'production'){
+    return collection.filter(post => post.date <= now && !post.data.draft);}
+  else {
+    return collection.filter(post => post.date <= now);}
 };
 
 module.exports = {
