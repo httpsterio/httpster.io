@@ -21,8 +21,6 @@ image: "/assets/images/reviews/casiopea-1979/cover casiopea 1979.webp"
 
 ---
 
-assets/images/reviews/casiopea-1979/cover casiopea 1979.webp
-
 ## Intro 
 During the COVID lockdowns, me and the wife got into a habit of playing Scrabble or doing puzzles whilst listening to random albums from YouTube.
 

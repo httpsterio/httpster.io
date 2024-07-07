@@ -1,0 +1,16 @@
+<article class="post-item {{post.data.type}} flow overflow-hidden h-entry">
+  <h3><a href="{{ post.url | url }}">{{ post.data.title }}</a></h3>
+  <div class="post-meta mt-xs">
+    {% set definedDate = post.date %} {% include "partials/date.njk" %}
+    <span class="post-category">${{post.data.category}}</span>
+    <ul class="tag-list">
+      {% for tag in post.data.tags %}
+        {% if tag != "posts" %}
+          <li class="tag">#{{ tag }}</li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+
+  <p class="mt-xs">{{ post.data.description }}</p>
+</article>

@@ -105,6 +105,19 @@
 
 /* item category styles */
 
+.item-article {
+  border-color: var(--color-green);
+  color: var(--color-dark);
+  background-color: var(--color-green);
+}
+
+.item-article:hover,
+.item-article:focus-within {
+  border-color: var(--color-dark);
+  box-shadow: 0.75rem -0.75rem 0 0 var(--color-dark), -0.75rem 0.75rem 0 0 var(--color-green);
+}
+
+
 .item-review {
   color: var(--color-dark);
 }
