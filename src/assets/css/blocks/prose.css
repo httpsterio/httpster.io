@@ -52,6 +52,8 @@
 
 .footnote-item {
   word-break: break-word;
+  line-height: 3.2ch;
+  font-size: var(--size-step-1);
 }
 
 #fn4 > p > a:nth-child(1)

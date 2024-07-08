@@ -2,6 +2,11 @@ module.exports = {
   log: [
     {
       date: "2024-07-08",
+      type: "content",
+      content: "Added new article on current status of the internet."
+    },
+    {
+      date: "2024-07-08",
       type: "feature",
       content: "Added a process.env check for draft posts and added green to article type posts."
     },
