@@ -1,7 +1,7 @@
 ---
 title: The interweb sucks
 date: "2024-07-08"
-description: ""
+description: "Pining for the yesteryears."
 writingtime: "1 hour"
 draft: false
 tags:
@@ -10,7 +10,7 @@ tags:
   - rant
 socialimage: "/assets/images/articles/2024/cover interweb-sucks.jpg"
 sharedlink: 
-  - https://test.com
+  - https://social.lol/@sami/112748686616645989
 ---
 
 ## Intro
