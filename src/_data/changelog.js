@@ -8,7 +8,7 @@ module.exports = {
     {
       date: "2024-07-09",
       type: "feature",
-      content: "Restyled tags and themed site heading if on a themed page. Also using just one post-item partial for all post item types instead of one for each post type."
+      content: "Restyled tags and themed site heading if on a themed page. Also using just one post-item partial for all post item types instead of one for each post type. Also, tags are now alphabetized."
     },
     {
       date: "2024-07-08",
