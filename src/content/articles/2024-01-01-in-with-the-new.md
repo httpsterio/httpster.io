@@ -5,6 +5,7 @@ description: "After three and a half years, it's time for a refresh."
 writingtime: "4 hours"
 draft: false
 tags:
+  - tech
   - webdev
 ---
 

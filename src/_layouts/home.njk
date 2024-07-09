@@ -30,7 +30,9 @@ layout: base
     {% set postslist = collections.posts %} 
 {% for post in postslist.slice(0, 20) %}
 {% if post.data.type %}
-  {% include "partials/item-type/" + post.data.type + ".njk" %}
+  {# if we want to have a separate njk for each article type. #}
+  {# {% include "partials/item-type/" + post.data.type + ".njk" %} #}
+  {% include "partials/item-type/post-item.njk" %}
 {% else %}
   {% include "partials/default.njk" %}
 {% endif %}

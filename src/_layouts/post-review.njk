@@ -2,6 +2,12 @@
 layout: base
 schema: blog
 ---
+{% if theme %}<style>
+.title-shadow-post { text-shadow: var(--color-{{theme}}) 0.08ch 0.08ch; }
+.logo { text-shadow: var(--color-{{theme}}) 0.1ch 0.1ch; }
+.logo:hover, .logo:focus-within { color: var(--color-{{theme}}); }
+</style>{% endif %}
+
 <article class="region blog">
   <div class="wrapper prose">
     <h1 class="title-shadow-post">{{ title }}</h1>
@@ -11,7 +17,7 @@ schema: blog
       <ul class="tag-list">
         {% for tag in tags %}
           {% if tag != "posts" %}
-            <li class="tag">#{{ tag }}</li>
+            <li class="rounded-btn tag">#{{ tag }}</li>
           {% endif %}
         {% endfor %}
       </ul>

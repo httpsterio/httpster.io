@@ -5,6 +5,7 @@ description: "Solving shifting content with webfonts!"
 writingtime: ""
 draft: false
 tags:
+  - tech
   - webdev
 sharedlink:
   - https://social.lol/@sami/111842574066744533

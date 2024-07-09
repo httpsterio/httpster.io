@@ -19,7 +19,8 @@ layout: base
     {% set postslist = collections.posts %} 
     {% for post in postslist %}
       {% if post.data.type %}
-        {% include "partials/item-type/" + post.data.type + ".njk" %}
+        {# {% include "partials/item-type/" + post.data.type + ".njk" %} #}
+        {% include "partials/item-type/post-item.njk" %}
       {% else %}
         {% include "partials/default.njk" %}
       {% endif %}

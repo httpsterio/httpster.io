@@ -18,9 +18,9 @@
     {% set definedDate = post.date %} {% include "partials/date.njk" %}
     <span class="post-category">${{post.data.category}}</span>
     <ul class="tag-list">
-      {% for tag in post.data.tags %}
+      {% for tag in post.data.tags | sort %}
         {% if tag != "posts" %}
-          <li class="tag">#{{ tag }}</li>
+          <li class="rounded-btn tag">#{{ tag }}</li>
         {% endif %}
       {% endfor %}
     </ul>

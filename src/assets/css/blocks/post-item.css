@@ -25,19 +25,9 @@
   list-style-type: none;
   font-size: var(--size-step-0);
   right: 0;
-  font-weight: 300;
-  border: 1px solid black;
-  color: var(--color-light);
-  background-color: var(--color-dark);
   padding-inline: 1ch;
-  border-radius: 0.5rem;
-  padding-top: 0.3ch;
+  font-weight: 300;
 }
-
-/* .tag:hover{
-  text-shadow: var(--color-dark) 0.1ch 0.1ch;
-  color: var(--color-green)
-} */
 
 
 

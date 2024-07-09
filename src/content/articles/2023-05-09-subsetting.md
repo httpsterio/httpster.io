@@ -6,6 +6,7 @@ writingtime: "4 hours"
 draft: false
 socialimage: "/img/subset.jpg"
 tags:
+  - tech
   - fonts
   - typography
   - webdev

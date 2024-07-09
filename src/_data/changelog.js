@@ -1,6 +1,16 @@
 module.exports = {
   log: [
     {
+      date: "2024-07-09",
+      type: "content",
+      content: "Fixed typos in the interweb rant. Working on a new post as well."
+    },
+    {
+      date: "2024-07-09",
+      type: "feature",
+      content: "Restyled tags and themed site heading if on a themed page. Also using just one post-item partial for all post item types instead of one for each post type."
+    },
+    {
       date: "2024-07-08",
       type: "content",
       content: "Added new article on current status of the internet."
