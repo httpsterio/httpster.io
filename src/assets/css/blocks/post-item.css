@@ -21,7 +21,7 @@
   row-gap: 0.7ch;
 }
 
-.tag {
+.post-tag {
   list-style-type: none;
   font-size: var(--size-step-0);
   right: 0;

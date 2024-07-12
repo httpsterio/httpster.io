@@ -7,6 +7,7 @@ draft: false
 tags:
   - tech
   - webdev
+  - guide
 sharedlink:
   - https://social.lol/@sami/111842574066744533
 ---

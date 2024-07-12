@@ -6,6 +6,7 @@ writingtime: 3 hours
 tags:
   - sysadmin
   - linux
+  - guide
 ---
 
 ## Fastest MEAN Stack Install on Ubuntu

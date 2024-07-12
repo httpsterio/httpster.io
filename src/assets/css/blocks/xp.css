@@ -1,0 +1,13 @@
+.xp-border {
+  border: 30px solid;
+  border-image: url("/assets/images/border.png");
+  border-image-slice: 30 fill;
+  border-image-width: 30px 4px 4px 4px;
+}
+
+.xp-border::before{
+  height:30px;
+  background-color: hotpink;
+  content: '';
+  position: absolute;
+}

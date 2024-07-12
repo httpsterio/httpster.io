@@ -25,8 +25,8 @@ module.exports = {
       url: '/collections/'
     },
     // {
-    //   text: 'Uses',
-    //   url: '#'
+    //   text: 'Test',
+    //   url: '/test/'
     // },
     {
       text: 'Now',

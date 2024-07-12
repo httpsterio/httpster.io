@@ -7,9 +7,9 @@ draft: false
 socialimage: "/img/subset.jpg"
 tags:
   - tech
-  - fonts
   - typography
   - webdev
+  - guide
 sharedlink:
   - https://social.lol/@sami/111865379426526421
 ---
