@@ -1,5 +1,5 @@
 ---
-title: Wedding stress!
+title: Wedding stress
 date: "2024-07-15"
 description: "Why are weddings so stressful?!?!"
 writingtime: "1 hour"
