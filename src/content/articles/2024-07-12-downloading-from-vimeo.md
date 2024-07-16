@@ -21,7 +21,9 @@ You should always aim to buy and support the creators. This guide is meant for t
 
 You'll need a couple of things to get started.
 
-The main software we're depending on is [yt-dlp](https://github.com/yt-dlp/yt-dlp)
+The main software we're depending on is [yt-dlp](https://github.com/yt-dlp/yt-dlp), currently the latest stable version is 2024.07.09
+
+
 
 ```html
 <iframe src="https://player.vimeo.com/video/666666666?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="horse_loop"></iframe>

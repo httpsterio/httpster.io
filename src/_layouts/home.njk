@@ -28,7 +28,7 @@ layout: base
 
   <div class="wrapper post-list mt-l-xl">
     {% set postslist = collections.posts %} 
-{% for post in postslist.slice(0, 20) %}
+{% for post in postslist.slice(0, 5) %}
 {% if post.data.type %}
   {# if we want to have a separate njk for each article type. #}
   {# {% include "partials/item-type/" + post.data.type + ".njk" %} #}
