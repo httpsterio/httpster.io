@@ -1,7 +1,12 @@
 module.exports = {
   log: [
     {
-      date: "2024-07-016",
+      date: "2024-07-017",
+      type: "content",
+      content: "Added new post about family gathering"
+    },
+    {
+      date: "2024-07-16",
       type: "content",
       content: "Added new post about the upcoming wedding"
     },
