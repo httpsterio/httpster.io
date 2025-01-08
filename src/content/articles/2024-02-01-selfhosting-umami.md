@@ -109,6 +109,12 @@ POSTGRES_PRISMA_URL="postgres://default:SomethingSomething@wow-many-words-such-f
 
 Now, on GitHub we'll need to create two files for our project. One file is our environment variable file that tells Umami the password and URL for the database and the second file is a Vercel specific configuration file that allows you to serve the tracking script from your own site.
 
+
+
+> [!WARNING] Important note!
+> Before proceeding, make sure your repo is private!
+> We're committing your secrets as a file and those can be misused.
+
 So, in the GitHub repository page, hit the ___"+"___ icon and ___"Create new file"___.
 
 <figure class="mb-xl">
@@ -134,7 +140,7 @@ DATABASE_URL=postgres://default:SomethingSomething@wow-many-words-such-fun.eu-ce
 3. remove ___?ssl=require___
 4. change ___connect_timeout=___ from 15 to 10
 
-___Commit the file___.
+All done! Now, ___commit the file___.
 
 
 

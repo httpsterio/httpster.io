@@ -1,0 +1,37 @@
+---
+permalink: /feed.json
+eleventyExcludeFromCollections: true
+excludeFromSitemap: true
+---
+{% set postslist = collections.articles %}
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "user_comment": "This JSON feed is ready for you—simply copy its URL from your browser and add it to your newsreader to subscribe.",
+  "title": "Sami's JSON Feed",
+  "description": "{{ meta.blog.name }}",
+  "home_page_url": "{{ meta.url }}",
+  "feed_url": "{{ meta.url }}/feed.json",
+  "authors": [
+    {
+      "name": "{{ meta.author }}",
+      "url": "{{ meta.url }}"
+    }
+  ],
+  "items": [
+  {%- for post in postslist %} {%- set absolutePostUrl = post.url | absoluteUrl(meta.url) %}
+    {
+      "id": "{{ absolutePostUrl }}",
+      "title": "{{ post.data.title }}",
+      "url": "{{ absolutePostUrl }}",
+      "content_html": "{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}",
+      "summary": "{{ post.data.description }}",
+      "date_published": "{{ post.date }}",
+      "tags": [
+        {% for tag in post.data.tags -%}
+        "{{tag}}"{% if not loop.last %},{% endif -%}
+        {%- endfor %}
+      ]
+    }{% if not loop.last %},{% endif -%}
+  {%- endfor %}
+  ]
+}

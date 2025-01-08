@@ -1,0 +1,21 @@
+.markdown-alert {
+  border-left: 0.7rem solid var(--color-dark);
+  background-color: var(--color-blue);
+  color: var(--color-light);
+  padding: 1.5rem;
+}
+
+.markdown-alert-title svg {
+  display:none;
+}
+
+.markdown-alert-title {
+  font-family: var(--font-display);
+  font-weight:700;
+}
+
+.markdown-alert-warning {
+  border-left: 0.7rem solid var(--color-red);
+  background-color: var(--color-yellow);
+  color: var(--color-dark);
+}

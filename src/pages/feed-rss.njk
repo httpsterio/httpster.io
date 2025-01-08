@@ -1,0 +1,26 @@
+---
+permalink: /rss.xml
+eleventyExcludeFromCollections: true
+excludeFromSitemap: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="{{meta.url}}" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <docs>{{meta.url}}/rss.xml</docs>
+    <title>{{ meta.blog.name }}</title>
+    <link href="{{ meta.url }}/" />
+    <description>{{ meta.blog.description }}</description>
+    <language>en-gb</language>
+    {% set postslist = collections.articles %}
+    {%- for post in postslist %} {%- set absolutePostUrl = post.url | absoluteUrl(meta.url) %}
+      <item>
+        <title>{{ post.data.title }}</title>
+        <link href="{{ absolutePostUrl }}" />
+        <description>{{ post.data.description }}</description>
+        <pubDate>{{ post.date | dateToRfc3339 }}</pubDate>
+        <dc:creator>{{ meta.author }}</dc:creator>
+        <guid>{{ absolutePostUrl }}</guid>
+      </item>
+    {% endfor %}
+  </channel>
+</rss>

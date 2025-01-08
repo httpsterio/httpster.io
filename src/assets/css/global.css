@@ -11,6 +11,7 @@
 /* BLOCKS */
 @import 'blocks/blog.css';
 @import 'blocks/button.css';
+@import 'blocks/callout.css';
 @import 'blocks/card.css';
 @import 'blocks/code.css';
 @import 'blocks/date.css';

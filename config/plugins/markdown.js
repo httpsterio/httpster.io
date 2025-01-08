@@ -6,6 +6,7 @@ const markdownItLinkAttributes = require('markdown-it-link-attributes');
 const markdownItFootnote = require('markdown-it-footnote');
 const markdownitMark = require('markdown-it-mark');
 const markdownitAbbr = require('markdown-it-abbr');
+const markdownitGHAlerts = require('markdown-it-github-alerts');
 const {slugifyString} = require('../utils');
 
 const markdownLib = markdownIt({
@@ -45,6 +46,7 @@ const markdownLib = markdownIt({
   // .use(markdownItEmoji)
   .use(markdownItFootnote)
   .use(markdownitMark)
+  .use(markdownitGHAlerts)
   .use(markdownitAbbr);
 
 module.exports = markdownLib;
