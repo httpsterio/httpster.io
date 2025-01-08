@@ -25,7 +25,7 @@ excludeFromSitemap: true
       "url": "{{ absolutePostUrl }}",
       "content_html": {{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) | dump | safe}},
       "summary": "{{ post.data.description }}",
-      "date_published": "{{ post.date }}",
+      "date_published": "{{ post.date | dateToRfc3339}}",
       "tags": [
         {% for tag in post.data.tags -%}
         "{{tag}}"{% if not loop.last %},{% endif -%}
