@@ -4,20 +4,21 @@ eleventyExcludeFromCollections: true
 excludeFromSitemap: true
 ---
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="{{meta.url}}" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
+    <atom:link href="{{meta.url}}/rss.xml" rel="self" type="application/rss+xml" />
     <docs>{{meta.url}}/rss.xml</docs>
     <title>{{ meta.blog.name }}</title>
-    <link href="{{ meta.url }}/" />
+    <link>{{ meta.url }}/</link>
     <description>{{ meta.blog.description }}</description>
     <language>en-gb</language>
     {% set postslist = collections.articles %}
     {%- for post in postslist %} {%- set absolutePostUrl = post.url | absoluteUrl(meta.url) %}
       <item>
         <title>{{ post.data.title }}</title>
-        <link href="{{ absolutePostUrl }}" />
+        <link>{{ absolutePostUrl }}/</link>
         <description>{{ post.data.description }}</description>
-        <pubDate>{{ post.date | dateToRfc3339 }}</pubDate>
+        <pubDate>{{ post.date | dateToRfc822 }}</pubDate>
         <dc:creator>{{ meta.author }}</dc:creator>
         <guid>{{ absolutePostUrl }}</guid>
       </item>
