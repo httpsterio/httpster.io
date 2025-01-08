@@ -2,3 +2,16 @@
   max-inline-size: var(--max-img-width, 100%);
   block-size: auto;
 }
+
+.inline-img {
+  display:inline-block;
+}
+
+.inline-img-link:hover {
+  background-color: white!important;
+}
+
+.inline-img-link {
+  background-color: white!important;
+
+}

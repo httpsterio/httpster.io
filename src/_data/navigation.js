@@ -39,7 +39,7 @@ module.exports = {
     },
     {
       text: 'Subscribe',
-      url: '/feed.xml',
+      url: '/subscribe',
       icon: 'rss.svg'
     }
   ],
