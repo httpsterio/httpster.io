@@ -4,7 +4,7 @@ eleventyExcludeFromCollections: true
 excludeFromSitemap: true
 ---
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:base="{{ meta.url }}/">
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="{{ meta.url }}/atom.xml">
   <title>{{ meta.blog.name }}</title>
   <subtitle>{{ meta.blog.description }}</subtitle>
   <link href="{{ meta.url }}/atom.xml" rel="self" />
@@ -29,7 +29,9 @@ excludeFromSitemap: true
       >{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}
     </content>
     <summary>{{ post.data.description }}</summary>
-    <author>{{ meta.author }}</author>
+    <author>
+      <name>{{ meta.author }}</name>
+    </author>
   </entry>
   {%- endfor %}
 </feed>

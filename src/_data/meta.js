@@ -5,10 +5,10 @@ module.exports = {
   siteName: 'httpster.io',
   siteDescription: 'My personal site',
   siteType: 'Person', // schema
-  locale: 'en_EN',
+  locale: 'en_gb',
   lang: 'en',
   skipContent: 'Skip to content',
-  author: 'httpsterio',
+  author: 'Sami Mäkelä',
   authorEmail: 'sami @ domain',
   authorWebsite: 'https://httpster.io',
   proof: 'provenc3d7aa',
