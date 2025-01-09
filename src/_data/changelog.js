@@ -2,6 +2,11 @@ module.exports = {
   log: [
     {
       date: "2025-01-08",
+      type: "content",
+      content: "Added blog post about productivity illusion"
+    },
+    {
+      date: "2025-01-08",
       type: "feature",
       content: "Updated the feeds by adding <a href=\"/atom.xml\">atom.xml</a>, <a href=\"/rss.xml\">rss.xml</a> and <a href=\"/feed.json\">feed.json</a>"
     },
