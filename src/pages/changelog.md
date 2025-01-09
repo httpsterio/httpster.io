@@ -2,6 +2,7 @@
 title: Changelog
 permalink: /changelog/index.html
 description: This site's changelog
+subtitle: Chronological timeline of this site's changes
 layout: page
 type: default
 ---

@@ -9,7 +9,7 @@
 }
 
 .title-shadow-post {
-  text-shadow: var(--color-red) 0.08ch 0.08ch;
+  text-shadow: var(--color-light) 1px 1px, var(--color-red) 0.08ch 0.08ch;
 }
 
 .title-shadow-post::selection {

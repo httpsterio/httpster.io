@@ -59,6 +59,11 @@ a.shared-link {
 }
 
 .post-meta-btn {
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.post-meta-btn:hover {
+  transform: translateY(0);
 }
 
 .post-meta-field {

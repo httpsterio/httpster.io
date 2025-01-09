@@ -1,10 +1,10 @@
 .changelog-item {
-  background-color: var(--color-light);
-  color: var(--color-dark);
+  background-color: var(--color-dark);
+  color: var(--color-light);
   padding-inline: 2rem;
   padding-block: 2rem;
   border: 0.3ch solid var(--color-dark);
-  box-shadow: 0.75rem 0.75rem 0 0 var(--color-blue), -0.75rem -0.75rem 0 0 var(--color-green);
+  box-shadow: 0.75rem 0.75rem 0 0 var(--color-red);
   margin-block: var(--space-l);
   display: flex;
   flex-direction: column;
