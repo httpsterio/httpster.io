@@ -17,18 +17,25 @@
   column-gap: 1rem;
   flex-wrap: wrap;
   padding-inline-start: 0;
+  margin-block-start: -0.4ch;
   color: currentColor;
   row-gap: 0.7ch;
+
 }
 
 .post-tag {
   list-style-type: none;
   font-size: var(--size-step-0);
   right: 0;
+  border-radius: 0.6ch;
+  padding-block-start: 0.2ch;
+  padding-block-end: 0ch;
   padding-inline: 1ch;
   font-weight: 300;
+  border-radius: 0.7ch;
+  color: var(--color-light);
+  background: var(--color-dark);
 }
-
 
 
 .post-item {
