@@ -1,12 +1,12 @@
 ---
 title: Family gatherings
 date: "2024-07-17"
-description: "Surprisingly okay this time"
+description: "Surprisingly okay this time."
 writingtime: "1 hour"
 draft: false
 tags:
   - life
-socialimage: "/assets/images/articles/2024/cover family gatherings.jpg"
+socialimage: "/assets/images/articles/2024/cover-family gatherings.jpg"
 sharedlink: 
 ---
 

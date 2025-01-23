@@ -9,7 +9,7 @@ tags:
   - social media
   - life
   - rant
-socialimage: "/assets/images/articles/2024/cover interweb-sucks.jpg"
+socialimage: "/assets/images/articles/2024/cover-interweb-sucks.jpg"
 sharedlink: 
   - https://social.lol/@sami/112748686616645989
 ---

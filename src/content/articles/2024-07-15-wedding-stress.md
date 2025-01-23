@@ -6,7 +6,7 @@ writingtime: "1 hour"
 draft: false
 tags:
   - life
-socialimage: "/assets/images/articles/2024/cover wedding-stress.jpg"
+socialimage: "/assets/images/articles/2024/cover-wedding-stress.jpg"
 sharedlink: 
 ---
 

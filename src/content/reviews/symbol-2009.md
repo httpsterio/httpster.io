@@ -16,7 +16,7 @@ director: Hitoshi Matsumoto
 runtime: 1h 33m
 score: 87
 socialimage: "/assets/images/social/symbol 2009.jpg"
-image: "/assets/images/reviews/symbol/cover symbol 2009.webp"
+image: "/assets/images/reviews/symbol/cover-symbol 2009.webp"
 ---
 
 ## Intro 

@@ -17,7 +17,7 @@ year: 1979
 runtime: 36min
 score: 95
 socialimage: "/assets/images/social/casiopea 1979.jpg"
-image: "/assets/images/reviews/casiopea-1979/cover casiopea 1979.webp"
+image: "/assets/images/reviews/casiopea-1979/cover-casiopea 1979.webp"
 
 ---
 

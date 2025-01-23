@@ -1,6 +1,11 @@
 module.exports = {
   log: [
     {
+      date: "2025-01-23",
+      type: "content",
+      content: "New article about the flat tire."
+    },
+    {
       date: "2025-01-09",
       type: "design",
       content: "Added thin strokes to headings, making the bg color pop. Recolored changelog page and edited Subscribe page."
