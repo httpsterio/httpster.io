@@ -1,6 +1,11 @@
 module.exports = {
   log: [
     {
+      date: "2025-02-23",
+      type: "feature",
+      content: "Added 88x31 gifs to https://httpster.io/subscribe/ and footer. updated top nav to accomodate more items. removed post-meta webmention form."
+    },
+    {
       date: "2025-01-23",
       type: "content",
       content: "New article about the flat tire."

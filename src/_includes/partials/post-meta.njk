@@ -1,5 +1,5 @@
+{% if sharedlink %}
 <aside class="postmeta-box">
-  {% if sharedlink %}
   <div class="meta-mastolinks">
     <h1>Related links:</h1> 
     {% for link in sharedlink %} 
@@ -7,17 +7,15 @@
     {% endfor %}
   </div>
   {% endif %}
-
-
+{# 
   <p class="text-center">Did you mention this on your website? Tell me about it and send a webmention!</p>
-
   <form class="post-meta-form" action="https://webmention.io/httpster.io/webmention" method="post" class="form-webmention">
     <label for="form-webmention-source" class="font-display">URL</label>
     <div class="post-meta-fields">
-      <input class="post-meta-field" id="form-webmention-source" type="url" name="source" placeholder="https://yourwebsite.url" required />
+      <input class="post-meta-field" id="form-webmention-source" type="url" name="source" placeholder="your url" required />
       <input type="hidden" name="target" value="https://httpster.io{{ page.url }}" />
       <input type="submit" class="rounded-btn post-meta-btn" value="Send" />
     </div>
-  </form>
-
+  </form> 
+#}
 </aside>

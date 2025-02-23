@@ -162,11 +162,3 @@ ___src___ is the script location on your website, ___data-website-id___ from you
 
 
 ## Notes
-
-[^1]:
-
-[^2]:
-
-[^3]:
-
-[^4]:

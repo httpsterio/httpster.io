@@ -131,6 +131,10 @@ module.exports = eleventyConfig => {
   eleventyConfig.addPlugin(require('./config/template-languages/css-config.js'));
   eleventyConfig.addPlugin(require('./config/template-languages/js-config.js'));
 
+  // 	--------------------- NJK settings ---------------------
+  eleventyConfig.setNunjucksEnvironmentOptions({
+    throwOnUndefined: false
+  });
   // 	--------------------- Custom collections -----------------------
   eleventyConfig.addCollection('posts', getAllPosts);
   eleventyConfig.addCollection('onlyMarkdown', onlyMarkdown);

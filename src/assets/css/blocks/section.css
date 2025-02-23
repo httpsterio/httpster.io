@@ -13,7 +13,3 @@
   font-size: var(--size-step-4);
   letter-spacing: var(--tracking-s);
 }
-
-.section :is(h1, h2, h3, blockquote) {
-  opacity: 95%;
-}

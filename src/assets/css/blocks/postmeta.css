@@ -1,7 +1,7 @@
 .postmeta-box {
 display: flex;
 inline-size: var(--wrapper-width,65rem);
-max-width: 80%;
+max-width: 50rem;
 margin-inline: auto;
 margin-bottom: var(--space-xl);
 padding-block: var(--space-m);
@@ -67,7 +67,31 @@ a.shared-link {
 }
 
 .post-meta-field {
+    background-color: var(--color-light);
+    font-family: var(--font-display);
+    font-size: var(--size-step-0);
+    text-decoration: none;
+    color: var(--color-light);
+    border-radius: 0.5rem 0 0 0.5rem;
+    border: 0;
+    padding-inline: var(--space-s);
+    padding-block: var(--space-3xs);
+    width: 40rem;
+    max-width: 70%;
+    background-image: radial-gradient(100% 100% at 100% 0, #e5633e 0, #cf4116 100%);
+    box-shadow: rgba(45, 35, 66, .4) 0 0.25ch 0.3ch, rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    transition: 0.25s ease-in-out;
+}
 
+.post-meta-field::placeholder {
+  color: var(--color-light);
+}
+
+.post-meta-field:hover, .post-meta-field:focus-within, .post-meta-field:focus {
+  background-image: radial-gradient(100% 100% at 100% 0, #df491f 0, #e4b419 100%);
+  box-shadow: rgba(45, 35, 66, .7) 0 0.6ch 0.6ch,rgba(58, 65, 111, .5) 0 -0.33ch 0 inset;
+  transition: 0.25s ease-in-out;
+  outline: 0;
 }
 
 .meta-mastolinks {}

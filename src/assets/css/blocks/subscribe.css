@@ -3,5 +3,5 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: var(--space-s);
-  padding-block-start: var(--space-s);
+  padding-block: var(--space-s);
 }
