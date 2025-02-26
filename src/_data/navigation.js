@@ -71,7 +71,9 @@ module.exports = {
     {
       text: '<img src="test.gif">',
       url: '/changelog/', 
-      image: '88x31.gif'
+      image: '88x31.gif',
+      height: '31px',
+      width: '88px'
     }
     // {
     //   text: 'Privacy',

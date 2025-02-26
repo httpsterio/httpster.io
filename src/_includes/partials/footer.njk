@@ -1,36 +1,34 @@
 {%- set activePage = page.url | url %}
 <footer class="site-foot">
-  <div class="wrapper">
-    <div class="site-foot__inner">
-      <nav id="footernav" class="site-foot__inner text-step-0" aria-label="Footer">
-      &copy; {% year %} <a href="/" {% if activePage === '/' %} aria-current="page" {% endif %}>{{ meta.siteName }}<small>{% packageVersion %}</small></a>
-        {%- for item in navigation.bottom -%}
-          {%- if item.image %}
-            <img class="inline-img" src="/assets/images/{{item.image}}" alt="{{item.text}}"/>
-          {% else %}
-            <a href="{{ item.url }}" {{- helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a>
-          {% endif %}
-        {%- endfor %}
-      </nav>
-      <nav id="social" class="site-foot__inner" aria-label="Social links">
-        {%- for item in social %}
-        {%- if item.platform == "rss" -%}
-        <a href="/feed.xml" rel="alternate" type="application/rss+xml">
-          <div aria-hidden="true">
-            {% include 'icons/social-' + item.icon %}
-          </div>
-        </a>
-
-        {%- else -%}
-        <a href="{{ item.url }}" rel="me">
-          <span class="sr-only">{{ item.platform }}</span>
-          <div aria-hidden="true">
-            {% include 'icons/social-' + item.icon %}
-          </div>
-        </a>
+  <div class="site-foot__inner">
+    <nav id="footernav" class="site-foot__inner text-step-0" aria-label="Footer">
+    &copy; {% year %} <a href="/" {% if activePage === '/' %} aria-current="page" {% endif %}>{{ meta.siteName }}<small>{% packageVersion %}</small></a>
+      {%- for item in navigation.bottom -%}
+        {%- if item.image %}
+          <a href="{{item.url}}"><img class="inline-img" src="/assets/images/{{item.image}}" height="{{item.height}}" width="{{item.width}}" alt="{{item.text}}"/></a>
+        {% else %}
+          <a href="{{ item.url }}" {{- helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a>
         {% endif %}
-        {%- endfor %}
-      </nav>
-    </div>
+      {%- endfor %}
+    </nav>
+    <nav id="social" class="site-foot__inner" aria-label="Social links">
+      {%- for item in social %}
+      {%- if item.platform == "rss" -%}
+      <a href="/feed.xml" rel="alternate" type="application/rss+xml">
+        <div aria-hidden="true">
+          {% include 'icons/social-' + item.icon %}
+        </div>
+      </a>
+
+      {%- else -%}
+      <a href="{{ item.url }}" rel="me">
+        <span class="sr-only">{{ item.platform }}</span>
+        <div aria-hidden="true">
+          {% include 'icons/social-' + item.icon %}
+        </div>
+      </a>
+      {% endif %}
+      {%- endfor %}
+    </nav>
   </div>
 </footer>

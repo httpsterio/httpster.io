@@ -1,5 +1,5 @@
 .site-foot {
-  padding: var(--space-s-m);
+  padding-block: var(--space-l);
   background: var(--color-dark);
   color: var(--color-light);
 }
@@ -9,12 +9,7 @@
   gap: var(--space-s);
   justify-content: center;
   align-items: center;
-
-}
-
-:not(nav#social).site-foot__inner {
   flex-wrap: wrap;
-  margin-top: -0.5rem;
 }
 
 .site-foot svg {
