@@ -44,6 +44,46 @@
 }
 
 .rounded-btn {
+  font-family: var(--font-display);
+  background-color:var(--color-dark);
+  font-size: var(--size-step-0);
+  text-decoration: none;
+  color: var(--color-light);
+  padding-block-start: 0.7rem;
+  padding-inline: 0.7rem;
+  max-width: var(--space-3xl);
+  height:4rem;
+  font-weight: 500;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+  border: 0.15rem solid black;
+  background-image: radial-gradient(100% 100% at 100% 0, #e5633e 0, #cf4116 100%);  color: #fff;
+  border-radius: 0.7rem;
+  box-shadow: 0 .5ch .6ch rgba(0, 0, 0, 0.5), inset 0 -0.7rem 0 rgba(145, 47, 2, 0.9);
+  cursor: pointer;
+  transition:0.2s;
+  position: relative; /* Needed for absolute positioning of ::after */
+
+}
+
+.rounded-btn::after {
+  content: "";
+  position: absolute;
+  top: -1rem; /* Keeps hover area at original 4rem height */
+  left: 0;
+  width: 100%;
+  height: 1rem; /* Extends hover area above button */
+  background: transparent;
+}
+
+.rounded-btn:hover, .rounded-btn:focus-within, .rounded-btn:active {
+  height:3rem;
+  margin-block-start: 1rem;
+  padding-block-start: 0.5rem;
+  background-image: radial-gradient(100% 100% at 100% 0, #ffd902 0, #ec821e 100%);  color: #ffffff;
+  box-shadow: 0 .5ch .6ch rgba(0, 0, 0, 0.5), inset 0 -0.3rem 0 rgba(145, 47, 2, 0.9);
+}
+
+/* .rounded-btn {
   background-color:var(--color-light);
   font-family: var(--font-display);
   font-size: var(--size-step-0);
@@ -69,7 +109,7 @@
 .rounded-btn:active {
   box-shadow: #e5633e 0 3px 7px inset;
   transform: translateY(0px);
-}
+} */
 
 
 /* .nav-button {
