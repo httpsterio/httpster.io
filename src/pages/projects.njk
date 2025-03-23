@@ -1,0 +1,22 @@
+---
+title: Projects
+permalink: /projects/index.html
+description: "Some of the projects I've worked on"
+subtitle: "Some of the projects I've worked on"
+layout: page
+type: default
+---
+
+<article class="region" style="--region-space-top: var(--space-s)">
+  <div class="wrapper post-list mt-l-xl">
+    {% set postslist = collections.projects %} 
+    {% for post in postslist %}
+      {% if post.data.type %}
+        {% include "partials/item-type/post-item.njk" %}
+      {% else %}
+        {% include "partials/default.njk" %}
+      {% endif %}
+    {% endfor %}
+    
+  </div>
+</article>

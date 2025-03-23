@@ -48,6 +48,7 @@ const {
   coffeeCollection,
   mainstreamCollection,
   reviewCollection,
+  projectCollection,
   mainCollection
 } = require('./config/collections/index.js');
 
@@ -142,6 +143,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addCollection('coffee', coffeeCollection);
   eleventyConfig.addCollection('mainstream', mainstreamCollection);
   eleventyConfig.addCollection('reviews', reviewCollection);
+  eleventyConfig.addCollection('projects', projectCollection);
   eleventyConfig.addCollection('mainContent', mainCollection);
 
   // 	--------------------- Events ---------------------

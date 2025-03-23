@@ -26,6 +26,11 @@ const reviewCollection = collection => {
   return filterdrafts(collection.getFilteredByGlob('./src/content/reviews/*.md')).reverse();
 };
 
+const projectCollection = collection => {
+  return filterdrafts(collection.getFilteredByGlob('./src/content/projects/*.md')).reverse();
+};
+
+
 const mainCollection = collection => {
   const mainContent = [
     ...articleCollection(collection),
@@ -43,5 +48,6 @@ module.exports = {
   coffeeCollection,
   mainstreamCollection,
   reviewCollection,
+  projectCollection,
   mainCollection
 };
