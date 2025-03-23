@@ -3,8 +3,5 @@
   "category": "coffee",
   "permalink": "//coffee/{{ title | slugify }}/index.html",
   "type": "item-coffee",
-  "theme": [
-    "blue",
-    "light"
-  ]
+  "theme": ["purple", "light"]
 }

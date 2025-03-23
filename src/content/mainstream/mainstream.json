@@ -2,5 +2,9 @@
   "layout": "post",
   "category": "mainstream",
   "permalink": "//music/{{ title | slugify }}/index.html",
-  "type": "item-mainstream"
+  "type": "item-mainstream",
+  "theme": [
+    "turquoise",
+    "dark"
+  ]
 }

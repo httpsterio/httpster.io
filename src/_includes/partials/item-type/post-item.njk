@@ -1,18 +1,18 @@
 {% if post.data.theme %}<style>
-.theme-{{post.data.theme}} {
-  border-color: var(--color-{{post.data.theme}});
-  color: var(--color-dark);
-  background-color: var(--color-{{post.data.theme}});
+.theme-{{post.data.theme[0]}} {
+  border-color: var(--color-{{post.data.theme[0]}});
+  color: var(--color-{{post.data.theme[1]}});
+  background-color: var(--color-{{post.data.theme[0]}});
 }
 
-.theme-{{post.data.theme}}:hover,
-.theme-{{post.data.theme}}:focus-within {
-  border-color: var(--color-dark);
-  box-shadow: 0.75rem -0.75rem 0 0 var(--color-dark), -0.75rem 0.75rem 0 0 var(--color-{{post.data.theme}});
+.theme-{{post.data.theme[0]}}:hover,
+.theme-{{post.data.theme[0]}}:focus-within {
+  border-color: var(--color-{{post.data.theme[1]}});
+  box-shadow: 0.75rem -0.75rem 0 0 var(--color-{{post.data.theme[1]}}), -0.75rem 0.75rem 0 0 var(--color-{{post.data.theme[0]}});
 }
 </style>{% endif %}
 
-<article class="post-item {{post.data.type}} theme-{{post.data.theme}} flow overflow-hidden h-entry">
+<article class="post-item {{post.data.type}} theme-{{post.data.theme[0]}} flow overflow-hidden h-entry">
   <h3><a href="{{ post.url | url }}">{{ post.data.title }}</a></h3>
   <div class="post-meta mt-xs">
     {% set definedDate = post.date %} {% include "partials/date.njk" %}

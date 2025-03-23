@@ -3,5 +3,5 @@
   "category": "article",
   "permalink": "//article/{{ title | slugify }}/index.html",
   "type": "item-article",
-  "theme": "green"
+  "theme": ["turquoise", "dark"]
 }

@@ -9,7 +9,6 @@ tags:
   - japanese
   - quirky
 reviewtype: film
-theme: yellow
 filmName: Symbol
 releaseYear: 2009
 director: Hitoshi Matsumoto

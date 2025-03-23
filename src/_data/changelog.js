@@ -1,6 +1,11 @@
 module.exports = {
   log: [
     {
+      date: "2025-03-23",
+      type: "feature",
+      content: "Refactored post-items to read the theme array as an array instead of a single value. This allows for defining light or dark text colors depending on the theme. Split reviews into subtypes."
+    },
+    {
       date: "2025-02-26",
       type: "feature",
       content: "Fixed some layout wrapper overflow issues with bottom and top nav"

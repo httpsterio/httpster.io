@@ -10,7 +10,6 @@ tags:
   - fusion
   - jazz
 reviewtype: album
-theme: red
 artist: Casiopea
 album: Casiopea
 year: 1979
