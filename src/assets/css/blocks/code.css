@@ -79,7 +79,7 @@ pre[class*='language-'] {
 }
 
 .token.attribute {
-  color: var(--color-green);
+  color: var(--color-turquoise);
 }
 
 .token.boolean {
@@ -95,7 +95,7 @@ pre[class*='language-'] {
 }
 
 .token.char {
-  color: var(--color-green);
+  color: var(--color-turquoise);
 }
 
 .token.class {
@@ -170,7 +170,7 @@ pre[class*='language-'] {
 }
 
 .token.property {
-  color: var(--color-green);
+  color: var(--color-turquoise);
 }
 
 .token.pseudo-class {

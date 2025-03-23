@@ -52,7 +52,7 @@
 
 .post-item ::selection {
   color: var(--color-dark);
-  background: var(--color-green);
+  background: var(--color-turquoise);
 }
 
 .post-item h3 {
@@ -68,7 +68,7 @@
 .post-item:hover,
 .post-item:focus-within {
   border: 0.3rem solid var(--color-dark);
-  box-shadow: 0.75rem -0.75rem 0 0 var(--color-green), -0.75rem 0.75rem 0 0 var(--color-blue);
+  box-shadow: 0.75rem -0.75rem 0 0 var(--color-turquoise), -0.75rem 0.75rem 0 0 var(--color-blue);
   transition: all 0.25s ease-in-out;
 }
 
@@ -103,15 +103,15 @@
 /* item category styles */
 
 .item-article {
-  border-color: var(--color-green);
+  border-color: var(--color-turquoise);
   color: var(--color-dark);
-  background-color: var(--color-green);
+  background-color: var(--color-turquoise);
 }
 
 .item-article:hover,
 .item-article:focus-within {
   border-color: var(--color-dark);
-  box-shadow: 0.75rem -0.75rem 0 0 var(--color-dark), -0.75rem 0.75rem 0 0 var(--color-green);
+  box-shadow: 0.75rem -0.75rem 0 0 var(--color-dark), -0.75rem 0.75rem 0 0 var(--color-turquoise);
 }
 
 

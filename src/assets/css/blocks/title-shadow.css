@@ -1,10 +1,10 @@
 .title-shadow {
-  text-shadow: var(--color-dark) 1px 1px, var(--color-green) 0.08ch 0.08ch;
+  text-shadow: var(--color-dark) 1px 1px, var(--color-turquoise) 0.08ch 0.08ch;
 }
 
 .title-shadow::selection {
   color: var(--color-dark);
-  background-color: var(--color-green);
+  background-color: var(--color-turquoise);
   text-shadow: var(--color-yellow) 0.08ch 0.08ch;
 }
 
@@ -14,6 +14,6 @@
 
 .title-shadow-post::selection {
   color: var(--color-dark);
-  background-color: var(--color-green);
+  background-color: var(--color-turquoise);
   text-shadow: var(--color-yellow) 0.08ch 0.08ch;
 }

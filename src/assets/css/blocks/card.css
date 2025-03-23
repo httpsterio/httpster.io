@@ -9,7 +9,7 @@
 
 .card ::selection {
   color: var(--color-dark);
-  background: var(--color-green);
+  background: var(--color-turquoise);
 }
 
 .card h2 {

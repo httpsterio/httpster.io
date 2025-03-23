@@ -101,7 +101,7 @@ figure {
   display:block;
   margin-inline: auto;
   border: 0.2ch solid var(--color-dark);
-  box-shadow: 0.5rem 0.5rem 0 0 var(--color-blue), -0.5rem -0.5rem 0 0 var(--color-green);
+  box-shadow: 0.5rem 0.5rem 0 0 var(--color-blue), -0.5rem -0.5rem 0 0 var(--color-turquoise);
   background-color: var(--color-dark);
   color: var(--color-light);
 }

@@ -20,9 +20,9 @@
 }
 
 .nav-button, .nav-button:focus-within{
-  border: 0.25rem solid var(--color-green);
+  border: 0.25rem solid var(--color-turquoise);
   color: var(--color-dark);
-  background-color: var(--color-green);
+  background-color: var(--color-turquoise);
   display: inline-block;
   font-family: var(--font-display);
   padding: 0.5rem 1rem 0rem 1rem;

@@ -153,7 +153,7 @@ article [href*='httpster.io']:hover {
 
 /* Base selection styles that invert whatever colours are rendered */
 ::selection {
-  background: var(--color-green);
+  background: var(--color-turquoise);
   color: var(--color-dark);
   padding: 1.5em;
 }
