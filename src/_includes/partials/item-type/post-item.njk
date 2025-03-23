@@ -10,6 +10,12 @@
   border-color: var(--color-{{post.data.theme[1]}});
   box-shadow: 0.75rem -0.75rem 0 0 var(--color-{{post.data.theme[1]}}), -0.75rem 0.75rem 0 0 var(--color-{{post.data.theme[0]}});
 }
+
+.theme-{{post.data.theme[0]}}-post-tag {
+  color: var(--color-{{post.data.theme[0]}});
+  background: var(--color-{{post.data.theme[1]}});
+}
+
 </style>{% endif %}
 
 <article class="post-item {{post.data.type}} theme-{{post.data.theme[0]}} flow overflow-hidden h-entry">
@@ -20,7 +26,7 @@
     <ul class="tag-list">
       {% for tag in post.data.tags | sort %}
         {% if tag != "posts" %}
-          <li class="post-tag">#{{ tag }}</li>
+          <li class="post-tag theme-{{post.data.theme[0]}}-post-tag">#{{ tag }}</li>
         {% endif %}
       {% endfor %}
     </ul>
