@@ -12,7 +12,7 @@ excludeFromSitemap: true
     <link>{{ meta.url }}/</link>
     <description>{{ meta.blog.description }}</description>
     <language>en-gb</language>
-    {% set postslist = collections.articles %}
+    {% set postslist = collections.mainContent %}
     {%- for post in postslist %} {%- set absolutePostUrl = post.url | absoluteUrl(meta.url) %}
       <item>
         <title>{{ post.data.title }}</title>

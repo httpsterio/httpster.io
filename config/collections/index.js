@@ -36,9 +36,10 @@ const mainCollection = collection => {
     ...articleCollection(collection),
     ...coffeeCollection(collection),
     ...mainstreamCollection(collection),
-    ...reviewCollection(collection)
+    ...reviewCollection(collection),
+    ...projectCollection(collection)
   ];
-  return filterdrafts(mainContent).reverse();
+  return mainContent;
 };
 
 module.exports = {
