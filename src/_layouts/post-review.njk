@@ -6,6 +6,10 @@ schema: blog
 .title-shadow-post { text-shadow: var(--color-light) 1px 1px, var(--color-{{theme}}) 0.08ch 0.08ch; }
 .logo { text-shadow: var(--color-dark) 1px 1px, var(--color-{{theme}}) 0.1ch 0.1ch; }
 .logo:hover, .logo:focus-within { color: var(--color-{{theme}}); }
+.theme-{{theme[0]}}-post-tag {
+  color: var(--color-{{theme[1]}});
+  background: var(--color-{{theme[0]}});
+
 </style>{% endif %}
 
 <article class="region blog">
@@ -17,12 +21,11 @@ schema: blog
       <ul class="tag-list">
         {% for tag in tags %}
           {% if tag != "posts" %}
-            <li class="post-tag">#{{ tag }}</li>
+            <li class="post-tag theme-{{theme[0]}}-post-tag">#{{ tag }}</li>
           {% endif %}
         {% endfor %}
       </ul>
     </div>
-
     {% if reviewtype == "album" %}
       {% include "partials/review/album-meta.njk" %}
     {% endif %}

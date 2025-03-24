@@ -12,7 +12,7 @@ const {slugifyString} = require('../utils');
 const markdownLib = markdownIt({
   html: true,
   breaks: true,
-  linkify: true,
+  linkify: false,
   typographer: true
 })
   .disable('code')
