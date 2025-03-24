@@ -1,0 +1,47 @@
+{
+  "folder-color.pathColors": [
+    {
+      "folderPath": "httpster.io-new/src/content/",
+      "badge": "⭐",
+      "color": "foldercolorizer.color_ffcc66"
+    },
+    {
+      "folderPath": "httpster.io-new/package.json/",
+      "color": "foldercolorizer.color_00cc99"
+    },
+    {
+      "folderPath": "httpster.io-new/.eleventy.js/",
+      "color": "foldercolorizer.color_00ccff"
+    },
+    {
+      "folderPath": "httpster.io-new/.gitignore/",
+      "color": "foldercolorizer.color_00cc99"
+    },
+    {
+      "folderPath": "httpster.io-new/netlify.toml/",
+      "color": "foldercolorizer.color_00cc99"
+    },
+    {
+      "folderPath": "httpster.io-new/readme.md/",
+      "color": "foldercolorizer.color_00cc99"
+    },
+    {
+      "folderPath": "httpster.io-new/tailwind.config.js/",
+      "color": "foldercolorizer.color_00cc99"
+    },
+    {
+      "folderPath": "httpster.io-new/src/assets/images/",
+      "color": "foldercolorizer.color_ff3366",
+      "badge": "🎞️"
+    },
+    {
+      "folderPath": "httpster.io-new/src/assets/media/"
+    },
+    {
+      "folderPath": "httpster.io-new/src/assets/scripts/"
+    },
+    {
+      "folderPath": "httpster.io-new/src/assets/stats/"
+    }
+  ]
+}
