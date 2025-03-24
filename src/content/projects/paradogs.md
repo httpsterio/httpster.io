@@ -10,7 +10,7 @@ tags:
   - University
 sharedlink: 
   - "https://github.com/httpsterio/Paradogs"
-  - "https://social.lol/@sami/113877697157842980"
+  - "https://social.lol/@sami/114214824824349832"
 ---
 
 During my studies at the university of applied sciences, I completed an elective minor in video game production worth 19 ECTS study credits or roughly 500 hours. A majority of the time was spent working as teams producing a game.
