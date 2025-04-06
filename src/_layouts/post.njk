@@ -6,6 +6,7 @@ schema: blog
 .title-shadow-post { text-shadow: var(--color-{{theme[1]}}) 1px 1px, var(--color-{{theme[0]}}) 0.08ch 0.08ch; }
 .logo { text-shadow: var(--color-{{theme[0]}}) 1px 1px, var(--color-{{theme[0]}}) 0.1ch 0.1ch; }
 .logo:hover, .logo:focus-within { color: var(--color-{{theme[0]}}); }
+.logo::selection {color: var(--color-dark); background-color: var(--color-yellow); text-shadow: var(--color-{{theme[0]}}) 0.08ch 0.08ch;}
 
 .theme-{{theme[0]}}-post-tag {
   color: var(--color-{{theme[1]}});
