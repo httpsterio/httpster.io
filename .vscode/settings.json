@@ -42,6 +42,10 @@
     },
     {
       "folderPath": "httpster.io-new/src/assets/stats/"
+    },
+    {
+      "folderPath": "httpster.io-new/src/content/projects/",
+      "color": "foldercolorizer.color_3399cc"
     }
   ]
 }

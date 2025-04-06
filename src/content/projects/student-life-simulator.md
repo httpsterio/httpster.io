@@ -15,7 +15,7 @@ sharedlink:
 
 We made Student Life Simulator during my first game jam ever, way back in 2013.
 
-I didn't know anybody there and had zero gamedev experience, but I'd already worked with music and audio for a few years so I got teamed up with some people needing a sound and game designer.
+I didn't know anybody there and had next to zero gamedev experience, but I'd already worked with music and audio for a few years so I got teamed up with some people needing a sound and game designer.
 
 After some brainstorming and sketching the first evening, we had a solid idea locked in and started working. The end result was chaotic. In a good way.
 
