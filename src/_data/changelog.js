@@ -3,6 +3,11 @@ module.exports = {
     {
       date: "2025-04-07",
       type: "content",
+      content: "Added I, Love, Robot project"
+    },
+    {
+      date: "2025-04-07",
+      type: "content",
       content: "Added Stranded in JKL project"
     },
     {
