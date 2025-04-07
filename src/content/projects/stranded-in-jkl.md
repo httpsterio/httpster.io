@@ -1,7 +1,7 @@
 ---
 title: Stranded in Jyväskylä
 date: "2015-02-26"
-description: ""
+description: "Game Jam gone awry... :c"
 draft: false
 socialimage: "/assets/images/projects/stranded/social-stranded.jpg"
 tags:
