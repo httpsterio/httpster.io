@@ -7,7 +7,7 @@ socialimage: "/assets/images/projects/paradogs/social-paradogs.jpg"
 tags:
   - Video Game
   - Unity
-  - University
+  - Ludum Dare
 sharedlink: 
   - "https://github.com/httpsterio/Paradogs"
 ---

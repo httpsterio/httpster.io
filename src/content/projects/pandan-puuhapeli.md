@@ -6,7 +6,7 @@ draft: false
 socialimage: "/assets/images/projects/panda/social-panda.jpg"
 tags:
   - Video Game
-  - Unity
+  - Flash
   - University
 sharedlink: 
   - "https://github.com/httpsterio/Pandan-Puuhapeli"

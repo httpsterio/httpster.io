@@ -6,7 +6,7 @@ draft: false
 socialimage: "/assets/images/projects/snakes/social-snakes.jpg"
 tags:
   - Video Game
-  - Unity
+  - Python
   - Game Jam
 sharedlink: 
   - "https://github.com/httpsterio/snakes-etc-on-a-plain"
