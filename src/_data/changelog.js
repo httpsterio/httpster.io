@@ -3,7 +3,12 @@ module.exports = {
     {
       date: "2025-04-07",
       type: "content",
-      content: "Added Pandan puuhapeli"
+      content: "Added Snakes etc. project"
+    },
+    {
+      date: "2025-04-07",
+      type: "content",
+      content: "Added Pandan puuhapeli project"
     },
     {
       date: "2025-03-25",
