@@ -2,7 +2,7 @@
 <footer class="site-foot">
   <div class="site-foot__inner">
     <nav id="footernav" class="site-foot__inner text-step-0" aria-label="Footer">
-    &copy; {% year %} <a href="/" {% if activePage === '/' %} aria-current="page" {% endif %}>{{ meta.siteName }}<small>{% packageVersion %}</small></a>
+    &copy; {% year %}
       {%- for item in navigation.bottom -%}
         {%- if item.image %}
           <a href="{{item.url}}"><img class="inline-img" src="/assets/images/{{item.image}}" height="{{item.height}}" width="{{item.width}}" alt="{{item.text}}"/></a>
@@ -14,7 +14,7 @@
     <nav id="social" class="site-foot__inner" aria-label="Social links">
       {%- for item in social %}
       {%- if item.platform == "rss" -%}
-      <a href="/feed.xml" rel="alternate" type="application/rss+xml">
+      <a href="/subscribe" rel="alternate" aria-label="subscribe" type="application/rss+xml">
         <div aria-hidden="true">
           {% include 'icons/social-' + item.icon %}
         </div>

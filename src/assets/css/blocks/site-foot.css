@@ -12,6 +12,10 @@
   flex-wrap: wrap;
 }
 
+.site-foot__inner > a:hover{
+  color: var(--color-red);
+}
+
 .site-foot svg {
   block-size: 0.9em;
   inline-size: 0.9em;

@@ -73,8 +73,8 @@ module.exports = {
       url: '/changelog/'
     },
     {
-      text: '<img src="test.gif">',
-      url: '/changelog/', 
+      text: 'homepage',
+      url: '/', 
       image: '88x31.gif',
       height: '31px',
       width: '88px'
