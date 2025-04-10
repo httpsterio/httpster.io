@@ -4,7 +4,7 @@
   "permalink": "//coffee/{{ title | slugify }}/index.html",
   "type": "item-coffee",
   "theme": [
-    "blue",
-    "light"
+    "tangerine",
+    "dark"
   ]
 }
