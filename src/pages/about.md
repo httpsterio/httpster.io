@@ -5,6 +5,7 @@ description: About Sami
 layout: page
 subtitle: I'm a full stack creative human who drinks too much coffee and gets needlessly rant-y on topics of no interest.
 type: default
+theme: ["tangerine", "dark"]
 ---
 
 ## About

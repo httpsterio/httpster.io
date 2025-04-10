@@ -1,4 +1,4 @@
-{% set assetHash = global.random() %}<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="{{ meta.lang }}">
   <head>
     <!-- charset/http-equiv/viewport -->
@@ -9,7 +9,9 @@
     <!-- title -->
     <title>{% if seo.title -%}{{ seo.title }}{% elif title -%}{{ title }} — {{ meta.siteName }}{% else -%}{{ meta.siteName }}{% endif -%}</title>
 
+    {% set assetHash = global.random() %}
     <link rel="stylesheet" href="/assets/css/global.css?{{ assetHash }}" />
+    <link rel="stylesheet" href="/assets/css/themes.css?{{ assetHash }}" />
 
     <!-- preloads -->
     <link rel="preload" href="/assets/fonts/supply/supplysans-variable.woff2" as="font" type="font/woff2" crossorigin />

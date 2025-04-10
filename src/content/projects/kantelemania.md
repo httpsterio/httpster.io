@@ -1,6 +1,6 @@
 ---
 title: Kantelemania
-date: "2023-02-05"
+date: "2023-02-01"
 description: ""
 draft: true
 socialimage: "/assets/images/projects/paradogs/social-paradogs.jpg"

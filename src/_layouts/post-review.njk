@@ -2,15 +2,6 @@
 layout: base
 schema: blog
 ---
-{% if theme %}<style>
-.title-shadow-post { text-shadow: var(--color-light) 1px 1px, var(--color-{{theme}}) 0.08ch 0.08ch; }
-.logo { text-shadow: var(--color-dark) 1px 1px, var(--color-{{theme}}) 0.1ch 0.1ch; }
-.logo:hover, .logo:focus-within { color: var(--color-{{theme}}); }
-.theme-{{theme[0]}}-post-tag {
-  color: var(--color-{{theme[1]}});
-  background: var(--color-{{theme[0]}});
-
-</style>{% endif %}
 
 <article class="region blog">
   <div class="wrapper prose">

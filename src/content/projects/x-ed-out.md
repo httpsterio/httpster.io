@@ -1,6 +1,6 @@
 ---
 title: "[X-ED OUT]"
-date: "2023-10-03"
+date: "2022-10-03"
 description: ""
 draft: true
 socialimage: "/assets/images/projects/paradogs/social-paradogs.jpg"
