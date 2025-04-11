@@ -3,5 +3,7 @@
   "category": "project",
   "permalink": "//project/{{ title | slugify }}/index.html",
   "type": "item-project",
-  "theme": ["purple", "light"]
+  "theme": ["blue", "light"]
 }
+
+

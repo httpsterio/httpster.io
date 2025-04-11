@@ -7,10 +7,10 @@
   max-inline-size: unset;
 }
 
-.card ::selection {
+/* .card ::selection {
   color: var(--color-dark);
   background: var(--color-turquoise);
-}
+} */
 
 .card h2 {
   font-size: var(--size-step-3);

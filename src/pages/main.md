@@ -5,4 +5,5 @@ layout: blog
 permalink: /main/index.html
 subtitle: "Here's all the stuff I've remembered to share"
 type: default
+theme: ["turquoise", "dark"]
 ---

@@ -3,7 +3,7 @@
 <header class="nav-main">
   <div class="site-head | ontop justify-center">
     {% set activePage = page.url | url %}
-   <a href="/" class="logo site-head__brand title-shadow-alt" {% if activePage === '/' %} aria-current="page" {% endif %}>{{ meta.siteName }}</a>
+   <a href="/" class="logo site-head__brand" {% if activePage === '/' %} aria-current="page" {% endif %}>{{ meta.siteName }}</a>
     {% include "partials/menu.njk" %}
   </div>
   {% include "partials/top-nav.njk" %}

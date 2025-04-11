@@ -152,11 +152,10 @@ article [href*='httpster.io']:hover {
 }
 
 /* Base selection styles that invert whatever colours are rendered */
-::selection {
+body::selection {
   background: var(--color-turquoise);
   color: var(--color-dark);
   padding: 1.5em;
-  border: 1px solid pink;
 }
 
 .preload-transitions * {
