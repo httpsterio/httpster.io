@@ -1,6 +1,8 @@
 code,
 pre {
-  padding: 0.125em 0.4em;
+  padding-block-start: 0.8ch;
+  padding-block-end: 0.5ch;
+  padding-inline: 1ch;
   font-family: var(--font-mono);
   font-weight: 300;
   background: var(--color-dark);

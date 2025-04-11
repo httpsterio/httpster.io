@@ -1,0 +1,5 @@
+details > summary {
+  color: var(--color-red);
+  font-family: var(--font-mono);
+  font-weight:800;
+}

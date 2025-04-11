@@ -134,7 +134,9 @@ module.exports = eleventyConfig => {
 
   // 	--------------------- NJK settings ---------------------
   eleventyConfig.setNunjucksEnvironmentOptions({
-    throwOnUndefined: false
+    throwOnUndefined: false,
+    trimBlocks: true,
+    lstripBlocks: true
   });
   // 	--------------------- Custom collections -----------------------
   eleventyConfig.addCollection('posts', getAllPosts);

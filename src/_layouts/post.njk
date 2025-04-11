@@ -12,7 +12,7 @@ schema: blog
       <ul class="tag-list">
         {% for tag in tags %}
           {% if tag != "posts" %}
-            <li class="post-tag theme-{{theme[0]}}-post-tag">#{{ tag }}</li>
+            <li class="post-tag {% if theme %}theme-{{ theme[0] }}-post-tag{% endif %}">#{{ tag }}</li>
           {% endif %}
         {% endfor %}
       </ul>

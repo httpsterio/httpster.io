@@ -2,6 +2,11 @@ module.exports = {
   log: [
     {
       date: "2025-04-11",
+      type: "content",
+      content: "Added content driven css article"
+    },
+    {
+      date: "2025-04-11",
       type: "feature",
       content: "Fixed how custom colors are used."
     },
