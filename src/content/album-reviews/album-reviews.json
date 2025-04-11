@@ -2,7 +2,6 @@
   "layout": "post-review",
   "category": "album-review",
   "permalink": "//review/{{ title | slugify }}/index.html",
-  "type": "item-album",
   "theme": [
     "red",
     "dark"

@@ -18,11 +18,7 @@ layout: base
   <div class="wrapper post-list mt-l-xl">
     {% set postslist = collections.posts %} 
     {% for post in postslist %}
-      {% if post.data.type %}
-        {% include "partials/item-type/post-item.njk" %}
-      {% else %}
-        {% include "partials/default.njk" %}
-      {% endif %}
+      {% include "partials/post-item.njk" %}
     {% endfor %}
     
   </div>

@@ -2,7 +2,6 @@
   "layout": "post-review",
   "category": "movie-review",
   "permalink": "//review/{{ title | slugify }}/index.html",
-  "type": "item-movie",
   "theme": [
     "yellow",
     "dark"

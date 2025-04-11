@@ -2,7 +2,6 @@
   "layout": "post",
   "category": "project",
   "permalink": "//project/{{ title | slugify }}/index.html",
-  "type": "item-project",
   "theme": ["blue", "light"]
 }
 

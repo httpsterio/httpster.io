@@ -2,6 +2,5 @@
   "layout": "post",
   "category": "article",
   "permalink": "//article/{{ title | slugify }}/index.html",
-  "type": "item-article",
   "theme": ["turquoise", "dark"]
 }
