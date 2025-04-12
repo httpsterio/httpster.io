@@ -209,8 +209,6 @@ So in the case of my projects, we're checking if the project file returns a them
 
 Remember that if you're not using themes for all of the content, you'll need a higher specifity in your classes to override the defaults. My articles have a fallback theme and only if I have set a custom theme in the post, will we be using that.
 
-Some of my classes are harder to override, like `::selection` which has a higher specificity than `.theme-${theme[0]}::selection` because they're in separate CSS files, changing it to `body::selection` helps override it as it's now narrower in scope and specific enough to allow the generated version to target the wanted elements. [^3]
-
 ## End words
 
 Eleventy can really be such a delight to work with and it's stuff like this that keeps me coming back to it all the time.
@@ -224,5 +222,3 @@ Ta ta and farewell!
 [^1]: [https://www.11ty.dev/docs/data-template-dir/](https://www.11ty.dev/docs/data-template-dir/)
 
 [^2]: [https://www.11ty.dev/docs/layouts/#sources-of-data](https://www.11ty.dev/docs/layouts/#sources-of-data)
-
-[^3]: [https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_cascade/Specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_cascade/Specificity)
