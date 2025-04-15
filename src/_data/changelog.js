@@ -1,6 +1,11 @@
 module.exports = {
   log: [
     {
+      date: "2025-04-15",
+      type: "content",
+      content: "Added Jypeli build tutorial article"
+    },
+    {
       date: "2025-04-13",
       type: "content",
       content: "Added CueBit to projects"
