@@ -10,6 +10,22 @@ tags:
 socialimage: "/assets/images/articles/2025/cover-content-css.jpg"
 ---
 
+## Table of Content
+
+1. [Intro](#intro)
+2. [Building for Windows](#building-for-windows)
+2.1. [Visual Studio](#visual-studio)
+2.2. [dotnet build](#dotnet-build)
+2.3. [Jetbrains Rider](#jetbrains-rider)
+3. [Building for MacOS](#building-for-macos)
+3.1. [dotnet publish](#dotnet-publish)
+3.2. [Bundling manually](#bundling-manually)
+3.3. [Bundling script](#bundling-script)
+3.4. [Removing the app from quarantine](#removing-the-app-from-quarantine)
+4. [Final thoughts](#final-thoughts)
+
+## Intro
+
 [Jypeli](https://github.com/Jypeli-JYU/Jypeli) is the University of Jyväskylä's fork of Microsoft's XNA, released way back in 2010. It's still used to teach the Programming 1 course at the university, which is why I ended up making a game with it in 2020.
 
 Having spent a few weeks going through all of the [game projects](/projects) I've been a part of, I found myself updating my Jypeli game [CueBit](https://github.com/httpsterio/CueBit) five years later.
@@ -85,7 +101,7 @@ If `PublishSingleFile` refuses to cooperate (which it might), just leave it out 
 
 Icons and other settings in your `.csproj` will be included, so make sure you've set those up as well.
 
-### Rider
+### Jetbrains Rider
 Rider is my go-to for Jypeli projects. It’s fast, doesn’t get in the way, and makes building executables pretty painless. You’ll need the .NET 8.0 or .NET 10 SDK installed first. You should obviously also grab the [Rider](https://www.jetbrains.com/rider/) non-commercial version from their website.
 
 Rider will also read your `.csproj`, so make sure it's set up correctly.
