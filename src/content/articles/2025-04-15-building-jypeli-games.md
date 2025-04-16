@@ -1,7 +1,7 @@
 ---
 title: Building Jypeli executables on Windows and Mac
 date: "2025-04-15"
-description: "Creating nice executables for Jypeli games"
+description: "Creating nice executables for Jypeli games."
 writingtime: "6 hour"
 draft: false
 tags:
