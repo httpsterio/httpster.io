@@ -1,7 +1,7 @@
 ---
 title: Building Jypeli executables on Windows and Mac
 date: "2025-04-15"
-description: "Why spend an hour writing CSS when you can spend four hours to create classes on the fly?"
+description: "Creating nice executables for Jypeli games"
 writingtime: "6 hour"
 draft: false
 tags:
