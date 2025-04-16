@@ -2,7 +2,7 @@
 title: "[X-ED OUT]"
 date: "2022-10-03"
 description: ""
-draft: true
+draft: false
 socialimage: "/assets/images/projects/x-ed-out/social-x-ed-out.jpg"
 tags:
   - Video Game
