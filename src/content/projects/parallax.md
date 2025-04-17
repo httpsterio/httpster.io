@@ -1,5 +1,5 @@
 ---
-title: Paradogs - Parallax
+title: Parallax
 date: "2015-02-18"
 description: "MVP demo of a simple platformer game with tight controls and physics. Made as the final project for my minor in video games."
 draft: false
