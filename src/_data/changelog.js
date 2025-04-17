@@ -3,6 +3,11 @@ module.exports = {
     {
       date: "2025-04-17",
       type: "content",
+      content: "Added Kantelemania"
+    },
+    {
+      date: "2025-04-17",
+      type: "content",
       content: "Added [X-ED OUT]"
     },
     {

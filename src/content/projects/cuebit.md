@@ -8,7 +8,6 @@ tags:
   - Video Game
   - University
   - Jypeli
-  - C#
 sharedlink: 
   - "https://github.com/httpsterio/CueBit"
 ---
@@ -27,4 +26,3 @@ For the graphics —_they're stunning, I know_—I built [Aseprite](https://gith
 Building it for Windows in this day and age was a bit of a chore, but I got it up and running. I managed to port it to the latest .Net runtime and latest version of Jypeli. I also added some quality of life updates to the messaging system. The comments and code is mainly in Finnish so it might not be the clearest project, but I'll try to translate it, it's only about 800 LOC in total.
 
 Anyways, feel free to grab the release from the GitHub down below and give the game a go!
-

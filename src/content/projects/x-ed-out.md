@@ -1,7 +1,7 @@
 ---
 title: "[X-ED OUT]"
 date: "2022-10-03"
-description: ""
+description: "Shooting aliens has never been more fun!"
 draft: false
 socialimage: "/assets/images/projects/x-ed-out/social-x-ed-out.jpg"
 tags:
@@ -17,7 +17,7 @@ sharedlink:
 [X-ED OUT] is the second Ludum Dare game we made with Marko and Roni. This time, my wife also joined us!
 
 <figure>
-  <img src="/assets/images/projects/x-ed-out/x-ed-out-screenshot.webp" alt="Screenshot from Panda's activity game" title="Screenshot from Panda's activity game"/>
+  <img src="/assets/images/projects/x-ed-out/x-ed-out-screenshot.webp" alt="Screenshot from the game [X-ED OUT]" title="Screenshot from the game [X-ED OUT]"/>
   <figcaption>Screenshot from the game</figcaption>
 </figure>
 
