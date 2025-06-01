@@ -7,45 +7,47 @@ content:
     label: Album Reviews
     path: src/content/album-reviews
     type: collection
-    fields: [common]
+    fields:
+      - name: common
+        component: common 
 
 components:
   common:
     label: Common post fields
     type: object
-      fields:
-        - name: title
-          label: Title
-          type: text
-          required: true
-        - name: date
-          label: Date
-          type: date
-          required: true
-          options:
-            format: yyyy-MM-dd
-        - name: description
-          label: Description
-          type: text
-          required: false
-        - name: draft
-          label: Draft
-          type: boolean
-          required: false
-        - name: tags
-          label: Tags
-          type: string
-          list:
-            min: 0
-            max: 10
-            collapsible: true
-        - name: socialimage
-          label: Social Image
-          type: image
-          options:
-            extensions: [jpg]
-          required: false
-        - name: sharedlink
-          label: Shared Link
-          type: string
-          list: true
+    fields:
+      - name: title
+        label: Title
+        type: text
+        required: true
+      - name: date
+        label: Date
+        type: date
+        required: true
+        options:
+          format: yyyy-MM-dd
+      - name: description
+        label: Description
+        type: text
+        required: false
+      - name: draft
+        label: Draft
+        type: boolean
+        required: false
+      - name: tags
+        label: Tags
+        type: string
+        list:
+          min: 0
+          max: 10
+          collapsible: true
+      - name: socialimage
+        label: Social Image
+        type: image
+        options:
+          extensions: [jpg]
+        required: false
+      - name: sharedlink
+        label: Shared Link
+        type: string
+        list: true
