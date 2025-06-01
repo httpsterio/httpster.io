@@ -63,27 +63,3 @@ content:
       - name: body
         label: Body
         type: rich-text
-
-components:
-  common:
-    label: Common post fields
-    type: object
-    fields:
-      - name: title
-        label: Title
-        type: text
-        required: true
-      - name: date
-        label: Date
-        type: date
-        required: true
-        options:
-          format: yyyy-MM-dd
-      - name: description
-        label: Description
-        type: text
-        required: false
-      - name: draft
-        label: Draft
-        type: boolean
-        required: false
