@@ -1,40 +1,16 @@
 media:
   input: src/media
   output: src/media
-
+ 
 content:
   - name: album-reviews
     label: Album Reviews
     path: src/content/album-reviews
     type: collection
     view:
-      fields: [ common.title, common.date, common.draft ]
-      primary: common.title
-    fields:
-      - name: common
-        component: commonFields
-      - name: body
-        label: Body
-        type: rich-text
-
-  - name: articles
-    label: Articles
-    path: src/content/articles
-    type: collection
-    view:
-      fields: [ common.title, common.date, common.draft ]
-      primary: common.title
-    fields:
-      - name: common
-        component: commonFields
-      - name: body
-        label: Body
-        type: rich-text
-
-components:
-  commonFields:
-    label: Common Fields
-    type: object
+      fields: [ title, date, draft ]
+      primary: title
+    
     fields:
       - name: title
         label: Title
@@ -54,3 +30,36 @@ components:
         label: Draft
         type: boolean
         required: false
+      - name: body
+        label: Body
+        type: rich-text
+
+  - name: articles
+    label: Articles
+    path: src/content/articles
+    type: collection
+    view:
+      fields: [ title, date, draft ]
+      primary: title
+    fields:
+      - name: title
+        label: Title
+        type: text
+        required: true
+      - name: date
+        label: Date
+        type: date
+        required: true
+        options:
+          format: yyyy-MM-dd
+      - name: description
+        label: Description
+        type: text
+        required: false
+      - name: draft
+        label: Draft
+        type: boolean
+        required: false
+      - name: body
+        label: Body
+        type: rich-text
