@@ -1,6 +1,6 @@
 media:
-  input: src/assets/media
-  output: assets/media
+  input: src/
+  output: src/
  
 content:
   - name: album-reviews
