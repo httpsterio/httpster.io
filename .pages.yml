@@ -1,6 +1,6 @@
 media:
-  input: src/
-  output: src/
+  input: src/media
+  output: src/media
  
 content:
   - name: album-reviews
