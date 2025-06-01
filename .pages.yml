@@ -8,7 +8,7 @@ content:
     path: src/content/album-reviews
     type: collection
     view:
-      fields: [ title ]
+      fields: [ title, date, draft ]
       primary: title
     
     fields:
