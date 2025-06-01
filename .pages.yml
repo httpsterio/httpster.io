@@ -30,6 +30,9 @@ content:
         label: Draft
         type: boolean
         required: false
+      - name: body
+        label: Body
+        type: rich-text
 
   - name: articles
     label: Articles
@@ -57,6 +60,9 @@ content:
         label: Draft
         type: boolean
         required: false
+      - name: body
+        label: Body
+        type: rich-text
 
 components:
   common:
