@@ -7,6 +7,10 @@ content:
     label: Album Reviews
     path: src/content/album-reviews
     type: collection
+    view:
+      fields: [ title ]
+      primary: title
+    
     fields:
       - name: common
         component: common
@@ -15,6 +19,9 @@ content:
     label: Articles
     path: src/content/articles
     type: collection
+    view:
+      fields: [ title ]
+      primary: title
     fields:
       - name: common
         component: common
