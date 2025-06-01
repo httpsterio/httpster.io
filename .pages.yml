@@ -12,8 +12,24 @@ content:
       primary: title
     
     fields:
-      - name: common
-        component: common
+      - name: title
+        label: Title
+        type: text
+        required: true
+      - name: date
+        label: Date
+        type: date
+        required: true
+        options:
+          format: yyyy-MM-dd
+      - name: description
+        label: Description
+        type: text
+        required: false
+      - name: draft
+        label: Draft
+        type: boolean
+        required: false
 
   - name: articles
     label: Articles
@@ -23,8 +39,24 @@ content:
       fields: [ title, date, draft ]
       primary: title
     fields:
-      - name: common
-        component: common
+      - name: title
+        label: Title
+        type: text
+        required: true
+      - name: date
+        label: Date
+        type: date
+        required: true
+        options:
+          format: yyyy-MM-dd
+      - name: description
+        label: Description
+        type: text
+        required: false
+      - name: draft
+        label: Draft
+        type: boolean
+        required: false
 
 components:
   common:
