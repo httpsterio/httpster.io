@@ -1,0 +1,110 @@
+media:
+  input: src/assets/media
+  output: /assets/media
+ 
+content:
+  - name: album-reviews
+    label: Album Reviews
+    path: src/content/album-reviews
+    type: collection
+    fields:
+      - name: title
+        label: Title
+        type: text
+        required: true
+      - name: date
+        label: Date
+        type: date
+        required: true
+        options:
+          format: yyyy-MM-dd
+          
+      - name: description
+        label: Description
+        type: text
+        required: false
+        
+      - name: draft
+        label: Draft
+        type: boolean
+        required: false
+        
+      - name: tags
+        label: Tags
+        type: string
+        list:
+          min: 0 # Must have at least one tag
+          max: 5 # Can have up to five tags
+          collapsible: true
+  
+      - name: reviewtype
+        label: Review Type
+        type: select
+        options:
+          values: [album, film]
+        required: false
+    
+      - name: artist
+        label: Artist
+        type: string
+        required: false
+        
+      - name: year
+        label: Year
+        type: date
+        options:
+          format: yyyy
+        required: false
+    
+      - name: runtime
+        label: Runtime (n min)
+        type: string
+        required: false
+    
+      - name: score
+        label: Score
+        type: number
+        required: false
+    
+      - name: socialimage
+        label: Social Image
+        type: image
+        options:
+          extensions: [jpg]
+        required: false
+    
+      - name: image
+        label: Image
+        type: image
+        options:
+          extensions: [webp]
+        required: false
+
+  - name: articles
+    label: Articles
+    path: src/content/articles
+    type: collection
+    fields: []
+  - name: coffee
+    label: Coffee Reviews
+    path: src/content/coffee
+    type: collection
+    fields: []
+  - name: mainstream
+    label: Mainstream Sheep
+    path: src/content/mainstream
+    type: collection
+    fields: []
+  - name: movie-reviews
+    label: Movie Reviews
+    path: src/content/movie-reviews
+    type: collection
+    fields: []
+  - name: projects
+    label: Projects
+    path: src/content/projects
+    type: collection
+    fields: []
+
+
+components:
