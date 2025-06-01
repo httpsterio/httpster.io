@@ -51,9 +51,7 @@ content:
         
       - name: year
         label: Year
-        type: date
-        options:
-          format: yyyy
+        type: string
         required: false
     
       - name: runtime
