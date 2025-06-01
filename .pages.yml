@@ -9,7 +9,43 @@ content:
     type: collection
     fields:
       - name: common
-        component: common 
+        component: common
+
+  - name: articles
+    label: Articles
+    path: src/content/articles
+    type: collection
+    fields:
+      - name: common
+        component: common
+  - name: coffee
+    label: Coffee Reviews
+    path: src/content/coffee
+    type: collection
+    fields:
+      - name: common
+        component: common
+  - name: mainstream
+    label: Mainstream Sheep
+    path: src/content/mainstream
+    type: collection
+    fields:
+      - name: common
+        component: common
+  - name: movie-reviews
+    label: Movie Reviews
+    path: src/content/movie-reviews
+    type: collection
+    fields:
+      - name: common
+        component: common
+  - name: projects
+    label: Projects
+    path: src/content/projects
+    type: collection
+    fields:
+      - name: common
+        component: common
 
 components:
   common:
