@@ -20,7 +20,7 @@ content:
     path: src/content/articles
     type: collection
     view:
-      fields: [ title ]
+      fields: [ title, date, draft ]
       primary: title
     fields:
       - name: common
