@@ -3,20 +3,6 @@ media:
   output: src/media
 
 content:
-  - name: album-reviews
-    label: Album Reviews
-    path: src/content/album-reviews
-    type: collection
-    view:
-      fields: [ title, date, draft ]
-      primary: title
-    fields:
-      - name: common
-        component: commonFields
-      - name: body
-        label: Body
-        type: rich-text
-
   - name: articles
     label: Articles
     path: src/content/articles
@@ -25,8 +11,6 @@ content:
       fields: [ title, date, draft ]
       primary: title
     fields:
-      - name: common
-        component: commonFields
       - name: body
         label: Body
         type: rich-text
