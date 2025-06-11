@@ -32,11 +32,12 @@ content:
       - {name: description, label: Description, type: text, options: { maxlength: 160 }}
       - {name: draft, label: Draft, type: boolean, default: true }
       - {name: tags, label: Tags, type: select, options: { multiple: true, creatable: true} }
-      - {name: reviewtype, label: Review Type, type: text, hidden: true, default: album }
-      - {name: artist, label: Artist, type: text }
-      - {name: album, label: Album, type: text }
-      - {name: runtime, label: Runtime, type: text }
-      - {name: score, label: Score, type: text }
+      - {name: reviewtype, label: Review Type, type: string, hidden: true, default: album }
+      - {name: artist, label: Artist, type: string }
+      - {name: album, label: Album, type: string }
+      - {name: year, label: Release Year, type: date, options: {format: YYYY} }
+      - {name: runtime, label: Runtime, type: string }
+      - {name: score, label: Score, type: string }
       - {name: socialimage, label: Social Image, type: image, options: {extensions: [jpg]}}
       - {name: image, label: Featured Image, type: image }
       - {name: body, label: Body, type: rich-text }
