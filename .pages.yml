@@ -31,7 +31,7 @@ content:
       - {name: date, label: Date, type: date }
       - {name: description, label: Description, type: text, options: { maxlength: 160 }}
       - {name: draft, label: Draft, type: boolean, default: true }
-      - {name: tags, label: Tags, type: select, options: { multiple: true, creatable: true} }
+      - {name: tags, label: Tags, type: select, default: album review, options: { multiple: true, creatable: true} }
       - {name: reviewtype, label: Review Type, type: string, hidden: true, default: album }
       - {name: artist, label: Artist, type: string }
       - {name: album, label: Album, type: string }
