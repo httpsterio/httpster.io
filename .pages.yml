@@ -16,6 +16,7 @@ content:
       - {name: description, label: Description, type: text, options: { maxlength: 160 }}
       - {name: draft, label: Draft, type: boolean, default: true }
       - {name: tags, label: Tags, type: select, options: { multiple: true, creatable: true} }
+      - {name: socialimage, label: Social Image, type: image, options: {extensions: [jpg]}}
       - {name: body, label: Body, type: rich-text }
 
 components:
