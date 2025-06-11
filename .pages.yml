@@ -35,7 +35,7 @@ content:
       - {name: reviewtype, label: Review Type, type: string, hidden: true, default: album }
       - {name: artist, label: Artist, type: string }
       - {name: album, label: Album, type: string }
-      - {name: year, label: Release Year, type: date, options: {format: YYYY} }
+      - {name: year, label: Release Year, type: date, options: {format: yyyy} }
       - {name: runtime, label: Runtime, type: string }
       - {name: score, label: Score, type: string }
       - {name: socialimage, label: Social Image, type: image, options: {extensions: [jpg]}}
