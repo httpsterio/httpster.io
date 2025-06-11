@@ -13,8 +13,9 @@ content:
     fields:
       - {name: title, label: Title, type: string }
       - {name: date, label: Date, type: date }
-      - {name: description, label: Description, type: text }
+      - {name: description, label: Description, type: text, options: { maxlength: 160 }}
       - {name: draft, label: Draft, type: boolean, default: true }
+      - {name: tags, label: Tags, type: select, options: { multiple: true, creatable: true} }
       - {name: body, label: Body, type: rich-text }
 
 components:
