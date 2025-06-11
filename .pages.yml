@@ -31,11 +31,34 @@ content:
       - {name: date, label: Date, type: date }
       - {name: description, label: Description, type: text, options: { maxlength: 160 }}
       - {name: draft, label: Draft, type: boolean, default: true }
-      - {name: tags, label: Tags, type: select, default: album review, options: { multiple: true, creatable: true} }
+      - {name: tags, label: Tags, type: select, options: { multiple: true, creatable: true} }
       - {name: reviewtype, label: Review Type, type: string, hidden: true, default: album }
       - {name: artist, label: Artist, type: string }
       - {name: album, label: Album, type: string }
       - {name: year, label: Release Year, type: string }
+      - {name: runtime, label: Runtime, type: string }
+      - {name: score, label: Score, type: string }
+      - {name: socialimage, label: Social Image, type: image, options: {extensions: [jpg]}}
+      - {name: image, label: Featured Image, type: image }
+      - {name: body, label: Body, type: rich-text }
+
+  - name: movie-reviews
+    label: Moview Reviews
+    path: src/content/movie-reviews
+    type: collection
+    view:
+      fields: [ title, date, draft ]
+      primary: title
+    fields:
+      - {name: title, label: Title, type: string }
+      - {name: date, label: Date, type: date }
+      - {name: description, label: Description, type: text, options: { maxlength: 160 }}
+      - {name: draft, label: Draft, type: boolean, default: true }
+      - {name: tags, label: Tags, type: select, options: { multiple: true, creatable: true} }
+      - {name: reviewtype, label: Review Type, type: string, hidden: false, default: film }
+      - {name: filmName, label: Film Name, type: string }
+      - {name: releaseYear, label: Release Year, type: string }
+      - {name: director, label: Director, type: string }
       - {name: runtime, label: Runtime, type: string }
       - {name: score, label: Score, type: string }
       - {name: socialimage, label: Social Image, type: image, options: {extensions: [jpg]}}
