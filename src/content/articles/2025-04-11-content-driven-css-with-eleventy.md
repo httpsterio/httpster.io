@@ -1,34 +1,34 @@
 ---
 title: Generating content driven CSS with Eleventy
-date: "2025-04-11"
-description: "Why spend an hour writing CSS when you can spend four hours to create classes on the fly?"
-writingtime: "1 hour"
+date: 2025-04-11
+description: Why spend an hour writing CSS when you can spend four hours to
+  create classes on the fly?
 draft: false
 tags:
   - CSS
   - NJK
   - JS
   - Eleventy
-socialimage: "/assets/images/articles/2025/cover-content-css.jpg"
+socialimage: /assets/images/articles/2025/cover-content-css.jpg
 ---
-
 If you've ever taken a peek at my [content stream](/main), you'll know that I use an assortment of colours to denote post categories.
 
-It took me a while to nail down how to achieve it. Creating the feature was surprisingly simple though once I had an understanding of the data cascade and how to utilize template files. 
+It took me a while to nail down how to achieve it. Creating the feature was surprisingly simple though once I had an understanding of the data cascade and how to utilize template files.
 
-The first version used hard-coded templates for each post type. The second version loaded different post types dynamically based on category. Third version inlined dynamically created classes (which meant a lot of duplicated inline CSS) and my latest iteration now creates the classes needed on the fly and everything only gets created once. 
+The first version used hard-coded templates for each post type. The second version loaded different post types dynamically based on category. Third version inlined dynamically created classes (which meant a lot of duplicated inline CSS) and my latest iteration now creates the classes needed on the fly and everything only gets created once.
 
 I'll demonstrate how I did it.
 
 ## Directory data files
 
-Eleventy has a handy thing called Directory data files[^1]. They're JSON or JS files that can either compute or apply static values to the files in your directories.
+Eleventy has a handy thing called Directory data files[^1](%5Bhttps://www.11ty.dev/docs/data-template-dir/%5D\(https://www.11ty.dev/docs/data-template-dir/\)). They're JSON or JS files that can either compute or apply static values to the files in your directories.
 
-My content is separated into sub-folders. I have a `src/content/$content-type` layout for my categories, `$content-type` being my folders for the categories like `articles` or `projects`. 
+My content is separated into sub-folders. I have a `src/content/$content-type` layout for my categories, `$content-type` being my folders for the categories like `articles` or `projects`.
 
 If you create a `folder-name.json` file inside the similarily named directory, you can use that json file to prepopulate your YAML front matter. This means, you don't have to type `category: article` for every post you have. It's pretty nice. This is what my `projects.json` looks like:
 
 {% raw %}
+
 ```json
 {
   "layout": "post",
@@ -37,15 +37,16 @@ If you create a `folder-name.json` file inside the similarily named directory, y
   "theme": ["blue", "light"]
 }
 ```
+
 {% endraw %}
 
 So, this means that every post that is in `src/content/projects/` will get the specified layout, category, permalink and theme automatically set in the front matter for each post.
 
-> __n.b.__ remember the data cascade[^2]. If you set a value in your front matter in both the directory data file as well as the front matter in your layouts, the directory file will override the values. Use eleventyComputed to override the directory data file values.
+> **n.b.** remember the data cascade[^2](%5Bhttps://www.11ty.dev/docs/layouts/#sources-of-data%5D\(https://www.11ty.dev/docs/layouts/#sources-of-data\)). If you set a value in your front matter in both the directory data file as well as the front matter in your layouts, the directory file will override the values. Use eleventyComputed to override the directory data file values.
 
 ## CSS Variables
 
-In the JSON example above, I set a key value pair called __theme__ with an array as the value. This means that in my layouts I can use either `theme[0]` and `theme[1]` or `post.data.theme[0]` and `post.data.theme[1]` to access the values set. You could have more values or just one. If you're using just one, you don't need an array, you can simply give it a string value as well. 
+In the JSON example above, I set a key value pair called **theme** with an array as the value. This means that in my layouts I can use either `theme[0]` and `theme[1]` or `post.data.theme[0]` and `post.data.theme[1]` to access the values set. You could have more values or just one. If you're using just one, you don't need an array, you can simply give it a string value as well.
 
 In my case, the colour `blue` and `light` are definied as a CSS variables and I'm only using colours I've already named and defined in the CSS like so:
 
@@ -74,10 +75,10 @@ I'm using Nunjucks files as that's what I'm most familiar with, but I'd recommen
 
 I made a `themes.css.11ty.js` file and it looks like this:
 
-<details>
-<summary>themes.css.11ty.js</summary>
+themes.css.11ty.js
 
 {% raw %}
+
 ```css
 module.exports = class {
   data() {
@@ -129,16 +130,14 @@ module.exports = class {
     }).join("\n\n");
   }
 };
-
 ```
+
 {% endraw %}
 
-</details>
-
-<details>
-<summary>themes.css.njk</summary>
+themes.css.njk
 
 {% raw %}
+
 ```js
 ---
 permalink: "/assets/css/themes.css"
@@ -170,15 +169,19 @@ eleventyExcludeFromCollections: true
 
 {% endfor %}
 ```
+
 {% endraw %}
-</details>
 
 _In short what the snippet above does:_
 
-- Create a file called themes.css
-- Store the theme keys and values
-- Loop through the collections.posts and store each unique theme
-- For each unique theme, create a theme-$name class and use the theme[0] and theme[1] values for CSS 
+*   Create a file called themes.css
+    
+*   Store the theme keys and values
+    
+*   Loop through the collections.posts and store each unique theme
+    
+*   For each unique theme, create a theme-$name class and use the theme\[0\] and theme\[1\] values for CSS
+    
 
 This will render out to a regular CSS file with all of your themes as their own classes, but you could even take it one step further.
 
@@ -191,18 +194,22 @@ Now it's time to actually use the CSS we just created.
 First off, you'll want to include the created file. I also have added a hashing function to cache bust the file between builds.
 
 {% raw %}
-  ```html
-    {% set assetHash = global.random() %}
-    <link rel="stylesheet" href="/assets/css/themes.css?{{ assetHash }}" />
-  ```
+
+```html
+  {% set assetHash = global.random() %}
+  <link rel="stylesheet" href="/assets/css/themes.css?{{ assetHash }}" />
+```
+
 {% endraw %}
 
 In my Nunjucks template I can now access the CSS classes like so
 
 {% raw %}
-  ```html
-  <article class="{% if post.data.theme %}theme-{{ post.data.theme[0] }}{% endif %}"></article>
-  ```
+
+```html
+<article class="{% if post.data.theme %}theme-{{ post.data.theme[0] }}{% endif %}"></article>
+```
+
 {% endraw %}
 
 So in the case of my projects, we're checking if the project file returns a theme value and then we add the `theme-blue` class to the article.
@@ -218,7 +225,3 @@ Hopefully my sort-of tutorial inspires you to experiment with using data and tem
 Ta ta and farewell!
 
 ## Notes
-
-[^1]: [https://www.11ty.dev/docs/data-template-dir/](https://www.11ty.dev/docs/data-template-dir/)
-
-[^2]: [https://www.11ty.dev/docs/layouts/#sources-of-data](https://www.11ty.dev/docs/layouts/#sources-of-data)
