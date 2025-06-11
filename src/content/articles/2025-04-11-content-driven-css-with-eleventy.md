@@ -1,8 +1,8 @@
 ---
 title: Generating content driven CSS with Eleventy
 date: 2025-04-11
-description: Why spend an hour writing CSS when you can spend four hours to
-  create classes on the fly?
+description: Why spend an hour writing CSS when you can spend four hours
+  creating classes on the fly?
 draft: false
 tags:
   - CSS
