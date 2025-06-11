@@ -43,7 +43,7 @@ content:
       - {name: body, label: Body, type: rich-text }
 
   - name: movie-reviews
-    label: Moview Reviews
+    label: Movie Reviews
     path: src/content/movie-reviews
     type: collection
     view:
@@ -55,7 +55,7 @@ content:
       - {name: description, label: Description, type: text, options: { maxlength: 160 }}
       - {name: draft, label: Draft, type: boolean, default: true }
       - {name: tags, label: Tags, type: select, options: { multiple: true, creatable: true} }
-      - {name: reviewtype, label: Review Type, type: string, hidden: false, default: film }
+      - {name: reviewtype, label: Review Type, type: string, hidden: true, default: film }
       - {name: filmName, label: Film Name, type: string }
       - {name: releaseYear, label: Release Year, type: string }
       - {name: director, label: Director, type: string }
