@@ -173,6 +173,10 @@ module.exports = eleventyConfig => {
     'src/assets/stats/script.js': '/stats/script.js'
   });
 
+  eleventyConfig.addPassthroughCopy({
+    'src/assets/stats/neatstats.well-known': '/.well-known/neatstats'
+  });
+
   // 	--------------------- general config -----------------------
   return {
     // Pre-process *.md, *.html and global data files files with: (default: `liquid`)
