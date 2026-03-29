@@ -22,22 +22,36 @@ const mainstreamCollection = collection => {
   return filterdrafts(collection.getFilteredByGlob('./src/content/mainstream/*.md')).reverse();
 };
 
-const reviewCollection = collection => {
-  return filterdrafts(collection.getFilteredByGlob('./src/content/reviews/*.md')).reverse();
-};
+// const reviewCollection = collection => {
+//   return filterdrafts(collection.getFilteredByGlob('./src/content/reviews/*.md')).reverse();
+// };
 
 const projectCollection = collection => {
   return filterdrafts(collection.getFilteredByGlob('./src/content/projects/*.md')).reverse();
 };
 
+const albumReviewCollection = collection => {
+  return filterdrafts(collection.getFilteredByGlob('./src/content/album-reviews/*.md')).reverse();
+};
+
+const movieReviewCollection = collection => {
+  return filterdrafts(collection.getFilteredByGlob('./src/content/movie-reviews/*.md')).reverse();
+};
+
+const tvShowReviewCollection = collection => {
+  return filterdrafts(collection.getFilteredByGlob('./src/content/tv-show-reviews/*.md')).reverse();
+};
 
 const mainCollection = collection => {
   const mainContent = [
     ...articleCollection(collection),
     ...coffeeCollection(collection),
     ...mainstreamCollection(collection),
-    ...reviewCollection(collection),
-    ...projectCollection(collection)
+    // ...reviewCollection(collection),
+    ...projectCollection(collection),
+    ...albumReviewCollection(collection),
+    ...movieReviewCollection(collection),
+    ...tvShowReviewCollection(collection)
   ];
   return mainContent;
 };
@@ -48,7 +62,10 @@ module.exports = {
   articleCollection,
   coffeeCollection,
   mainstreamCollection,
-  reviewCollection,
+  // reviewCollection,
   projectCollection,
+  albumReviewCollection,
+  movieReviewCollection,
+  tvShowReviewCollection,
   mainCollection
 };

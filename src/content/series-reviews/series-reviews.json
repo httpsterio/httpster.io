@@ -1,0 +1,9 @@
+{
+  "layout": "post-review",
+  "category": "series-review",
+  "permalink": "//review/{{ title | slugify }}/index.html",
+  "theme": [
+    "tangerine",
+    "dark"
+  ]
+}

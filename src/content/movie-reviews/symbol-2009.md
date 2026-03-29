@@ -9,8 +9,8 @@ tags:
   - japanese
   - quirky
 reviewtype: film
-filmName: Symbol
-releaseYear: 2009
+filmname: Symbol
+releaseyear: 2009
 director: Hitoshi Matsumoto
 runtime: 1h 33m
 score: 87

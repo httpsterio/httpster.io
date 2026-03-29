@@ -23,6 +23,9 @@ schema: blog
     {% if reviewtype == "film" %}
       {% include "partials/review/film-meta.njk" %}
     {% endif %}
+    {% if reviewtype == "series" %}
+      {% include "partials/review/series-meta.njk" %}
+    {% endif %}
 
     <div class="wrapper flow">
       {{ content | safe }}

@@ -26,6 +26,7 @@ socialimage: "/assets/images/articles/2025/cover-content-css.jpg"
 
 ## Intro
 
+
 [Jypeli](https://github.com/Jypeli-JYU/Jypeli) is the University of Jyväskylä's fork of Microsoft's XNA, released way back in 2010. It's still used to teach the Programming 1 course at the university, which is why I ended up making a game with it in 2020.
 
 Having spent a few weeks going through all of the [game projects](/projects) I've been a part of, I found myself updating my Jypeli game [CueBit](https://github.com/httpsterio/CueBit) five years later.
