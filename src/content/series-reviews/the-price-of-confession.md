@@ -3,7 +3,7 @@ title: The Price Of Confession
 date: "2026-03-29"
 description: "Matsumoto's second film is easily the wackiest one I've seen in a long time."
 writingtime: 3 hours
-draft: false
+draft: true
 tags:
   - tv series
   - korean
