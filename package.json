@@ -22,14 +22,14 @@
     "url": "https://github.com/httpsterio/httpster.io.git"
   },
   "dependencies": {
-    "@11ty/eleventy": "^2.0.1",
-    "@11ty/eleventy-activity-feed": "^1.0.9",
+    "@11ty/eleventy": "^3.1.6",
+    "@11ty/eleventy-activity-feed": "^2.0.0",
     "@11ty/eleventy-fetch": "^4.0.0",
-    "@11ty/eleventy-img": "^3.0.0",
+    "@11ty/eleventy-img": "^7.0.0",
     "@11ty/eleventy-plugin-bundle": "^1.0.4",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
-    "@11ty/eleventy-server-browsersync": "^1.0.2",
+    "@11ty/eleventy-server-browsersync": "^2.0.0",
     "markdown-it-github-alerts": "^0.3.0",
     "tailwindcss": "^3.0.23"
   },
@@ -40,7 +40,7 @@
     "cssnano": "^6.0.0",
     "dayjs": "^1.11.5",
     "dotenv": "^16.0.3",
-    "esbuild": "^0.19.0",
+    "esbuild": "^0.28.2",
     "html-minifier-terser": "^7.1.0",
     "lodash": "^4.17.21",
     "markdown-it": "^14.0.0",

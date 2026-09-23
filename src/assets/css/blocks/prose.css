@@ -71,5 +71,5 @@
 }
 
 .prose ul ul {
-  margin-left: var(--space-l);
+  margin-left: var(--space-xs);
 }
