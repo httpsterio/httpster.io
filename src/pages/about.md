@@ -12,8 +12,13 @@ theme: ["tangerine", "dark"]
 Heya! My name is Sami and I'm a 32 year old developer/designer/artist. I'm living in Finland with my wife and I'm originally from Denmark.
 
 ## Now
-Coding, working, gaming and studying in Uni in a nutshell :)
-_Updated on the 4th of December, 2023_
+I've been building some custom modules for ITGmania to allow heart rate data to be shown in-game. It's been refreshing to build something for other people to use!
+
+Aside from that, I'm still basking in the experience that was the Masayoshi Takanaka gig last month in London. I feel like my head is set totally differently.
+
+In general, life is good.
+
+_Updated on the 23rd of September, 2026_
 
 ## Uses
 ### Main computer
@@ -26,13 +31,13 @@ I use this PC for gaming, video editing, music production and programming. It's 
 - __Motherboard:__ MSI PRO Z690-A
 - __Power Supply:__ Fractal Design 850W Ion Gold
 - __Storage:__ 
-  - 256gb Samsung 980 Evo Pro NVME
+  - 1tb Samsung 980 Evo Pro NVME
   - 1tb WD Green 5.4k RPM HDD
   - 4tb Seagate Barracuda 5.4k RPM HDD
   - 4tb FireCuda 5.4k RPM SSHD
 
-- __Mouse:__ Logitech MX Master 2S
-- __Keyboard:__ Logitech G512 MX Brown
+- __Mouse:__ Keychron M6
+- __Keyboard:__ Gamiac TKL90G (Kaihl Blue)
 - __Case:__ Fractal Design Meshify S2
 
 ### Secondary

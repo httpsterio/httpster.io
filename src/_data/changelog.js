@@ -1,6 +1,11 @@
 module.exports = {
   log: [
     {
+      date: "2026-09-23",
+      type: "content",
+      content: "Added CV to the footer"
+    },
+    {
       date: "2025-04-17",
       type: "content",
       content: "Added Summogon"

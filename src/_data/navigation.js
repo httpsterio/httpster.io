@@ -73,12 +73,17 @@ module.exports = {
       url: '/changelog/'
     },
     {
+      text: '/cv',
+      url: '/assets/media/sami_makela_resume.pdf'
+    },
+    {
       text: 'homepage',
       url: '/', 
       image: '88x31.gif',
       height: '31px',
       width: '88px'
     }
+
     // {
     //   text: 'Privacy',
     //   url: '/privacy/'
