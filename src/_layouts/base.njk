@@ -9,9 +9,8 @@
     <!-- title -->
     <title>{% if seo.title -%}{{ seo.title }}{% elif title -%}{{ title }} — {{ meta.siteName }}{% else -%}{{ meta.siteName }}{% endif -%}</title>
 
-    {% set assetHash = global.random() %}
-    <link rel="stylesheet" href="/assets/css/global.css?{{ assetHash }}" />
-    <link rel="stylesheet" href="/assets/css/themes.css?{{ assetHash }}" />
+    <link rel="stylesheet" href="/assets/css/global.css" />
+    <link rel="stylesheet" href="/assets/css/themes.css" />
 
     <!-- preloads -->
     <link rel="preload" href="/assets/fonts/supply/supplysans-variable.woff2" as="font" type="font/woff2" crossorigin />
@@ -20,7 +19,7 @@
     <link rel="preload" href="{{ preloads.href }}" as="{{ preloads.as }}" {% if preloads.type %}type={{ preloads.type }}{% endif %}{% if preloads.imagesrcset %}imagesrcset="{{ preloads.imagesrcset }}" {% endif %}{% if preloads.crossorigin %}crossorigin{% endif %} />
     {% endif %}
 
-    <script type="module" src="/assets/scripts/app.js?{{ assetHash }}" defer></script>
+    <script type="module" src="/assets/scripts/app.js" defer></script>
     <script async defer src="/assets/scripts/neatstats.js"></script>
     <script async defer src="/assets/scripts/umami.js" data-host-url="//httpsterio-analytics.vercel.app" data-website-id="78cb6f21-0db7-4f90-86cb-ffd1219e3cdd"></script>
 
