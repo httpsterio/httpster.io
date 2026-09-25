@@ -5,7 +5,7 @@
     &copy; {% year %}
       {%- for item in navigation.bottom -%}
         {%- if item.image %}
-          <a href="{{item.url}}"><img class="inline-img" src="/assets/images/{{item.image}}" height="{{item.height}}" width="{{item.width}}" alt="{{item.text}}"/></a>
+          <a href="{{item.url}}"><img eleventy:ignore class="inline-img" src="/assets/images/{{item.image}}" height="{{item.height}}" width="{{item.width}}" alt="{{item.text}}"/></a>
         {% else %}
           <a href="{{ item.url }}" {{- helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a>
         {% endif %}

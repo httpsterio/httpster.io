@@ -18,25 +18,16 @@ const packageVersion = require('./package.json').version;
 
 // module import filters
 const {
-  limit,
-  toHtml,
-  where,
   toISOString,
   formatDate,
-  toAbsoluteUrl,
-  stripHtml,
   stripHttps,
   yearsSinceDate,
   yearsSinceYear,
-  minifyCss,
-  minifyJs,
-  mdInline,
-  splitlines
+  mdInline
 } = require('./config/filters/index.js');
 
 // module import shortcodes
 const {
-  imageShortcodePlaceholder,
   includeRaw,
 } = require('./config/shortcodes/index.js');
 
@@ -60,9 +51,9 @@ const markdownLib = require('./config/plugins/markdown.js');
 const {EleventyRenderPlugin} = require('@11ty/eleventy');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const {slugifyString} = require('./config/utils');
-const {escape} = require('lodash');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const bundlerPlugin = require('@11ty/eleventy-plugin-bundle');
+const {imageTransformPlugin} = require('@11ty/eleventy-img');
 
 module.exports = eleventyConfig => {
 
@@ -78,34 +69,19 @@ module.exports = eleventyConfig => {
   eleventyConfig.addLayoutAlias('post', 'post.njk');
 
   // 	---------------------  Custom filters -----------------------
-  eleventyConfig.addFilter('limit', limit);
-  eleventyConfig.addFilter('where', where);
-  eleventyConfig.addFilter('escape', escape);
-  eleventyConfig.addFilter('toHtml', toHtml);
   eleventyConfig.addFilter('toIsoString', toISOString);
   eleventyConfig.addFilter('formatDate', formatDate);
-  eleventyConfig.addFilter('toAbsoluteUrl', toAbsoluteUrl);
-  eleventyConfig.addFilter('stripHtml', stripHtml);
   eleventyConfig.addFilter('stripHttps', stripHttps);
   eleventyConfig.addFilter('slugify', slugifyString);
-  eleventyConfig.addFilter('toJson', JSON.stringify);
-  eleventyConfig.addFilter('fromJson', JSON.parse);
   eleventyConfig.addFilter('yearsSinceDate', yearsSinceDate);
   eleventyConfig.addFilter('yearsSinceYear', yearsSinceYear);
-  eleventyConfig.addFilter('cssmin', minifyCss);
-  eleventyConfig.addNunjucksAsyncFilter('jsmin', minifyJs);
   eleventyConfig.addFilter('md', mdInline);
-  eleventyConfig.addFilter('splitlines', splitlines);
-  eleventyConfig.addFilter('keys', Object.keys);
-  eleventyConfig.addFilter('values', Object.values);
-  eleventyConfig.addFilter('entries', Object.entries);
 
   const util = require('util');
   eleventyConfig.addFilter('console', value => `<div style="white-space: pre-wrap;">${decodeURIComponent(util.inspect(value))}</div>;`);
   
 
   // 	--------------------- Custom shortcodes ---------------------
-  eleventyConfig.addNunjucksAsyncShortcode('imagePlaceholder', imageShortcodePlaceholder);
   eleventyConfig.addShortcode('include_raw', includeRaw);
   eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`); // current year, stephanie eckles
   eleventyConfig.addShortcode('packageVersion', () => ` v${packageVersion}`);
@@ -149,6 +125,19 @@ module.exports = eleventyConfig => {
   eleventyConfig.setLibrary('md', markdownLib);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(bundlerPlugin);
+
+  // Rewrites every <img> into a responsive <picture> (avif + webp, several widths). Add `eleventy:ignore` to an <img> to skip it
+  eleventyConfig.addPlugin(imageTransformPlugin, {
+    formats: ['avif', 'webp'],
+    widths: [320, 570, 880, 1200],
+    htmlOptions: {
+      imgAttributes: {
+        loading: 'lazy',
+        decoding: 'async',
+        sizes: '(min-width: 55rem) 880px, 100vw'
+      }
+    }
+  });
 
   // 	--------------------- Passthrough File Copy -----------------------
   // same path
