@@ -54,6 +54,8 @@ const {slugifyString} = require('./config/utils');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const bundlerPlugin = require('@11ty/eleventy-plugin-bundle');
 const {imageTransformPlugin} = require('@11ty/eleventy-img');
+const fs = require('fs');
+const path = require('path');
 
 module.exports = eleventyConfig => {
 
@@ -135,6 +137,20 @@ module.exports = eleventyConfig => {
         loading: 'lazy',
         decoding: 'async',
         sizes: '(min-width: 55rem) 880px, 100vw'
+      }
+    }
+  });
+
+  // Copy each post's original images next to its page, so feed readers (which get the plain post HTML) can load them
+  eleventyConfig.on('eleventy.after', ({results}) => {
+    for (const {inputPath, outputPath} of results) {
+      if (!inputPath.startsWith('./src/content/') || !outputPath) continue;
+      const from = path.dirname(inputPath);
+      const to = path.dirname(outputPath);
+      for (const file of fs.readdirSync(from)) {
+        if (/\.(jpe?g|png|webp|gif|avif)$/i.test(file)) {
+          fs.copyFileSync(path.join(from, file), path.join(to, file));
+        }
       }
     }
   });
