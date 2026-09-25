@@ -66,21 +66,6 @@ const bundlerPlugin = require('@11ty/eleventy-plugin-bundle');
 
 module.exports = eleventyConfig => {
 
-  // browsersync config
-  eleventyConfig.setServerOptions({
-    module: "@11ty/eleventy-server-browsersync",
-
-    // Default options shown:
-    port: 8080,
-    ignore: ["node_modules"],
-    watch: false,
-    open: false,
-    notify: false,
-    ui: false,
-    ghostMode: true,
-    index: "index.html",
-  })
-
   // 	--------------------- Custom Watch Targets -----------------------
   eleventyConfig.addWatchTarget('./src/assets');
   eleventyConfig.addWatchTarget('./utils/*.js');
@@ -147,6 +132,13 @@ module.exports = eleventyConfig => {
   eleventyConfig.addCollection('reviews', reviewCollection);
   eleventyConfig.addCollection('projects', projectCollection);
   eleventyConfig.addCollection('mainContent', mainCollection);
+
+  // 	--------------------- Drafts & scheduled posts ---------------------
+  // In a real build (not --serve), skip drafts and future-dated posts entirely: no page, no collections, no feeds
+  eleventyConfig.addPreprocessor('drafts', 'md', data => {
+    if (process.env.ELEVENTY_RUN_MODE !== 'build') return;
+    if (data.draft || data.page.date > new Date()) return false;
+  });
 
   // 	--------------------- Events ---------------------
   // eleventyConfig.on('afterBuild', svgToJpeg);
