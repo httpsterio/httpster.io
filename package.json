@@ -6,7 +6,7 @@
   "license": "ISC",
   "main": ".eleventy.js",
   "engines": {
-    "node": ">=16.x.x"
+    "node": ">=22"
   },
   "scripts": {
     "clean": "rimraf dist",
